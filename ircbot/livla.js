@@ -447,7 +447,7 @@ var processormensi = function(clientmensi, from, to, text, message) {
 		)
 	):
 		text = text.trim().replace(/\?/g, '');
-		inLanguage = defaultLanguage;
+		var inLanguage = defaultLanguage;
 		inLanguage = RetrieveUsersLanguage(from, inLanguage);
 
 		clientmensi.say(
@@ -703,11 +703,11 @@ if (gchild===''){
 				lin= f;
 			}else{
 				//var start = new Date().getTime();
-				lin= "[< "+katna(lin,lng,'',xmlDoc)+"] "+mulno(lin,lng,xmlDoc);
+				lin= "[< "+katna(lin,lng,'',xmlDoc)+"] "+mulno(lin,lng,flag,xmlDoc);
 				//var end = new Date().getTime();var time = end - start;
 			}
 		}else{
-			lin= mulno(lin,lng,xmlDoc);
+			lin= mulno(lin,lng,flag,xmlDoc);
 		}
 	}else{
 		lin= '';
@@ -726,7 +726,7 @@ ljv='';
 return lin;
 };
 
-var mulno = function (lin,lng,xmlDoc)
+var mulno = function (lin,lng,flag,xmlDoc)
 {
 lin=lin.replace(/\"/g,'');var xo;
 if (typeof xmlDoc==='undefined'){
@@ -745,6 +745,11 @@ var gag=stra.join(", ").trim();
 if (stra.length==1){gag = tordu(gag,lng);}
 if (stra.length>1){gag = xo + " da se tolcri: " + gag;}
 if(gag===''){gag='lo nu mulno sisku zo\'u: y no da se tolcri';if (ljv!==''){gag+= "\n" + ljv;}}
+if(flag === 'passive')
+{
+	console.log(gag);
+	return '';
+}
 return gag;
 };
 
