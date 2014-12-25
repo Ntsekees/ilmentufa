@@ -1,19 +1,14 @@
 //livla bot
 var fs = require("fs"),path = require("path-extra"),libxmljs = require("libxmljs");
-var s,t,notci,notcijudri;
+var s,t,notci,notcijudri,ljv='';
 var tato= require('./tatoeba.js');
 var interv=300000;
 var interm=2900;
 fram="../../../files/fndata-1.5/frame";
-//<<<<<<< HEAD
-var tcan='#lojban,#ckule';
-//=======
-
-	// Default configuration, may be modified by “loadConfig”, with the content of
+// Default configuration, may be modified by “loadConfig”, with the content of
 // “~/.livla/config.json.
 var tcan='#lojban,#ckule';
-//>>>>>>> 10a7da789641dfdc44f9b444f18d61cbf813f2aa
-var livlytcan='##jboselbau';//where la livla talks to la mensi 
+var livlytcan='##jboselbau';//where la livla talks to la mensi
 var asker='livla';
 var replier='mensi';
 var server='irc.freenode.net';
@@ -28,6 +23,8 @@ var config = {
     debug: false,
     messageSplit: 190,
     realName: 'http://mw.lojban.org/index.php?title=IRC_Bots',
+    floodProtection: true,
+    floodProtectionDelay: 400
   }
 };
 var configmensi = {
@@ -37,9 +34,19 @@ var configmensi = {
     channels: [livlytcan, tcan],
     debug: false,
     messageSplit: 190,
-    realName: 'http://mw.lojban.org/index.php?title=IRC_Bots'
+    realName: 'http://mw.lojban.org/index.php?title=IRC_Bots',
+    floodProtection: true,
+    floodProtectionDelay: 400
   }
 };
+var userSettings = {}; // Saving user preferences
+userSettings[asker] = {
+	"language": "jbo" // Not used, but someone might like to have bots speak to each other in another language
+},
+userSettings[replier] = {
+	"language": "jbo"
+};
+var defaultLanguage="en"; // Maybe someday should be replaced with "jbo" when Lojban definitions almost equal that of English
 var preasker=asker + ': ';
 var prereplier=replier + ': ';
 var said;
@@ -112,6 +119,15 @@ function loadConfig() {
 	server    = either( localConfig.server,    server    );
 }
 
+// Load the user configuration from “~/.livla/user-settings.json”
+// These are settings
+function loadUserSettings() {
+	var localConfig = readConfig("user-settings.json");
+	if (localConfig.trim() === "")
+		return;
+	userSettings = JSON.parse(localConfig);
+}
+
 var irc = require('irc');
 var client = new irc.Client(config.server, config.nick, config.options);
 var clientmensi = new irc.Client(configmensi.server, configmensi.nick, configmensi.options);
@@ -124,6 +140,7 @@ clientmensi.addListener('message', function(from, to, text, message) {
     processormensi(clientmensi, from, to, text, message);
 });
 
+loadUserSettings();
 loadNotci();
 
 var updatexmldumps = function (callback) {
@@ -153,8 +170,9 @@ var updatexmldumps = function (callback) {
 						xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),'utf8'));
 					}
 					delete velruhe.cfari[thisa];
+					sutsisningau(thisa);
 				}
-				if (callback && Object.keys(velruhe.cfari).length == 0) {
+				if (callback && Object.keys(velruhe.cfari).length === 0) {
 					callback(velruhe);
 				}
 			}); 
@@ -179,13 +197,34 @@ var updatexmldumps = function (callback) {
 			});
 		});
 	}catch(err){console.log('Error when autoupdating: ' + err);}
-	sutsisningau("en");
+	sutsisningau("zamenhofo");sutsisningau("laadan");
 };
 var xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),'utf8'));//store en dump in memory
 
-setInterval(function(){updatexmldumps()}, 86400000); //update logs once a djedi
+setInterval(function(){updatexmldumps()}, 3*86400000); //update logs once a djedi
 
+var updateUserSettings = function (callback) {
+	readConfig("user-settings.json"); // Ensure existance
 
+	var body = JSON.stringify(userSettings);
+	var configDirectory = path.join(path.homedir(),".livla");
+	var filename = "user-settings.json";
+	file = path.join(configDirectory, filename);
+	try
+	{
+		fs.writeFileSync(file, body);
+		console.log('User settings updated');
+	}
+	catch (e)
+	{
+		// If we get an “ENOENT” error, we return an empty string.
+		// Other errors are still thrown.
+		if (typeof(e.code) === "undefined" || e.code !== 'ENOENT') {
+			throw e;
+		}
+		return;
+	}
+};
 
 var camxesoff = require('../camxes.js');
 var camxes = require('../camxes-exp.js');
@@ -358,31 +397,40 @@ var processormensi = function(clientmensi, from, to, text, message) {
 	case text.indexOf("jbofi'e:") == '0': jbofihe(text.substr(8),sendTo);break;
 	case text.indexOf("jbofihe:") == '0': jbofihe(text.substr(8),sendTo);break;
 	case text.indexOf("gerna:") == '0': jbofihe(text.substr(6),sendTo);break;
-	case text.indexOf(replier + ': ko ningau') == '0': setTimeout(function() {updatexmldumps(function(velruhe) {clientmensi.say(sendTo, 'i ba\'o ningau'); var selsre = Object.keys(velruhe.nalmulselfaho); if (selsre.length) clientmensi.say(sendTo, 'i na kakne lo ka ningau la\'e zoi zoi ' + selsre.join(' ') + ' zoi');});clientmensi.say(sendTo,'mi ca ca\'o ningau lo pe mi sorcu i ko bazi troci lo ka pilno mi');},1); break;
+	case text.indexOf(replier + ': ko ningau') == '0': setTimeout(function() {updatexmldumps(function(velruhe) {clientmensi.say(sendTo, 'i ba\'o ningau'); var selsre = Object.keys(velruhe.nalmulselfaho); if (selsre.length) clientmensi.say(sendTo, 'i na kakne lo ka ningau la\'e zoi zoi ' + selsre.join(' ') + ' zoi');});clientmensi.say(sendTo,'sei ca ca\'o ningau be lo pe mi sorcu');},1); break;
 	case text.indexOf('guaspi:') == '0': clientmensi.say(sendTo, vlaste(text.substr(7),'guaspi'));break;
 	case text.indexOf('frame: /full ') == '0': clientmensi.say(sendTo, vlaste(text.substr(12),'en','framemulno'));break;
 	case text.indexOf('frame:/full ') == '0': clientmensi.say(sendTo, vlaste(text.substr(11),'en','framemulno'));break;
 	case text.indexOf('frame:') == '0': clientmensi.say(sendTo, vlaste(text.substr(6),'en','frame'));break;
-	case text.indexOf('jbo:') == '0': clientmensi.say(sendTo, vlaste(text.substr(4),'jbo'));break;
-	case text.indexOf('en:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'en'));break;
+
+	// Change default language
+	case text.indexOf('bangu:') == '0': clientmensi.say(sendTo, bangu(text.substr(6).trim(), from));break;
+
+	// Give definition of valsi in specified language
+	case text.indexOf('?:') == '0': var inLanguage = defaultLanguage;inLanguage = RetrieveUsersLanguage(from, inLanguage);clientmensi.say(sendTo, vlaste(text.substr(2), inLanguage));break; // Gives definition of valsi in the default language set to user
+	case text.indexOf('jbo:') == '0': clientmensi.say(sendTo, vlaste(text.substr(4),'jbo'));break; // Gives definition of valsi in Lojban
+	case text.indexOf('en:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'en'));break; // Gives definition of valsi in English
 	case text.indexOf('ru:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'ru'));break;
 	case text.indexOf('es:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'es'));break;
-	case text.indexOf('fr:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'fr'));break;
-	case text.indexOf('fr-facile:') == '0': clientmensi.say(sendTo, vlaste(text.substr(10),'fr-facile'));break;
+	case text.indexOf('fr:')	== '0': clientmensi.say(sendTo, vlaste(text.substr(3),'fr'));break;
+	case text.indexOf('fr-facile:')	== '0': clientmensi.say(sendTo, vlaste(text.substr(10),'fr-facile'));break;
+	case text.indexOf('f@:')	== '0': clientmensi.say(sendTo, vlaste(text.substr(3),'fr-facile'));break;
 	case text.indexOf('ja:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'ja'));break;
 	case text.indexOf('de:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'de'));break;
 	case text.indexOf('eo:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'eo'));break;
 	case text.indexOf('zh:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'zh'));break;
 	case text.indexOf('en-simple:') == '0': clientmensi.say(sendTo, vlaste(text.substr(10),'en-simple'));break;
+
 	case text.indexOf('selmaho:') == '0': clientmensi.say(sendTo, vlaste(text.substr(8),'en','selmaho'));break;
 	case text.indexOf('finti:') == '0': clientmensi.say(sendTo, vlaste(text.substr(6),'en','finti'));break;
 	case text.indexOf('rafsi:') == '0': clientmensi.say(sendTo, vlaste(text.substr(6),'en','raf'));break;
 	case text.indexOf('toki:') == '0': clientmensi.say(sendTo, vlaste(text.substr(5),'toki'));break;
 	case text.indexOf('laadan:') == '0': clientmensi.say(sendTo, vlaste(text.substr(7),'laadan'));break;
+	case text.indexOf('loglan:') == '0': clientmensi.say(sendTo, vlaste(text.substr(7),'loglan'));break;
 	case text.indexOf('gloss:') == '0': clientmensi.say(sendTo, gloso(text.substr(6),'en'));break;
 	case text.indexOf('loi:') == '0': clientmensi.say(sendTo, loglo(text.substr(4),''));break;
 	case text.indexOf('coi:') == '0': clientmensi.say(sendTo, loglo(text.substr(4),'coi'));break;
- 	case text==replier+': io': clientmensi.say(sendTo, io());break;
+ 	case text==replier+': ii': clientmensi.say(sendTo, io());break;
  	case text==replier+': help': clientmensi.say(sendTo, sidju());break;
 	case text.indexOf("rot13:") == '0': clientmensi.say(sendTo, rotpaci(text.substr(6)));break;
  	case text.indexOf(prereplier + 'r ') == '0': clientmensi.say(sendTo, rusko(text.substr(prereplier.length+1).trim()));break;
@@ -527,6 +575,56 @@ var rusko = function (lin)
 return jbopotext;
 };
 
+var bangu = function (lng, username)
+{
+	var ret = "";
+	lng=lng.trim().toLowerCase();
+	if(lng.length > 100)
+	{
+		// small data overflow protection
+		return ret;
+	}
+	if(typeof userSettings[username] === "undefined")
+	{
+		userSettings[username] = {};
+	}
+	userSettings[username].language = lng;
+	switch (lng)
+	{
+		// ME(speaking in third person) isn't implemented in irc.js
+		case "lv":
+			ret = "Es ar '" + username + "' turpmāk runāšu latviešu valodā.";
+			break;
+		case "en":
+			ret = "I will speak to '" + username + "' in English from now on.";
+			break;
+		default:
+			ret = "I will speak to '" + username + "' in '" + lng.toUpperCase() + "' from now on."; // TODO: translate to lojban
+			break;
+	}
+	updateUserSettings();
+	return ret;
+};
+
+var RetrieveUsersLanguage = function (username, lng)
+{
+	if(
+		(
+			typeof userSettings[username] === "undefined"
+			|| typeof userSettings[username].language === "undefined"
+		)
+	)
+	{
+		if(typeof lng === "undefined")
+		{
+			return defaultLanguage;
+		}
+		return lng;
+	}
+
+	return userSettings[username].language;
+};
+
 var vlaste = function (lin,lng,raf)
 {
 lin=lin.toLowerCase().trim();
@@ -539,18 +637,40 @@ var ret;
 		case raf=='finti': ret=finti(lin.replace(/[^a-z'\.\*0-9]/g,''));break;
 		case raf=='frame': ret=frame(lin.replace(/[^a-z_'\.]/g,''));break;
 		case raf=='framemulno': ret=framemulno(lin.replace(/[^a-z_'\.]/g,''));break;
-		default: ret=tordu(lin.replace(/\"/g,''),lng);break;
+		default:
+			if(raf==='passive')
+			{ret=tordu(lin.replace(/\"/g,''), lng, raf);break;}
+			else{ret=tordu(lin.replace(/\"/g,''), lng);break;}
 	}
-return ret.replace(/(.{80,120})(, |[ \.\"])/g,'$1$2\n');
+return ret.replace(/(.{80,120})(, |[ \.\"\/])/g,'$1$2\n');
 };
 
 
 var tordu = function (lin,lng,flag,xmlDoc)
 {
-lin=lin.replace(/\"/g,'');
-if (flag!==1){
-	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
-}
+	lin=lin.replace(/\"/g,'');
+	if (flag!==1){
+		if (lng==="en")
+		{
+			xmlDoc=xmlDocEn;
+		}
+		else
+		{
+			var xmlPath = path.join(__dirname,"dumps",lng + ".xml");
+			var errorMessage = 'Dictionary for the desired "' + lng + '" language does not exist.'; //TODO: Translate to Lojban
+			if(!fs.existsSync(xmlPath))
+			{
+				if(flag === 'passive')
+				{
+					console.log(errorMessage);
+					return '';
+				}
+				return errorMessage;
+			}
+			xmlDoc = libxmljs.parseXml(fs.readFileSync(xmlPath,'utf8'));
+		}
+	}
+
 var gchild='';
 	try{gchild +='[' + xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\"]/selmaho[1]").text()+'] ';}catch(err){}
 	try{gchild += xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\"]/definition[1]").text();}catch(err){}
@@ -563,9 +683,9 @@ if (gchild===''){
 			if (f!==''){
 				lin= f;
 			}else{
-				var start = new Date().getTime();
+				//var start = new Date().getTime();
 				lin= "[< "+katna(lin,lng,'',xmlDoc)+"] "+mulno(lin,lng,xmlDoc);
-				var end = new Date().getTime();var time = end - start;
+				//var end = new Date().getTime();var time = end - start;
 			}
 		}else{
 			lin= mulno(lin,lng,xmlDoc);
@@ -574,15 +694,16 @@ if (gchild===''){
 		lin= '';
 	}
 }else{
-	gchild=gchild.replace(/[\{\}_\$]/igm,"").replace(/`/g,"'").substring(0,1000);
-		if (gchild.length>=1000){
-			gchild+=' [mo\'u se katna] http://jbovlaste.lojban.org/dict/'+ lin;
+	gchild=gchild.replace(/[\{\}_\$]/igm,"").replace(/`/g,"'").substring(0,600);
+		if (gchild.length>=600){
+			gchild+='...\n[mo\'u se katna] http://jbovlaste.lojban.org/dict/'+ lin;
 		}
 		if (xulujvo(lin)===true){
 			lin+=" [< "+katna(lin,lng,'',xmlDoc)+"]";
 		}
 		lin= lin + " = " + gchild;
 }
+ljv='';
 return lin;
 };
 
@@ -592,19 +713,28 @@ lin=lin.replace(/\"/g,'');var xo;
 if (typeof xmlDoc==='undefined'){
 	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
 }
-var coun = xmlDoc.find("/dictionary/direction[1]/valsi[contains(translate(./definition,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\") or contains(translate(./notes,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\") or contains(translate(@word,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\")]");
-var stra=[];
-	for (var i=0;i<coun.length;i++)
-	{
-		stra.push(coun[i].attr("word").value());
-	}
+	
+var stra=[];var i;
+var coun = xmlDoc.find("/dictionary/direction[1]/valsi[(translate(@word,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\")]");
+	if(typeof coun!=='undefined'){for (i=0;i<coun.length;i++){stra.push(coun[i].attr("word").value());}}
+coun = xmlDoc.find("/dictionary/direction[1]/valsi[contains(translate(@word,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\")]");
+	if(typeof coun!=='undefined'){for (i=0;i<coun.length;i++){stra.push(coun[i].attr("word").value());}}
+coun = xmlDoc.find("/dictionary/direction[1]/valsi[(translate(./glossword/@word,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\") or (translate(./Engl,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\")]");
+	if(typeof coun!=='undefined'){for (i=0;i<coun.length;i++){stra.push(coun[i].attr("word").value());}}
+coun = xmlDoc.find("/dictionary/direction[1]/valsi[contains(translate(./glossword/@word,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\") or contains(translate(./Engl,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\")]");
+	if(typeof coun!=='undefined'){for (i=0;i<coun.length;i++){stra.push(coun[i].attr("word").value());}}
+coun = xmlDoc.find("/dictionary/direction[1]/valsi[contains(translate(./definition,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\") or contains(translate(./notes,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\")]");
+	if(typeof coun!=='undefined'){for (i=0;i<coun.length;i++){stra.push(coun[i].attr("word").value());}}
+
+stra=stra.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
+
 xo=stra.length;
 try{stra.splice(30);}catch(err){}
 if (stra.length>=30){stra.push("...");}
 var gag=stra.join(", ").trim();
 if (stra.length==1){gag = tordu(gag,lng);}
 if (stra.length>1){gag = xo + " da se tolcri: " + gag;}
-if(gag===''){gag='lo nu mulno sisku zo\'u: y no da se tolcri';}
+if(gag===''){gag='lo nu mulno sisku zo\'u: y no da se tolcri';if (ljv!==''){gag+= "\n" + ljv;}}
 return gag;
 };
 
@@ -646,13 +776,13 @@ if (coun.length!==0){coun='zo\'oi ' + coun + ' rafsi zo ' + lin;}
 
 var rev = xmlDocEn.get("/dictionary/direction[1]/valsi[rafsi=\""+lin+"\"]");
 //now try -raf- in notes
-if (typeof rev==='undefined'){rev =  xmlDocEn.get("/dictionary/direction[1]/valsi[contains(translate(./notes,\""+lin.toUpperCase()+"\",\""+lin+"\"),\"-"+lin+"-\")]");}
+if (typeof rev==='undefined'){rev =  xmlDocEn.get("/dictionary/direction[1]/valsi[contains(translate(./notes,\""+lin.toUpperCase()+"\",\""+lin+"\"),\" -"+lin+"-\")]");}
 //now try to add a vowel:
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"a\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"e\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"i\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"o\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"u\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"a\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"e\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"i\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"o\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"u\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
 
 if (typeof rev!=='undefined' && rev.attr("word").value()!==lin){rev='zo ' + rev.attr("word").value() + ' se rafsi zo\'oi '+lin;}else{rev='';}
 switch(true){
@@ -666,7 +796,7 @@ return gag;
 
 var io = function ()
 {
-return '.io';
+return '.ii';
 };
 
 var sidju = function ()
@@ -737,7 +867,7 @@ var items = logl.loglandic();
 			lin=lin.join(" ").replace(/ /gm,"* ").replace(/$/gm,"*").replace(/A\*/gm,"").replace(/A$/gm,"");
 		}else
 		{
-			lin=lin.replace(/[^a-z'\. ]/g,'').trim().split(" ");
+			lin=lin.replace(/[^a-z', ]/g,'').replace(/\./g,' ').replace(/ +/g,' ').trim().split(" ");
 			for (i=0;i<items.length;i++)
 			{
 			myregexp = new RegExp("^"+items[i][1]+"$", "gm");
@@ -750,7 +880,7 @@ var items = logl.loglandic();
 		lin=lin.join(" ").replace(/ /gm,"* ").replace(/$/gm,"*").replace(/A\*/gm,"").replace(/A$/gm,"");
 	}
 }catch(err){lin='O_0';}
-	return lin;
+	return lin.replace(/(.{80,120})(, |[ \.\"\/])/g,'$1$2\n');
 };
 
 var finti = function (lin)
@@ -783,8 +913,15 @@ if (typeof xmlDoc==='undefined'){
 }
 var retur='y no da se tolcri';
 var items = [
-	["lo","the"],["nu","event-of"],["zo","the-word:"],["coi","hello"],["co'o","goodbye"],["ro","each-of"],["ma","what"],["mo","is-what"],
+	["lo","a(n)"],["le","the"],["la","@@@"],["nu","event-of"],["zo","the-word:"],["coi","hello"],["co'o","goodbye"],["ro","each-of"],["ma","what"],["mo","is-what"],
 	["na","not"],["na'e","not"],["nai","-not"],["nelci","fond-of"],["ka","being"],["tu'a","about"],
+	["ie","yeah"],["e'u","I-suggest"],
+	["e","and"],["a","and/or"],
+	["je","and"],["ja","and/or"],
+	["gi'e",",-and"],["gi'a",",-and/or"],
+	["bu'u","at"],["ca","at-present"],
+	["ku",","],
+	["zo'u",":"],
 	["za'a","as-I-ca-see"],["za'adai","as-you-can-see"],["pu","in-past"],["ba","in-future"],["vau","]"],["doi","oh"],["uinai","unfortunately"],["u'u","sorry"],
 	["ko","do-it-so-that-you"],["poi","that"],["noi",",which"],["me","among"],
 	//["bakni","is-a-cow"],
@@ -812,24 +949,30 @@ lin=lin.toLowerCase();
 					for (j=0;j<items.length;j++){
 						myregexp = new RegExp("^"+items[j][0]+"$", "gim");
 						if (lin[i].match(myregexp)!==null){
-								lin[i]=items[j][1].replace(/$/gm,"A");
+								lin[i]=items[j][1].replace(/$/gm,"%%%");
 						}
 					}
 					}
 					for (j=0;j<itemsu.length;j++){//universal items, actually should use them later
 						myregexp = new RegExp("^"+itemsu[j][0]+"$", "gim");
 						if (lin[i].match(myregexp)!==null){
-								lin[i]=itemsu[j][1].replace(/$/gm,"A");
+								lin[i]=itemsu[j][1].replace(/$/gm,"%%%");
 						}
 					}
 			var cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+lin[i].toUpperCase()+"\",\""+lin[i]+"\")=\""+lin[i]+"\"]/glossword[1]");
 			if (typeof cnt==='undefined'){cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+lin[i].toUpperCase()+"\",\""+lin[i]+"\")=\""+lin[i]+"\"]/keyword[@place=\"1\"]");}//try keyword
-			if (typeof cnt!=='undefined'){lin[i]=cnt.attr("word").value().replace(/ /gm,"-").replace(/$/gm,"A");}
+			if (typeof cnt!=='undefined'){lin[i]=cnt.attr("word").value().replace(/ /gm,"-").replace(/$/gm,"%%%");}
 		}
 		//}
-		lin=lin.join(" ").replace(/ /gm,"* ").replace(/$/gm,"*").replace(/A\*/gm,"");
+		lin=lin.join(" ").replace(/ /gm,"* ").replace(/$/gm,"*").replace(/%%%\*/gm,"");
+		lin=lin.replace(/(@@@ .)/ig,function(v) { return v.toUpperCase(); }).replace(/@@@/ig,'');//uppercase for {la}
+		lin=lin.replace(/,+ *\./g,'.');
+		lin=lin.replace(/(^.)/ig,function(v) { return v.toUpperCase(); }).replace(/ +/ig,' ').replace(/( \. *[^ ])/ig,function(v) { return v.toUpperCase(); }).replace(/ \./ig,'.');//punctuation prettification
+		lin=lin.replace(/-/g,' ');
+		lin=lin.replace(/ *(:|,)/g,'$1');
+		lin=lin.replace(/\*\*/g,'*');
 	}catch(err){lin='O_0';}
-	return lin.replace(/\*\*/g,'*');
+	return lin;
 };
 
 var valsicmene = function (lin,lng)
@@ -1086,8 +1229,8 @@ if (typeof xmlDoc==='undefined'){
 	si=si.trim().split(" ").splice(0,5);
 	if (si.length>=5){si.push("...");}
 	si=si.join(", ");
-	if (tor!==''){si+=" ["+tor+"]";}
-	if (flag===1){si=tor;}
+	if (tor!==''){si+="\n"+tor+"";}
+	if (flag===1){ljv=si;si=tor;}
 	return si;
 };
 
@@ -1097,13 +1240,13 @@ var gag;
 
 var rev = xmlDocEn.get("/dictionary/direction[1]/valsi[rafsi=\""+lin+"\"]");
 //now try -raf- in notes
-if (typeof rev==='undefined'){rev =  xmlDocEn.get("/dictionary/direction[1]/valsi[contains(translate(./notes,\""+lin.toUpperCase()+"\",\""+lin+"\"),\"-"+lin+"-\")]");}
+if (typeof rev==='undefined'){rev =  xmlDocEn.get("/dictionary/direction[1]/valsi[contains(translate(./notes,\""+lin.toUpperCase()+"\",\""+lin+"\"),\" -"+lin+"-\")]");}
 //now try to add a vowel
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"a\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"e\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"i\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"o\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
-if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"u\" and (@type=\"fu'ivla\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"a\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"e\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"i\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"o\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
+if (typeof rev==='undefined'){rev = xmlDocEn.get("/dictionary/direction[1]/valsi[@word=\""+lin+"u\" and (@type=\"fu'ivla\" or @type=\"experimental gismu\" or @type=\"gismu\")]");}
 //may be it's already a word? then just return it.
 if (typeof rev!=='undefined'){rev=rev.attr("word").value();}else{if (xugismu(lin)===true||xufuhivla(lin)===true){rev=lin;}else{rev=lin+"*";}}
 return rev;
@@ -1121,36 +1264,49 @@ var katna= function(lin,lng,flag,xmlDoc){
 
 
 var sutsisningau = function(lng){//write a new file parsed.js that would be used by sutsis
+if (typeof lng==='undefined'){lng='en';}
+if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+
 var pars='var documentStore = {';
-var rev = xmlDocEn.find("/dictionary/direction[1]/valsi");
+var rev = xmlDoc.find("/dictionary/direction[1]/valsi");
 	for (var i=0;i<rev.length;i++) {
 		var hi=rev[i].attr("word").value();
 		pars+="\""+hi+"\":{\"word\":\""+hi+"\"";
 		try{pars+=",\"type\":\""+rev[i].attr("type").value()+"\"";}catch(err){}
 		try{pars+=",\"definition\":\""+rev[i].find("definition[1]")[0].text().replace(/"/g,"'").replace(/\\/g,"\\\\")+"\"";}catch(err){}
 		try{pars+=",\"notes\":\""+rev[i].find("notes[1]")[0].text().replace(/"/g,"'")+"\"";}catch(err){}
-		var ra=rev[i].find("rafsi//text()[1]").join("\",\"");
-		if (ra.length!==0){pars+=",\"rafsi\":[\""+ra+"\"]";}else{pars+=",\"rafsi\":[]";}
+		var ra=rev[i].find("rafsi//text()[1]");
+		if (xugismu(hi)===true){
+			ra.push(hi);
+			if(hi.indexOf("brod")!==0){ra.push(hi.substr(0,4));}
+			if(hi.indexOf("broda")===0){ra.push("brod");}
+		}
+		ra=ra.join("\",\"");
+		
+		if (ra.length!==0){pars+=",\"rafsi\":[\""+ra+"\"]";}//else{pars+=",\"rafsi\":[]";}//not needed anymore due to gleki's fixes
 		pars+="}";
-		if (i<rev.length-1){pars+=",\n";}
+		if (i<rev.length-1){pars+=",";}//\n
 	}
-	pars+="};\n";
-rev = xmlDocEn.find("/dictionary/direction[2]/nlword");
+	pars+="};";//\n
+rev = xmlDoc.find("/dictionary/direction[2]/nlword");
 var nl='var literals = {';
 	for (i=0;i<rev.length;i++) {
 		nl+="\""+rev[i].attr("word").value().replace(/"/g,"'").replace(/\\/g,"\\")+"\":[\""+rev[i].attr("valsi").value().replace(/"/g,"'").replace(/\\/g,"\\")+"\"]";
 		nl+="";
-		if (i<rev.length-1){nl+=",\n";}
+		if (i<rev.length-1){nl+=",";}//\n
 	}
-	nl+="};\n";
+	nl+="};";//\n
 	pars+=nl;
 	var t = path.join(__dirname,"../i/data","parsed-"+lng + ".js");
-	content = fs.writeFileSync(t+".temp",pars);
-	fs.renameSync(t+".temp", t);console.log(t + ' updated');
+	pars = fs.writeFileSync(t+".temp",pars);
+	fs.renameSync(t+".temp",t);
+	t = path.join(__dirname,"../i/"+lng+"/","webapp.appcache");
+	var d = new Date();
+	var n = d.getDate();
+	if(n==1){try{pars=fs.readFileSync(t,'utf8');pars = fs.writeFileSync(t,pars);console.log(t + ' updated');}catch(err){}}
 };
 
-//sutsisningau();
-var lmw = function (lin,sendTo){
+var lmw = function (lin,sendTo){//to be done
 var request = require("request"); var body;
 var uri="http://mw.lojban.org/index.php?action=render&title="+lin;
 //var uri="http://mw.lojban.org/index.php?search="+lin+"&button=&title=Special%3ASearch";
@@ -1167,7 +1323,8 @@ request({uri: uri,method: "GET"}, function(err, response, body) {
 var tcepru = function(lin,sendTo){
 	var exec = require('child_process').exec;
 	exec(path.join(__dirname,"../tcepru/./parser") + ' <<<"'+lin+'" 2>/dev/null', function (error, stdout, stderr) {
-  		 clientmensi.say(sendTo, stdout);
+                 lin=stdout.toString();if (lin===''){lin='O_0';}
+  		 clientmensi.say(sendTo, lin);
 	});
 };
 
@@ -1177,8 +1334,15 @@ var jbofihe = function(lin,sendTo){
 	lin=stdout;
 	if (error !==null){lin='O_0';}
   	clientmensi.say(sendTo, lin.replace(/\n/g,' ').replace(/ {2,}/g,' '));
-  		 //console.log("|"+stderr.toString()+"|");
-  		 //console.log("+"+error.toString()+"+");
 	});
 };
 
+var pseudogismu = function(){//a joke function. checks if an English word is  a valid gismu
+	var words = fs.readFileSync(path.join(__dirname,"../","vale.txt"),'utf8').split("\n");
+	var sj=[];
+	for (var j=0;j<words.length;j++){
+			sj.push(words[j]+" "+run_camxes(words[j].toLowerCase().replace(/sh/g,"c"),3));
+	}
+	var content = fs.writeFileSync(path.join(__dirname,"../","vale-result"),sj.join("\n"));
+};
+//pseudogismu();

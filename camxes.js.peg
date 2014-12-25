@@ -1,5 +1,12 @@
+// camxes.js.peg
+// Copyright (c) 2013, 2014 Masato Hagiwara
+// https://github.com/mhagiwara/camxes.js
+//
+// camxes.js can be used, modified, and re-distributed under MIT license.
+// See LICENSE for the details.
+
 // This is a Parsing Expression Grammar for Lojban.
-// See http://www.pdos.lcs.mit.edu/~baford/packrat/
+// See http://bford.info/packrat/
 // 
 // All rules have the form:
 // 
@@ -126,7 +133,7 @@
   }
 }
 
-text "text" = expr:(intro_null NAI_clause* text_part_2 (!text_1 joik_jek)? text_1? faho_clause EOF?) {return _node("text", expr);}
+text = expr:(intro_null NAI_clause* text_part_2 (!text_1 joik_jek)? text_1? faho_clause EOF?) {return _node_nonempty("text", expr);}
 
 intro_null = expr:(spaces? su_clause* intro_si_clause) {return _node_nonempty("intro_null", expr); }
 
@@ -464,7 +471,7 @@ pre_zei_bu = expr:(!BU_clause !ZEI_clause !SI_clause !SA_clause !SU_clause !FAhO
 // LOhU_pre / ZO_pre / ZOI_pre / !ZEI_clause !BU_clause !FAhO_clause !SI_clause !SA_clause !SU_clause any_word_SA_handling si_clause?
 // pre_zei_bu_no_SA = LOhU_pre / ZO_pre / ZOI_pre / !ZEI_clause !BU_clause !FAhO_clause !SI_clause !SA_clause !SU_clause any_word si_clause?
 
-dot_star = .*
+dot_star = expr:(.*) { ret = ""; for (i in expr) ret += (expr[i] === " ") ? "_" : expr[i]; return ret; }
 
 // __ General Morphology Issues
 //
@@ -1425,7 +1432,8 @@ fuhivla_head = expr:(!rafsi_string brivla_head) { return _join(expr); }
 
 brivla_head = expr:(!cmavo !slinkuhi !h &onset unstressed_syllable*) { return _join(expr); }
 
-slinkuhi = expr:(consonant rafsi_string) { return _join(expr); }
+//// Change by Xorxes
+slinkuhi = expr:(consonant (rafsi_string / brivla_rafsi / stressed_brivla_rafsi)) { return _join(expr); }
 
 rafsi_string = expr:(y_less_rafsi* (gismu / CVV_final_rafsi / stressed_y_less_rafsi short_final_rafsi / y_rafsi / stressed_y_rafsi / stressed_y_less_rafsi? initial_pair y)) { return _join(expr); }
 
@@ -1479,7 +1487,8 @@ unstressed_diphthong = expr:(!stressed diphthong !stress) {return _join(expr);}
 
 unstressed_vowel = expr:(!stressed vowel !stress) {return _join(expr);}
 
-stress = expr:(consonant* y? syllable pause) {return _join(expr);}
+//// FIX: Xorxes' fix for fu'ivla rafsi stress
+stress = expr:(consonant* h? y? syllable pause) {return _join(expr);}
 
 stressed = expr:(onset comma* [AEIOU]) {return _join(expr);}
 
@@ -1487,7 +1496,8 @@ any_syllable = expr:(onset nucleus coda? / consonantal_syllable) {return _join(e
 
 syllable = expr:(onset !y nucleus coda?) {return _join(expr);}
 
-consonantal_syllable = expr:(consonant syllabic &(consonantal_syllable / onset) (consonant &spaces)?) {return _join(expr);}
+//// FIX: preventing {bla'ypre} from being a valid lujvo
+consonantal_syllable = expr:(consonant syllabic &(consonantal_syllable / !nucleus onset) (consonant &spaces)?) {return _join(expr);}
 
 coda = expr:(!any_syllable consonant &any_syllable / syllabic? consonant? &pause) {return _join(expr);}
 

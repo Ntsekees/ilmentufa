@@ -32,6 +32,8 @@
  *   -- dbg_bracket_count(str)
  */
 
+alert = console.log;
+
 function camxes_postprocessing(text, mode) {
 	if (!is_string(text)) return "ERROR: Wrong input type.";
 	if (mode == 0) return text;
@@ -64,7 +66,7 @@ function camxes_postprocessing(text, mode) {
 	text = delete_superfluous_brackets(text);
 	text = text.replace(/\[ +/g, "[");
 	text = text.replace(/ +\]/g, "]");
-	text = text.replace(/([A-Z]) \[/g, "$1[");
+	text = text.replace(/([A-Z] )\[/g, "$1[");
 	/* Abbreviations */
 	text = text.replace(/(cmene|cmevla):/g, "C:");
 	text = text.replace(/gismu:/g, "G:");
