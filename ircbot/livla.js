@@ -427,7 +427,7 @@ var processormensi = function(clientmensi, from, to, text, message) {
 	case text.indexOf('toki:') == '0': clientmensi.say(sendTo, vlaste(text.substr(5),'toki'));break;
 	case text.indexOf('laadan:') == '0': clientmensi.say(sendTo, vlaste(text.substr(7),'laadan'));break;
 	case text.indexOf('loglan:') == '0': clientmensi.say(sendTo, vlaste(text.substr(7),'loglan'));break;
-	case text.indexOf('gloss:') == '0': clientmensi.say(sendTo, gloso(text.substr(6),'en'));break;
+	case text.indexOf('gloss:') == '0': clientmensi.say(sendTo, glosrgentufa(text.substr(6),'en'));break;
 	case text.indexOf('loi:') == '0': clientmensi.say(sendTo, loglo(text.substr(4),''));break;
 	case text.indexOf('coi:') == '0': clientmensi.say(sendTo, loglo(text.substr(4),'coi'));break;
  	case text==replier+': ii': clientmensi.say(sendTo, io());break;
@@ -901,6 +901,170 @@ if (stra.length==1){gag = tordu(gag,lng);}
 if (stra.length>1){gag = cnt + " da se tolcri: " + gag;}
 if(gag===''){gag='y no da se tolcri';}
 return gag;
+};
+
+var glosrgentufa=function(lin,lng,check,xmlDoc)
+{
+lin=lin.replace(/\"/g,'');
+if (typeof xmlDoc==='undefined'){
+	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+}
+var retur='y no da se tolcri';
+var items = {
+	"lo": "a(n)", "le": "the", "la": "@@@", "nu": "event-of", "zo": "the-word:", "coi": "hello", "co'o": "goodbye", "ro": "each-of", "ma": "what", "mo": "is-what",
+	"na": "not", "na'e": "not", "nai": "-not", "nelci": "fond-of", "ka": "being", "tu'a": "about",
+	"ie": "yeah", "e'u": "I-suggest",
+	"e": "and", "a": "and/or",
+	"je": "and", "ja": "and/or",
+	"gi'e": ",-and", "gi'a": ",-and/or",
+	"bu'u": "at", "ca": "at-present",
+	"ku": ", ",
+	"zo'u": ":",
+	"za'a": "as-I-ca-see", "za'adai": "as-you-can-see", "pu": "in-past", "ba": "in-future", "vau": "]", "doi": "oh", "uinai": "unfortunately", "u'u": "sorry",
+	"ko": "do-it-so-that-you", "poi": "that", "noi": ",which", "me": "among",
+	//"bakni": "is-a-cow",
+	"pe'i": "in-my-opinion", "ui": "yay", "uinai": "unfortunately",
+	"ju": "whether-or-not", "gu": "whether-or-not", "gi'u": "whether-or-not", "u": "whether-or-not",
+	"xu": "is-it-true-that", "ka'e": "possibly-can",
+        "re'u": "time", "roi": "times",
+	"mi": "I"//dont copy
+	};
+var itemsu = {//universal glosses
+	"lu": "<", "li'u": ">", "i": ".", "bo": "-|-", "sai": "!", "cai": "!!!", "na'e": "!", "da": "X", "de": "Y", "di": "Z", "cu": ":", "jo": "⇔",
+	"fa": "(1:)", "fe": "(2:)", "fi": "(3:)", "fo": "(4:)", "fu": "(5:)",
+	"ba'e": "(NB!=>)",
+	"na": "!"};
+lin=lin.toLowerCase();
+	var i,myregexp,j;
+	function lastel(array) { array = array.filter(function(a) {return a}); return array[array.length-1] };
+	var handlers = [
+		function setese (obj) {
+			function swap(arr, one, two) {
+				arr = arr.concat();
+				var temp = arr[one];
+				arr[one] = arr[two];
+				arr[two] = temp;
+				return arr;
+			}
+			if (lastel(obj.s) != "tanru_unit_2") return;
+			if (!obj.c || !obj.c[0] || !obj.c[0].s || lastel(obj.c[0].s) != "SE_clause") return;
+			if (lastel(obj.s) != "tanru_unit_2") return;
+			var places = obj.c[1] && obj.c[1].d && obj.c[1].d.places || [1,2,3,4,5];
+			var swaps = {se: 1, te: 2, ve: 3, xe: 4};
+			var theswap = swaps[obj.c[0].c];
+			theswap && (places = swap(places, 0, theswap));
+			obj.d.places = places;
+			delete obj.c[1].d.places;
+		},
+	];
+	function ganzu (obj) {
+		if (!Array.isArray(obj)) return obj;
+		if (obj.length == 2 && typeof obj[0] == "string" && typeof obj[1] == "string")
+			return obj[1];
+		if (Array.isArray(obj[0])) return obj.map(ganzu);
+		var ret = {s: [obj[0]], c: obj.slice(1).map(ganzu), d: {}};
+		while (Array.isArray(ret.c) && ret.c.length == 1) {
+			ret.s = ret.s.concat(ret.c[0].s || "");
+			ret.c = ret.c[0].c || ret.c[0];
+		}
+		handlers.forEach(function(a) {a(ret)});
+		return ret;
+	}
+	function basygau (string, s, data) {
+		var selbri = Math.max(s.lastIndexOf("bridi_tail"), s.lastIndexOf("free")), 
+			sumti = s.lastIndexOf("sumti_5"); 
+		var isnoun = sumti > selbri;
+		if (!data) data = {};
+		function trygloss () {
+			var cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+string.toUpperCase()+"\",\""+string+"\")=\""+string+"\"]/glossword[1]");
+			if (cnt) return cnt.attr("word").value();
+		}
+		function trykeyword (place) {
+			var cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+string.toUpperCase()+"\",\""+string+"\")=\""+string+"\"]/keyword[@place=\"" + (place || 1) + "\"]");
+			if (cnt) return cnt.attr("word").value();
+		}
+
+		var word = lng == "en" && items[string];
+		if (!word) word = itemsu[string];
+		var place = data.places && data.places[0] || 1;
+		if (isnoun) {
+			if (!word) word = trykeyword(place);
+			if (!word) word = trygloss();
+		} else {
+			if (!word) word = trygloss();
+			if (!word) word = trykeyword();
+		}
+		if (!word) return string+"*";
+		if (isnoun) word = word.replace(/^is (an? )/, "");
+		return word;
+	}
+	function merge (inner, outer) {
+		if (!outer)
+			if (inner) return inner;
+			else return {};
+		var ret = {};
+		if (inner)
+			Object.keys(inner).forEach(function(a) { ret[a] = inner[a] });
+		Object.keys(outer)
+			.filter(function(a) { return !(a in ret) })
+			.forEach(function(a) { ret[a] = outer[a] });
+		return ret;
+	}
+	function porgau (obj, s, d) {
+		if (!s) s = [];
+		if (obj.c) return porgau(obj.c, s.concat(obj.s), merge(obj.d, d));
+		if (Array.isArray(obj)) {
+			return "["+obj.map(function(sub) {
+				return porgau(sub, sub.s ? s.concat(sub.s) : s, merge(sub.s, d))
+			}).join(" ")+"]";
+		}
+		return basygau(obj, s, d);
+	}
+	function tolpandi (text) {
+		return text.replace(/[\]\[]+/g, "").replace(/  +/g, " ");
+	}
+	
+	var segentufa;
+	try {
+		segentufa = camxesoff.parse(lin);
+	} catch (e) {
+		try {
+			segentufa = camxes.parse(lin);
+		} catch (f) {
+			return "O_0";
+		}
+	}
+	var seganzu = ganzu(segentufa);
+	var porsi = porgau(seganzu);
+	var mulno = tolpandi(porsi);
+	return mulno;
+	
+	
+	try{
+		//from lojban to gloso
+		
+		if (check!==1){lin=run_camxes(lin.replace(/[^a-z'\. ]/g,''),5).replace(/[^a-z'\. ]/g,'').trim().replace(/ ([nd]ai)( |$)/img,"$1$2");}
+		lin=lin.split(" ");
+		for (i=0;i<lin.length;i++){
+			if (lng==='en'){//items are only for English. Think of some universla items.
+				if (lin[i] in items)
+					lin[i] = items[lin[i]] + "%%%";
+			}
+			if (lin[i] in itemsu)
+				lin[i] = itemsu[lin[i]] + "%%%";
+			var cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+lin[i].toUpperCase()+"\",\""+lin[i]+"\")=\""+lin[i]+"\"]/glossword[1]");
+			if (typeof cnt==='undefined'){cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+lin[i].toUpperCase()+"\",\""+lin[i]+"\")=\""+lin[i]+"\"]/keyword[@place=\"1\"]");}//try keyword
+			if (typeof cnt!=='undefined'){lin[i]=cnt.attr("word").value().replace(/ /gm,"-").replace(/$/gm,"%%%");}
+		}
+		lin=lin.join(" ").replace(/ /gm,"* ").replace(/$/gm,"*").replace(/%%%\*/gm,"");
+		lin=lin.replace(/(@@@ .)/ig,function(v) { return v.toUpperCase(); }).replace(/@@@/ig,'');//uppercase for {la}
+		lin=lin.replace(/,+ *\./g,'.');
+		lin=lin.replace(/(^.)/ig,function(v) { return v.toUpperCase(); }).replace(/ +/ig,' ').replace(/( \. *[^ ])/ig,function(v) { return v.toUpperCase(); }).replace(/ \./ig,'.');//punctuation prettification
+		lin=lin.replace(/-/g,' ');
+		lin=lin.replace(/ *(:|,)/g,'$1');
+		lin=lin.replace(/\*\*/g,'*');
+	}catch(err){lin='O_0';}
+	return lin;
 };
 
 
