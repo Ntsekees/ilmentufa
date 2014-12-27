@@ -143,6 +143,31 @@ clientmensi.addListener('message', function(from, to, text, message) {
 loadUserSettings();
 loadNotci();
 
+var glossfallback = {};
+var updategloss = function () {
+	try {
+		var newgloss = {};
+		var name = path.join(__dirname, "dumps", "gimste.txt");
+		var contents = fs.readFileSync(name, 'utf8');
+		contents.split("\n").forEach(function (line) {
+			var cells = line.split("	");
+			for (var i = 0; i < 12; i++)
+				cells[i] = cells[i] && cells[i].trim() || "";
+			newgloss[cells[0]] = {
+				bridi1post: cells[1],
+				bridi2: cells[2],
+				bridi2post: cells[3],
+				bridirest: cells.slice(4, 7),
+				sumtiplaces: cells.slice(7, 12) // don't copy
+			};
+		});
+		glossfallback = newgloss;
+	} catch (e) {
+		console.log("while updating gloss: " + e);
+	}
+};
+updategloss();
+
 var updatexmldumps = function (callback) {
 	var err;
 	var velruhe = { cfari: {}, mulno: {}, nalmulselfaho: {} };
@@ -198,6 +223,7 @@ var updatexmldumps = function (callback) {
 		});
 	}catch(err){console.log('Error when autoupdating: ' + err);}
 	sutsisningau("zamenhofo");sutsisningau("laadan");
+	updategloss();
 };
 var xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),'utf8'));//store en dump in memory
 
@@ -955,6 +981,10 @@ lin=lin.toLowerCase();
 			theswap && (places = swap(places, 0, theswap));
 			obj.d.places = places;
 			delete obj.c[1].d.places;
+			obj.c[0].d.placehide = true;
+		},
+		function placefill (obj) {
+			
 		},
 	];
 	function ganzu (obj) {
@@ -975,6 +1005,8 @@ lin=lin.toLowerCase();
 			sumti = s.lastIndexOf("sumti_5"); 
 		var isnoun = sumti > selbri;
 		if (!data) data = {};
+		if (isnoun && data.placehide)
+			return "";
 		function trygloss () {
 			var cnt = xmlDoc.get("/dictionary/direction[1]/valsi[translate(@word,\""+string.toUpperCase()+"\",\""+string+"\")=\""+string+"\"]/glossword[1]");
 			if (cnt) return cnt.attr("word").value();
@@ -989,8 +1021,20 @@ lin=lin.toLowerCase();
 		var place = data.places && data.places[0] || 1;
 		if (isnoun) {
 			if (!word) word = trykeyword(place);
-			if (!word) word = trygloss();
+			if (!word) word = glossfallback[string] && glossfallback[string].sumtiplaces[place-1];
+			if (!word && place == 1 && glossfallback[string]) {
+				word = glossfallback[string].bridi1post;
+				if (word) word = "something that " + word;
+			}
+			if (!word) {
+				word = trygloss();
+				if (word && place > 1)
+					word += "-(" + place + ")";
+			}
 		} else {
+			if (!word && glossfallback[string] && place == 1) {
+				word = glossfallback[string].bridi1post;
+			}
 			if (!word) word = trygloss();
 			if (!word) word = trykeyword();
 		}
