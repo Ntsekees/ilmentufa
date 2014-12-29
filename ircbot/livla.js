@@ -937,7 +937,7 @@ if (typeof xmlDoc==='undefined'){
 }
 var retur='y no da se tolcri';
 var items = {
-	"lo": "a(n)", "le": "the", "la": "@@@", "nu": "event-of", "zo": "the-word:", "coi": "hello", "co'o": "goodbye", "ro": "each-of", "ma": "what", "mo": "is-what",
+	"lo": "a(n)", "le": "the", "la": "that-named", "nu": "event-of", "zo": "the-word:", "coi": "hello", "co'o": "goodbye", "ro": "each-of", "ma": "what", "mo": "is-what",
 	"na": "not", "na'e": "not", "nai": "-not", "nelci": "fond-of", "ka": "being", "tu'a": "about",
 	"ie": "yeah", "e'u": "I-suggest",
 	"e": "and", "a": "and/or",
@@ -946,7 +946,7 @@ var items = {
 	"bu'u": "at", "ca": "at-present",
 	"ku": ", ",
 	"zo'u": ":",
-	"za'a": "as-I-ca-see", "za'adai": "as-you-can-see", "pu": "in-past", "ba": "in-future", "vau": "]", "doi": "oh", "uinai": "unfortunately", "u'u": "sorry",
+	"za'a": "as-I-can-see", "za'adai": "as-you-can-see", "pu": "in-past", "ba": "in-future", "vau": "]", "doi": "oh", "uinai": "unfortunately", "u'u": "sorry",
 	"ko": "do-it-so-that-you", "poi": "that", "noi": ",which", "me": "among",
 	//"bakni": "is-a-cow",
 	"pe'i": "in-my-opinion", "ui": "yay", "uinai": "unfortunately",
@@ -961,9 +961,54 @@ var itemsu = {//universal glosses
 	"ba'e": "(NB!=>)",
 	"na": "!"};
 lin=lin.toLowerCase();
+	var fa = {fa: 0, fe: 1, fi: 2, fo: 3, fu: 4, fai: 0}
 	var i,myregexp,j;
-	function lastel(array) { array = array.filter(function(a) {return a}); return array[array.length-1] };
+	function lastel(array) { if (!Array.isArray(array)) return null; array = array.filter(function(a) {return a}); return array[array.length-1] };
+	function firstword (obj) {
+		while (!(typeof obj == "string")) {
+			if (Array.isArray(obj))
+				obj = obj[0];
+			else
+				obj = obj.c;
+		}
+		return obj;
+	}
+	function firstwordselmaho (obj, selmaho) {
+		if (typeof obj == "string") return null;
+		if (Array.isArray(obj)) {
+			obj = obj.map(function(a) {return firstwordselmaho(a, selmaho)});
+			obj = obj.filter(function(a) {return a});
+			return obj[0];
+		}
+		if (obj.c) {
+			if (obj.s.some(function(a) {return a in selmaho})) 
+				return firstword(obj);
+			if (Array.isArray(obj.c)) 
+				return firstwordselmaho(obj.c, selmaho);
+		}
+	}
+	var bracketed = {
+		sumti: 1, linkargs: 1, sentence: 1
+	};
+	function wordsonly (obj) {
+		if (!obj) {
+			return [];
+		} else if (typeof obj == "string") {
+			return [obj];
+		} else if (Array.isArray(obj)) {
+			return obj.map(wordsonly).reduce(function (a, b) {
+				return a.concat(b);
+			}, []);
+		} else if (Array.isArray(obj.c) || typeof obj.c == "string") {
+			return wordsonly(obj.c);
+		}
+	}
 	var handlers = [
+		function bracket (obj) {
+			if (!obj.s) return;
+			if (obj.s.some(function(a) {return bracketed[a]}) && wordsonly(obj.c).length > 1)
+				obj.d.brackets = true;
+		},
 		function setese (obj) {
 			function swap(arr, one, two) {
 				arr = arr.concat();
@@ -972,10 +1017,12 @@ lin=lin.toLowerCase();
 				arr[two] = temp;
 				return arr;
 			}
-			if (lastel(obj.s) != "tanru_unit_2") return;
-			if (!obj.c || !obj.c[0] || !obj.c[0].s || lastel(obj.c[0].s) != "SE_clause") return;
-			if (lastel(obj.s) != "tanru_unit_2") return;
+			if (!obj.s || obj.s[0] != "tanru_unit_2") return;
 			var places = obj.c[1] && obj.c[1].d && obj.c[1].d.places || [1,2,3,4,5];
+			if (!obj.c || !obj.c[0] || !obj.c[0].s || lastel(obj.c[0].s) != "SE_clause") {
+				obj.d.places = places;
+				return;
+			}
 			var swaps = {se: 1, te: 2, ve: 3, xe: 4};
 			var theswap = swaps[obj.c[0].c];
 			theswap && (places = swap(places, 0, theswap));
@@ -984,15 +1031,58 @@ lin=lin.toLowerCase();
 			obj.c[0].d.placehide = true;
 		},
 		function placefill (obj) {
-			
+			function selbriterms (unit) {
+				var pre = unit.s && unit.s.length == 1 && unit.s[0] == "tanru_unit_1" &&
+					unit.c && unit.c.length == 2 &&
+					unit.c[0].s && unit.c[0].s[0] == "tanru_unit_2" &&
+					unit.c[1].s && unit.c[1].s[0] == "linkargs";
+				if (!pre) {
+					if (lastel(unit.s) == "tanru_unit") {
+						console.log("c[0]" + unit.c[0]);
+					}
+					return;
+				}
+				if (!unit.c[0].d.places) return;
+				var places = unit.c[0].d.places.concat();
+				var placesused = {};
+				var counter = 0;
+				var node = unit.c[1];
+				function nextlink(node) {
+					if (node.c.length < 3) return false;
+					if (!node.c[2].s || !node.c[2].s[0] == "links")
+						return false;
+					console.log(node.c[2]);
+					if (!node.c[2].c[1]) return false;
+					return node.c[2];
+				}
+				do {
+					counter++;
+					var sumti = node.c[1];
+					if (sumti.c[0] && sumti.c[0].s && firstword(sumti.c[0]) in fa) {
+						counter = fa[firstword(sumti.c[0])];
+					}
+					node.d.sumtiplace = places[counter];
+					node.d.sumtibrivo = firstwordselmaho(unit.c[0], {"BRIVLA_clause": 1, "GOhA_clause": 1});
+					placesused[places[counter]] = true;
+					
+				} while (node = nextlink(node));
+				unit.c[0].d.places = unit.c[0].d.places.filter(function(a) {return!(a in placesused)});
+			}
+			selbriterms(obj);
 		},
 	];
 	function ganzu (obj) {
+		var ret;
 		if (!Array.isArray(obj)) return obj;
 		if (obj.length == 2 && typeof obj[0] == "string" && typeof obj[1] == "string")
 			return obj[1];
-		if (Array.isArray(obj[0])) return obj.map(ganzu);
-		var ret = {s: [obj[0]], c: obj.slice(1).map(ganzu), d: {}};
+		if (Array.isArray(obj[0])) {
+			var ret = obj.map(ganzu);
+			if (ret.length == 1) return ret[0];
+			return ret;
+			//return {s: ["EVIL"], c: ret, d: {}};
+		}
+		ret = {s: [obj[0]], c: obj.slice(1).map(ganzu), d: {}};
 		while (Array.isArray(ret.c) && ret.c.length == 1) {
 			ret.s = ret.s.concat(ret.c[0].s || "");
 			ret.c = ret.c[0].c || ret.c[0];
@@ -1005,6 +1095,26 @@ lin=lin.toLowerCase();
 			sumti = s.lastIndexOf("sumti_5"); 
 		var isnoun = sumti > selbri;
 		if (!data) data = {};
+		if (isnoun && string in fa || string == "be'o") return "";
+		if (string in {be: 1, bei: 1} && data.sumtiplace && data.sumtibrivo) {
+			console.log("sumtibrivo: " + data.sumtibrivo);
+			var placetable = glossfallback[data.sumtibrivo];
+			if (placetable)
+				if (data.sumtiplace == 1) {
+					console.log("placetable1");
+					return "(" + placetable.bridi1post + ":)"
+				} else if (data.sumtiplace == 2) {
+					console.log("placetable2");
+					if (placetable.bridi2post) {
+						console.log("placetable2post");
+						return (placetable.bridi2 + " (" + placetable.bridi2post + ")").trim();
+					}
+					return placetable.bridi2 || "of";
+				} else if (data.sumtiplace > 2 && data.sumtiplace < 6) {
+					console.log("placetable3+");
+					return placetable.bridirest[data.sumtiplace - 3] || "("+data.sumtiplace+":)";
+				}
+		}
 		if (isnoun && data.placehide)
 			return "";
 		function trygloss () {
@@ -1039,7 +1149,7 @@ lin=lin.toLowerCase();
 			if (!word) word = trykeyword();
 		}
 		if (!word) return string+"*";
-		if (isnoun) word = word.replace(/^is (an? )/, "");
+		if (isnoun) word = word.replace(/^is (an? )?/, "");
 		return word;
 	}
 	function merge (inner, outer) {
@@ -1054,18 +1164,63 @@ lin=lin.toLowerCase();
 			.forEach(function(a) { ret[a] = outer[a] });
 		return ret;
 	}
-	function porgau (obj, s, d) {
+	function porgau (obj, s, d, brackets) {
 		if (!s) s = [];
-		if (obj.c) return porgau(obj.c, s.concat(obj.s), merge(obj.d, d));
+		if (!d) d = {};
+		if (obj.c) return porgau(obj.c, s.concat(obj.s), merge(obj.d, d), obj.d.brackets);
 		if (Array.isArray(obj)) {
-			return "["+obj.map(function(sub) {
-				return porgau(sub, sub.s ? s.concat(sub.s) : s, merge(sub.s, d))
-			}).join(" ")+"]";
+			var ret = obj.map(function(sub) {
+				return porgau(sub, sub.s ? s.concat(sub.s) : s, merge(sub.d, d), sub.d && sub.d.brackets)
+			}).join(" ");
+			if (brackets) return "[" + ret  + "]";
+			return ret;
 		}
 		return basygau(obj, s, d);
 	}
+	function porgaudedbugo (obj) {
+		if (Array.isArray(obj.c)) {
+			return "("+obj.s+")[\n"+obj.c.map(function(sub) {
+				return porgaudedbugo(sub)
+			}).join(" ")+"]";
+		}
+		if (Array.isArray(obj)) {
+			return "(BARE ARRAY WHAT THE HELL)[\n"+obj.map(function(sub) {
+				return porgaudedbugo(sub)
+			}).join(" ")+"]";
+		}
+		if (obj.s) return "("+obj.s+")"+obj.c;
+		return typeof obj == "string" && obj || JSON.stringify(obj);
+	}
+	function showplaces (obj) {
+		var ret = "";
+		if (obj.d && obj.d.sumtiplace) {
+			ret = "{" + obj.d.sumtibrivo + obj.d.sumtiplace + "}" + ret;
+		}
+		if (obj.d && obj.d.brackets) {
+			ret = "B" + ret;
+		}
+		if (obj.d && obj.d.places) {
+			ret = "<" + obj.d.places + ">" + ret;
+		}
+		if (obj.d && obj.d.placehide) {
+			ret = "PH:" + ret;
+		}
+		if (Array.isArray(obj.c)) {
+			return ret + "["+obj.c.map(function(sub) {
+				return showplaces(sub)
+			}).join(" ")+"]";
+		}
+		if (Array.isArray(obj)) {
+			return ret + "(BARE ARRAY)[\n"+obj.map(function(sub) {
+				return showplaces(sub)
+			}).join(" ")+"]";
+		}
+		if (obj.s) return ret + obj.c;
+		return typeof obj == "string" && ret + obj || ret + JSON.stringify(obj);
+	}
 	function tolpandi (text) {
-		return text.replace(/[\]\[]+/g, "").replace(/  +/g, " ");
+		return text.replace(/\[\]/g, "").replace(/  +/g, " ");
+		//return text.replace(/[\]\[]+/g, "").replace(/  +/g, " ");
 	}
 	
 	var segentufa;
@@ -1080,8 +1235,10 @@ lin=lin.toLowerCase();
 	}
 	var seganzu = ganzu(segentufa);
 	var porsi = porgau(seganzu);
+	var porsrdedbugo = porgaudedbugo(seganzu);
+	var shownplaces = showplaces(seganzu);
 	var mulno = tolpandi(porsi);
-	return mulno;
+	return mulno //+ "\n" + "\n" + porsrdedbugo + "\n" + shownplaces;
 	
 	
 	try{

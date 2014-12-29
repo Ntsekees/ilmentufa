@@ -1,1477 +1,1477 @@
-Verb	1post	2pre	2post	3pre	4pre	5pre	place1	place2	place3	place4	place5
-aftobuso	is a bus, coach						bus, coach				
-akti	is running	in service					active, in action	active operation			
-alna	is an alder 	of species					alder	species of alder			
-ankabuta	is a spider 	of species					spider	species of spider			
-arte	is a piece of artwork						piece of artwork				
-arxokuna	is a raccoon 	of species					raccoon	species of raccoon			
-tolckire	feels resentment, bitterness 	towards		for action			resentful				
-asna	is a posture, stance, asana 	of body					posture				
-bacru	utters						utterer	uttered text or sound			
-badna	is a banana fruit or plant 	of species					banana	banana species			
-badri	is sad 	about					sad	sad event			
-bajra	runs 	on surface		using limbs			runner	running surface	running limb		
-bakfu	is a pack or bundle 	containing		held together by			pack, bundle	content of a pack			
-bakni	is a cow or bovine 	of species					cow	species of cow			
-bakri	is some chalk						chalk				
-baktu	is a pail or bucket	containing					bucket	content of a bucket			
-balji	is a bulb 	of plant					bulb (of a plant)				
-balnema	is a baleen whale 	of species					baleen whale	species of baleen whale			
-balni	is a balcony or shelf 	of structure					balcony	building with a balcony			
-balre	is a blade 	of tool					blade	a tool or weapon with a blade			
-balvi	is later	than					later event	earlier event			
-bambola	is a doll						doll				
-bambu	is a bamboo 	of variety					bamboo	species of bamboo			
-bancu	is beyond boundary			from	in			boundary			
-bandu	defends			from threat			defender	threat defended against			
-banfi	is an amphibian of species						amphibian				
-bangu	is a language 	used by		to express			language	user of a language			
-banli	is great, magnificent 	in					something great				
-banro	grows 	to size or into form		from							
-banxa	is a bank	owned by		for banking functions			bank	bank owner, bank system	function of bank		
-banzu	is enough 	for	to take place				sufficient thing				
-bapli	forces, convinces		to occur				force				
-barda	is big	in dimension					large, big	dimension of largeness			
-bargu	is an arch 	over or around					arch	something arched around			
-barja	is a bar 	serving		to customers			bar	bar merchandise	bar customer		
-barna	is a mark or spot 	on					mark, spot	something with mark/spot			
-bartu	is outside 	of					something outside	something inside			
-basna	emphasizes			by action			emphasizer	something emphasized			
-basti	is a replacement 	for					replacement (object)	something replaced			
-batci	bites or pinches		on/at				biter	bitten			
-batke	is a button or knob	on					button				
-bavmi	is barley 	of species					barley	species of barley			
-baxso	is Malay-Indonesian 	in					Malaysian	Malaysian aspect			
-bebna	is foolish 	in					fool	foolish action			
-bekpi	is the back body-part 	of					back (of body)				
-bemro	is North American 	in					North American				
-bende	is a team or crew 	of persons		led by	for purpose		team	member of a team	leader of a team	purpose of a team	
-bengo	is Bengal 	in					Bengali	Bengali aspect			
-benji	transmits			to receiver	from origin	via	sender	receiver	transmission receiver	origin of a transmission	medium of transmission
-bersa	is a son 	of					son	parent of son			
-berti	is to the north 	of					northern				
-besna	is a brain 	of					brain	enitity with a brain			
-betfu	is the abdomen	of					abdomen				
-betka	is a beet 	of variety					beet	species of beet			
-betri	is a tragedy 	for					tragedy	experiencer of tragedy			
-bevri	brings, transports, carries			to	from	by path	carrier	cargo	cargo destination	cargo source	cargo route
-bidju	is a bead or pebble						pebble, bead				
-bifce	is a bee or wasp 	of species					bee, wasp	species of bee/wasp			
-bikla	whips or lashes						whipper	whipped			
-bilga	is obligated 	to do		by agreement			obligated	obligation			
-bilma	is ill or sick 	with symptoms		from disease			ill	symptom of an illness	disease		
-bilni	is personnel 	organized in system		for purpose			personnel	workforce	purpose of workforce		
-bindo	is Indonesian 	in					Indonesian				
-binra	insures			against threat	with benefit		insurer, underwriter	insured thing or person		insurance compensation	
-binxo	transforms 	into					something that becomes	something that is become			
-biorka	is a birch 	of species					birch				
-birje	is beer or ale 	brewed from					beer	beer ingredient			
-birka	is an arm 	of body					arm				
-birti	is convinced 	that	is true				convinced				
-bisli	is ice						ice				
-bitmu	is a wall, fence 	of		separating it from			fence, wall	building with walls			
-bitri	is		bits in size				bits	number of bits			
-blabi	is white						white				
-blaci	is glass						glass (substance)				
-blanu	is blue						blue				
-blato	is a cockroach, termite 	of species					cockroach				
-bliku	is a block						block				
-blondine	has fair hair						blond				
-brunete	has dark hair						brunet				
-bloti	is a boat or ship 	for carrying					boat	cargo of a boat, passenger of a boat			
-bolci	is a ball or sphere						ball				
-bombila	is a light bulb						light bulb				
-bongu	is a bone 	of					bone	bony structure			
-boske	is a forest 	of					forest	forest organism			
-botpi	is a bottle, jar, or flask	for					bottle	contents of a bottle			
-boxfo	is a sheet or blanket						sheet				
-boxna	is a wave 	in					wave	medium of wave			
-bradi	is an enemy 	of		in struggle			enemy	someone who has an enemy	struggle between enemies		
-bratu	is hail or sleet						hail/sleet				
-brazo	is Brazilian 	in					Brazilian				
-bredi	is ready 	for					ready				
-bridi	is a clause 	with relationship		among arguments			grammatical clause	relationship in a grammatical clause	argument of a grammatical clause		
-brife	is wind 	from					wind	direction of a wind			
-briju	is an office	of workers					office	office worker			
-brito	is British 	in					British				
-broda	is the predicate variable 1						broda				
-brode	is the predicate variable 2						brode				
-brodi	is the predicate variable 3						brodi				
-brodo	is the predicate variable 4						brodo				
-brodu	is the predicate variable 5						brodu				
-bruna	is a brother	of		bonded by			brother	sibling of a brother			
-budjo	is Buddhist 	in					Buddhist				
-bukpu	is cloth						cloth				
-bumru	is covered by a fog or mist 	of					foggy thing	fog, mist			
-bunda	is		weight units	in standard							
-bunre	is brown						brown				
-burcu	is a brush 	for doing		with bristles			brush	purpose of a brush	brush bristle		
-burna	is flustered, disconcerted 	by					flustered	befuddling event			
-cabna	is current 	with	in time				current	current			
-cabra	is an apparatus 	for function		controlled by agent			apparatus	function of an apparatus			
-minji	is a machine 	for function					machine	function of a machine			
-cacra	is		hours in duration				hour	number of hours			
-cadzu	walks 	on surface		with limbs			walker	walked-on surface			
-cafne	occurs frequently						frequent event				
-cagna	is a wound 	on body		at locus	caused by		wound				
-cakla	is chocolate or cocoa						chocolate				
-calku	is a shell or husk 	around					shell				
-canci	vanishes 	from location									
-cando	is idle or at rest						idle thing				
-cange	is a farm or ranch 	at		farmed by	that raises or produces		farm		farmer	farm production	
-canja	trades 	commodity		for	with		trader	commodity			
-canko	is a window 	in structure					window	building with a window			
-canlu	is a space 	occupied by					space				
-canpa	is a shovel 	for doing					shovel				
-canre	is sand						sand				
-canti	is a gut 	of					intestine				
-carce	is a carriage or wagon 	for carrying					carriage	cargo of a carriage			
-carmi	is bright or intense 	in					bright thing				
-carna	turns or rotates 	around axis		in direction			rotating	axis of rotation	direction of rotation		
-cartu	is a chart or diagram 	of		showing information			chart	picture on a chart			
-carvi	rains or showers 	to		from			rain		rain cloud		
-casnu	discusses						discusser	topic of a discussion			
-catke	shoves or pushes			at locus							
-catlu	examines										
-catni	has authority 	over matter		on the basis of			someone with authority				
-catra	kills						killer	killed			
-caxno	is shallow 	in direction		away from reference point			shallow				
-cecla	launches projectile or missile						gun	missile			
-cecmu	is a community or colony of organisms						community	member of a community			
-cedra	is an era or age 	characterized by					era				
-cenba	varies 	in		by amount			variable				
-censa	is holy or sacred 	to					holy				
-centero	is in the center 	of					center				
-centi	is a hundredth 	of		in			hundredth				
-cerda	inherits			from	according to rule		inheritor, heir	inherited, heritage			
-cermurse	is the dawn 	of day					dawn				
-cerni	is a morning 	of day					morning				
-certu	is skilled 	at					expert	field of expertise			
-cevni	is a god 	of people/religion		with dominion over			god				
-cfari	commences, begins, or starts						beginning, start				
-cfika	is a work of fiction	about					work of fiction	plot of a work of fiction			
-cfila	is a flaw 	in		causing			flaw	flawed			
-cfine	is a wedge						wedge				
-cfipu	confuses or baffles			in			confusing				
-ciblu	is blood	of					blood				
-cicna	is turquoise or cyan						cyan (color)				
-cidja	is food 	for					food				
-cidni	is a knee/elbow 	of limb					knee, elbow				
-cidro	is hydrogen						hydrogen				
-cifnu	is an infant or baby	of species					infant				
-cigla	is a gland 	secreting		in body			gland	secretion of a gland			
-cikna	is awake						someone awake				
-cikre	repairs or mends			for use			repairer	repaired			
-ciksi	explains			to	with explanation		expounder			explanation	
-cilce	is wild or untamed						wild				
-cilmo	is moist or damp 	with liquid					damp				
-cilre	learns	information		about	from		learner	learned			
-cilta	is a thread, wire, filament						thread (cord), cord				
-cimde	is a dimension 	of space or object		according to rule or model			dimension				
-cimni	in infinite 	in					infinite				
-cinba	kisses			at				kissed			
-cindu	is an oak 	of species					oak				
-cinfo	is a lion 	of species					lion				
-cinje	is a wrinkle 	in					wrinkle	wrinkled			
-cinki	is an arthropod 	of species					arthropod				
-cinla	is thin 	in dimension					thin				
-cinmo	feels emotion			about			emotional (live being)	emotion			
-cinri	is interesting	to					interesting	interested			
-cinta	is paint 	of substance		in a base of			paint (coloring substance)	pigment of a paint	paint base		
-cintura	is a waist 	of body					waist (of body)				
-cinza	is a pincer/chopsticks/tongs 	for doing		to			tongs				
-cipni	is a bird 	of species					bird				
-cipra	is a test, act of examination	of					study, test	tested			
-cirko	loses			at			loser	lost, not in possesion			
-cirla	is cheese						cheese				
-ciska	writes			on			writer	written text	writing medium		
-cisma	smiles						smiler				
-ciste	is a system	with structure		, components	, displaying		system	structure of a system	component of a system	property of a system	
-citka	eats						eater	eaten			
-citno	is young 	in that it has					young				
-citri	is a history 	of		according to			history	having a history			
-citsi	is a season 	defined by		of year			season				
-civla	is a flea or louse 	of species		parasitic on			flea				
-cizra	is strange 	to		in			strange				
-ckabu	is rubber						rubber				
-ckafi	is coffee						coffee				
-ckaji	has property						property			
-ckana	is a bed						bed				
-ckape	is dangerous 	to					dangerous	threatened			
-ckasu	mocks			about	by doing		bully	bullied				
-ckeji	feels ashamed, mortified 	about		before audience			ashamed	shameful event			
-ckiku	is a key 	fitting lock					key (of a lock)	lock (of a key)			
-ckilu	is a scale of units 	for measuring					scale				
-ckini	is related 	to		by relationship			related		relationship		
-ckire	is grateful or thankful 	to		for			thankful		reason for gratitude		
-ckule	is a school 	serving area		, teaching	to		school		subject taught in a school	pupil of a school	
-ckunu	is a conifer 	of species					conifer				
-cladu	is loud 	at observation point					loud (producing loud sound)	loud place			
-clani	is long 	in dimension					long				
-claxu	lacks						deficient				
-clika	is lichen or moss 	of species		growing on			moss				
-clira	is early 	by standard					early event				
-clite	is polite 	in matter					polite	polite behaviour			
-cliva	leaves			via							
-clupa	is a loop	of material					loop				
-cmaci	is mathematics 	describing					mathematics	field of mathematics			
-cmalu	is small 	in dimension					small				
-cmana	is a mountain 	projecting from					mountain	land mass with a mountain			
-cmavo	is a grammatical particle 	of class					grammatical particle				
-cmene	is a name	of		used by			name		namegiver		
-cmila	laughs						laugher				
-cmima	is a member 	of 					member	set			
-cmoni	howls, utters, moans			expressing			moaner				
-cnano	is normal 	in		among			norm				
-cnebo	is a neck 	of body					neck				
-cnemu	rewards			for atypical	with		rewarder	rewardee	reason for a reward	reward	
-cnici	is neat or orderly 	in					neat				
-cnino	is new 	to observer		in property			new				
-cnisa	is lead metal						lead (metal)				
-cnita	is directly beneath or below						what is beneath	what is above			
-cokcu	soaks up			from	into		absorber	absorbed			
-condi	is deep 	in		away from reference point			deep				
-cortu	feels pain 	at					who feels pain	location of pain			``
-cpacu	acquires or gets			from				acquired			
-cpana	on top 	of					what is on top	what is below			
-cpare	climbs 	on									
-cpedu	requests			from				something requested			
-cpina	is pungent or irritating	to					pungent, irritating				
-cradi	broadcasts or transmits			via station or frequency	to receiver		broadcaster	broadcasted	broadcasting station	broadcast receiver	
-crane	is in front 	of		facing			something in front				
-creka	is a shirt						shirt				
-crepu	harvests			from			harvester	harvested crop	crop field		
-cribe	is a bear 	of species					bear (animal)				
-crida	is a fairy/elf/gnome						fairy, elf				
-crino	is green						green				
-crisa	is summer 	of year		at location			summer				
-critu	is autumn 	of year		at location			autumn				
-ctaru	is a tide 	in					tide				
-ctebi	is a lip 	of orifice					lip	orifice with a lip			
-cteki	is a tax 	on		levied against	by authority or collector		tax	taxable property	taxpayer	collector of a tax	
-ctile	is petroleum						petroleum				
-ctino	is a shadow 	of		made by light source			shadow				
-ctuca	teaches to			ideas			teacher	taught audience	subject taught		
-cukla	is round				round				
-cukta	is a book 	with work					book	work in a book			
-culno	is full 	of					full				
-cumki	is possible						possible				
-cumla	is modest or humble 	about					modest				
-cunmi	is millet or grain 	of species					millet				
-cunso	is random, unpredictable						random				
-cuntu	is an affair/business	involving persons					affair				
-cupra	produces			by process			producer	product	process of production		
-curnu	is a worm 	of species					worm				
-curve	is pure 	in					pure				
-cusku	says			to audience			who says	what is said	audience		
-cutci	is a shoe 	for covering					shoe				
-cutne	is the chest 	of body					chest				
-cuxna	chooses			from complete set				what is chosen	set of choices, menu of choices		
-dacru	is a drawer 	in					drawer				
-dacti	is a material thing						material object				
-dadjo	is Taoist	in					Taoist				
-dakfu	is a knife 	for cutting					knife				
-dakli	is a bag or sack 	containing					bag	contents of a bag			
-damba	fights or struggles 	with		over issue			fighter				
-damri	is a percussion instrument	with beater					drum	beater of a drum			
-damva'u	smokes, inhales smoke						smoker				
-dandu	is suspended or hangs 	from		at joint							
-danfu	is an answer/solution	to					solution to a problem	problem			
-danlu	is an animal	of species					live being				
-danmo	is smoke 	from source					smoke				
-danre	applies force	to					pressure				
-dansu	dances	to					dancer				
-danti	is a ballistic projectile 	for firing by					bullet	gun			
-daplu	is an island						island				
-dapma	condemns or curses			to fate				condemned			
-dargu	is a road or highway						road				
-darlu	argues 	for stance		against stance			arguer	stance (in a discussion)			
-darno	is distant 	from		in			distant				
-darsi	shows audacity 	in behavior					cheeky	audacious behaviour			
-darxi	hits or strikes			with			who strikes				
-daski	is a pocket or pouch 	in					pocket				
-dasni	wears			as garment of type			who wears a garment	garment worn			
-daspo	destroys						destroyer	destroyed			
-dasri	is a ribbon or strip						ribbon				
-datka	is a duck 	of species					duck				
-datni	is information 	about		gathered by method			information		method of getting information		
-datru	is dated	to day		of month	of year	in calendar	dated event	calendar full day	calendar month	calendar year	type of calendar system
-decti	is a tenth 	of		in			'1/10'				
-degji	is a finger, toe, or digit 	on limb					finger, toe, digit (of body)	limb with fingers or toes			
-dejni	owes debt			to creditor	in return for service		debtor	debt	creditor of debt		
-dekpu	is		volume units	in standard							
-dekto	is ten times			in			'10'				
-delfinu	is a dolphin 	of species/breed					dolphin				
-delno	is		candela in luminosity					amount of candela			
-dembi	is a legume, bean, or pea 	from plant					legume seed	plant with legumes			
-denci	is a tooth 	of					tooth				
-denmi	is dense 	in					dense				
-denpa	waits or pauses 	for		at state	before doing		something that waits				
-dertu	is soil or dirt						soil				
-derxi	is a heap or stack 	of					heap				
-desku	shakes or vibrates 	from force					something vibrating				
-detri	is the date of						datestamp				
-dicra	interrupts or disrupts			due to quality							
-didni	deduces	that	is true 	about	from general rule		deducer				
-dikca	is electric current 	in medium		of polarity or quantity			electric current				
-diklo	is local	to location		within range			local				
-dikni	is regular or periodic 	in		with interval			regular				
-dilcu	is a quotient 	of		divided by	leaving remainder		quotient	dividend of a quotient	divisor of a quotient	remainder of a quotient	
-dilnu	is a cloud of material				cloud				
-dimna	is a fate or destiny 	of					destiny				
-dinju	is a building 	for purpose					building				
-dinko	is a nail or tack 	for purpose					nail (tack)				
-dirba	is dear or precious 	to					precious				
-dirce	radiates or emits						emitter	radiation			
-dirgo	is a drop 	of					drop				
-ditcu	is the time-duration/period 	of					period				
-dizlo	is low 	compared to					low				
-djacu	is water						water				
-djedi	is		full days long				full day	number of full days			
-djica	desires or wants			for purpose				something desired			
-djuno	knows 	fact		about	on grounds			known fact		grounds of knowledge	
-donri	is daytime 	of day					daytime				
-dotco	is German 	in					German				
-draci	is a drama or play 	about					play (drama)	plot of a drama			
-drani	is correct 	in					correct				
-drata	is not the same 	as					other				
-drudi	is a roof or lid 	of structure					roof	something with a lid			
-dugri	is the logarithm 	of		to base			logarithm		base of a logarithm		
-dukti	is opposite or contrary 	to		in			opposite				
-dunda	gives or donates			to			giver	gift	receiver of a gift		
-dunja	freezes										
-dunku	is distressed or anguished 	by					distressed	distressing event			
-dunli	is equal 	to		in			equal				
-dunra	is winter 	of year		at location			winter				
-dzena	is an elder or ancestor 	of		by bond			ancestor	descendant			
-dzipo	is Antarctican 	in									
-enge	is an architect/designer/engineer 	of					designer				
-entuzi	is enthusiastic, excited 	about					enthusiastic				
-esporte	is a type of sports 	practiced by					sports	sportsperson, sportsman, sportswoman			
-facki	discovers 	fact		about			discoverer	a discovery			
-fadni	is ordinary 	in		among			typical, ordinary				
-fagri	is a fire 	with fuel		burning in			fire	fuel for fire	oxidizer of fire		
-falnu	is a sail 	for gathering wind		on vehicle			sail	wind for a sail	sailboat		
-famti	is an aunt or uncle 	of		by bond			aunt, uncle	niece, nephew			
-lacri	relies, counts on, trusts			to bring about, ensure, maintain state							
-fancu	is a function 	mapping domain		to range	defined by rule		function	function domain	function range		
-fange	is alien or unfamiliar 	to		in			alien, unfamiliar				
-fanmo	is the end	of					end	process being finished			
-fanri	is a factory or mill 	producing		from			factory, mill	product of a factory	raw material for a factory		
-fanta	prevents		from occurring					event being prevented			
-fanva	translates			to language	from language	with result	translator	text to be translated	target language for translation	source language for translation	translation (text)
-fanza	annoys				annoying event	annoyed person			
-fapro	opposes, doesn't surrender 	to		about							
-farlu	falls 	to		from							
-farna	is the direction of			from origin			direction				
-farvi	evolves or develops 	into		from	through stages					stage of development, version in development	
-fasnu	happens						occurrence				
-fatci	is a fact						fact				
-fatne	is in reverse order 	from					reversed	a sequence before reversal			
-fatri	is distributed 	among		with portions			distributed		portion of a distributed thing		
-febvi	boils						something boiling				
-fegli	is ugly 	to observer		in aspect			something ugly				
-femti	is 10 to the negative fifteenth 	of		in							
-fendi	divides			into			divider	divided			
-fengu	is angry 	at		for			angry				
-fenki	is crazy						crazy action				
-fenra	is a crack 	in					crack				
-fenso	sews or stitches		together 	with tool	using filament						
-fepni	is		cents/copecks in value 	in monetary system							
-fepri	is a lung 	of					lung				
-ferti	is fertile 	for growing					fertile				
-festi	is waste 	from					waste				
-fetsi	is a female 	of species		with feminine traits			female		feminine trait		
-figre	is a fig 	of species					fig				
-filme	is a video, movie 	about					movie, film	plot of a movie			
-filso	is Palestinian 	in					something Palestinian				
-finpe	is a fish 	of species					fish				
-finti	creates			for purpose	from existing elements or ideas		creator	creation (object created), creature	purpose of creation	raw materials for creation	
-firca	flirts 	with		by doing							
-flalu	is a law 	specifying		for community			law				
-flani	is a flute, fife						flute				
-flecu	is a current 	in		flowing towards	from		current (flow)				
-fliba	fails 	at doing									
-flira	is a face 	of body					face				
-flora	is a flower 	of plant or species					flower	blooming			
-fluso	is a flowing fluid 	flowing to		from	via the route		fluid				
-foldi	is a field 	made of					field				
-fonmo	is some foam or froth 	of material		with bubbles of material			foam		bubble in foam		
-fonxa	is a phone or modem 	in network					telephone, phone	phone network			
-forca	is a fork 	for		with tines	on base		fork				
-fragari	is a strawberry 	of species/breed					strawberry				
-fraso	is French 	in					French				
-frati	responds or reacts 	with action		to stimulus			responder	a response	a responder's stimulus	a response condition	
-fraxu	forgives			for					action forgiven		
-frica	differs 	from		in			something different				
-friko	is African 	in					African				
-frili	is easy 	for					easy				
-frinu	is a fraction 	of		divided by			fraction	numerator of a fraction	denominator of a fraction		
-friti	offers			to				offering			
-frumu	frowns										
-fukpi	is a copy 	of		in form	made by method		copy, replica				
-fulta	floats 	in or on									
-funca	is determined by luck 	of					luck (good or bad)				
-fusra	rots or decays						rotting				
-fuzme	is responsible 	for		to authority			responsible				
-gacri	is a lid 	for covering					lid	something with a lid			
-gadri	is a sumti generating particle of class LE or LA	labelling					gadri (grammatical particle)				
-galfi	modifies or changes			into			modifier				
-galtu	is high 	in reference frame					high				
-galxe	is a throat 	of					throat				
-ganlo	is closed 	preventing access to place		for object			closed				
-ganra	is broad or wide 	in dimension					broad				
-ganse	detects or senses			by means			detector	detected	means of detection		
-ganti	is a gonad	of		of sex			gonad		sex (biological)		
-ganxo	is the anus 	of					anus				
-ganzu	organizes 	chaos		into order	by principle		organizer	chaotic, not organized	organized		
-gapci	is a gas						gas				
-gapru	is directly above						something above				
-garna	is a railing or bar 	supporting or restraining					rail				
-gasnu	causes		to happen				agent				
-gaspo	is gua\spi 	in					gua\spi				
-gasta	is steel						steel				
-genja	is a root 	of					root				
-gento	is Argentinian 	in					Argentinian				
-genxu	is a hook						hook				
-gerku	is a dog 	of species					dog				
-gerna	is the grammar 	of language		for structure			grammar		text		
-gidva	guides or leads			in			guide (conductor)				
-gigdo	is a billion or 10 to the ninth 	of		in							
-ginka	is a camp 	of inhabitants					camp	camper			
-girzu	is a group 	with 	in common				group				
-gismu	is a root verb						gismu (root verb)				
-glare	is hot						hot				
-gleki	is happy 	about					happy				
-gletu	copulates	with									
-glico	is English 	in					English				
-gluta	is a glove or mitten						glove				
-gocti	is 10 to the negative twenty-fourth 	of		in							
-gotro	is 10 to the twenty-fourth 	of		in							
-gradu	is a unit 	on scale		measuring			unit	scale with units			
-grake	has a weight	of	grams					weight in grams			
-grana	is a rod or pole						rod				
-grasu	is grease, oil						grease				
-gredile	is a grill/grid/graticule 	consisting of lines					grill, grid	line of a grid			
-greku	is a frame or structure 	supporting					frame				
-grusi	is gray						gray				
-grute	is a fruit 	of species					fruit (of a plant)				
-gubni	is public 	to community					public	a community with something public			
-gugde	is the country 	of inhabitants		with territory			country	citizen of a country	territory of a country		
-gumri	is a mushroom 	of species					mushroom				
-gundi	is industry 	producing		by process or means			industry	product of an industry	industrial process		
-gunka	works 	on		with goal			worker	work activity	work goal		
-gunma	is a joint mass, team 	of components that are					mass, aggregate	component of a mass			
-gunro	rolls 	on surface		rotating on axis or axle							
-gunse	is a goose 	of species					goose				
-gunta	attacks			with goal			attacker	attacked			
-gurni	is grain 	from plant					grain				
-guska	erodes			from							
-gusni	is light 	falling down on		from source			light (illumination)	illuminated	illuminator		
-gusta	is a restaurant 	serving food		to			restaurant				
-gutci	is		non-metric short distance units	in standard	with subunits		something measured in non-metric short distance	an amount of non-metric distance	a non-metric short distance standard	a subunit of a non-metric short distance	
-gutra	is the womb 	of					womb				
-influenza	is an influenza, grippe, flu						influenza, grippe, flu				
-influ'enza	is an influenza, grippe, flu						influenza, grippe, flu				
-info	is information 	about		gathered by method			information		method of gathering information		
-insekto	is an insect 	of species					insect				
-incipe	is the beginning	of					beginning (first part) of an event				
-intele	is an intellect 	of bearer					intellect				
-irci	is an IRC user	on channel		in network			IRC user				
-jabre	brakes or slows activity			with mechanism or principle							
-jadni	is a decoration 	of					ornament, decoration (ornament)	adorned			
-jakne	is a rocket						rocket				
-jalge	is a result or outcome 	of					outcome of an event, result of an event				
-jalna	is starch						starch				
-jamfu	is a foot 	of					foot				
-jamna	wars 	against		over territory or matter					reason for a war		
-janbe	is a bell or chime 	producing sound					bell	sound of a bell			
-janco	is a joint 	attaching limbs					joint	limb with a joint			
-janli	collides 	with								
-jansu	is a diplomat 	representing polity		in negotiation/with function			diplomat		diplomatic negotiation		
-janta	is a bill, invoice 	for goods or service		billed to	by		bill, invoice				
-jarbu	is a suburban area 	of					suburban area				
-jarco	demonstrates or shows			to				demonstrated, manifestated property			
-jarki	is narrow 	in dimension					narrow				
-jaspu	is a passport 	issued to		by	allowing		passport	something having a passport			
-jatna	is a commander or leader 	of					commander, leader, captain, boss				
-javni	is a rule 	mandating		in			rule	prescribed by a rule	people to whom the rule is applied		
-jbama	is a bomb 	with explosive					bomb	explosive of a bomb			
-jbari	is a berry	of plant					berry				
-jbena	is born 	to						birth giver			
-jbera	borrows			from	for time			borrowed			
-jbini	is between/among			in			something between				
-jbopre	is a Lojbanist						Lojbanist				
-jdari	is firm or resistant 	to force					firm				
-jdice	decides 	that	is true	about							
-jdika	decreases 	in		by amount			decreasing				
-jdima	is the price 	of		to	set by		price	something having a price		price-maker	
-jdini	is money 	issued by					money				
-jduli	is jelly 	of material					jelly	contents of a jelly			
-jecta	is a polity or state 	governing					polity, state				
-jeftu	is		weeks long								
-jegvo	is Judaic, Christian, or Moslem 	in					Judaic or Christian or Moslem				
-jelca	burns										
-jemna	is a gem						gem				
-jenca	shocks or stuns						shocking event	shocked			
-jendu	is an axle 	on which	rotates				axle				
-jenmi	is an army 	serving		in doing			army				
-jerna	earns salary or payment			for work			deserving	deserved, salary			
-jersi	chases						chaser	chased			
-jerxo	is Algerian 	in					something Algerian				
-jesni	is a needle						needle				
-jetce	is a jet 	of material		expelled from			jet	a material of a jet	a jet source		
-jetnu	is true 	by standard					_true	standard for truth			
-jgalu	is a claw 	of					claw				
-jganu	is an angle 	from vertex		subtended by lateral			angle	vertex of an angle	lateral of an angle		
-jgari	holds, clutches			using			holder	held			
-jgena	is a knot 	in					knot	something with a knot			
-jgina	is a gene 	of		determining trait			gene				
-jgira	feels pride 	in					proud				
-jgita	is a guitar or stringed musical instrument	with plectrum or bow					guitar, stringed musical instrument	bow of a guitar, bow of a stringed musical instrument			
-jibni	is near			in			near				
-jibri	is a job 	of person					job	having a job			
-jicla	stirs fluid										
-jicmu	is a fundamental principle, basis 	of					basis, fundamental principle				
-jijnu	intuitively knows							intuitively known			
-jikca	socializes, interacts socially	with									
-jikni	is the economic market, system 	of political body or sector					economic system				
-jikru	is a strong alcoholic drink, liquor, spirits 	distilled from					liquor				
-jilka	is a quantity of alkali	of metal					alkali				
-jilra	is envious or jealous 	of		about			envious, jealous				
-jimca	is a branch 	of					branch				
-jimpe	understands			about							
-jimte	is a limit or border 	of		in			limit	something with a limit			
-jinci	are shears or scissors 	for cutting					scissors				
-jinga	wins prize			from competitors	in competition		winner	a prize won			
-jinku	is a vaccine 	protecting		against	introduced by method		vaccine	vaccinated	disease prevented by vaccine	method of vaccination	
-jinme	is metal						metal				
-jinru	is immersed or submerged 	in liquid					immersed				
-jinsa	is clean 	, lacking					clean				
-jinto	is a well or spring 	of fluid					well/spring	fluid of a well, spring water			
-jinvi	opines or thinks 	that	is true 	about	on grounds		having an opinion	opinion			
-jinzi	is an innate or natural property 	of					innate				
-jipci	is a chicken 	of species					chicken				
-jipno	is a tip or point 	on object		at location			tip				
-jirna	is a horn 	of body					horn				
-jisra	is some juice 	from					juice				
-jitfa	is false 	by standard or epistemology					_false	standard of truth/falsehood			
-jitro	has control 	over		in activity			in control	under control			
-jivbu	weaves			from material					yarn for weaving		
-jivna	competes 	with competitors		in contest	for the reward		competitor	opponent in a competition	competition	prize in a competition	
-jmaji	gather 	at location		from locations			gatherers	location of gathering			
-jmifa	is a shoal or reef						shoal				
-jmina	combines or adds			to	with result						
-jmive	is alive 	in that it does					alive				
-jordo	is Jordanian 	in					something Jordanian				
-jorne	is joined 	to		at location							
-jubme	is a table						table				
-judri	is an address 	of		in system			address		address system		
-jufra	is a sentence or statement 	about		in language			sentence	topic of a sentence	language of a sentence		
-jukpa	cooks or prepares food			by recipe			cook	cooked food	recipe for cooking		
-julne	is a filter 	letting	pass	and prohibiting			filter				
-jundi	pays attention 	to					attentive	object of attention			
-jungo	is Chinese 	in					Chinese				
-junla	is a timer or clock 	measuring time units					timer	unit of time			
-junpero	is a juniper/cedar 	of species/variety									
-junri	is earnest or serious 	about					someone serious				
-junta	is the weight of	in field			weight				
-jurme	is a bacteria or germ 	of species					bacteria				
-jursa	is harsh or severe 	to					harsh event				
-jutsi	is a taxon 	of super-taxon					taxon, species				
-juxre	is clumsy 	in doing					clumsy				
-jvinu	is a view 	seen by		from viewpoint			view		viewpoint		
-kabri	is a cup or mug 	containing					cup	content of a cup			
-kacma	is a camera 	recording images of illumination type		to medium			camera				
-kadno	is Canadian 	in					something Canadian				
-kafke	coughs, farts, burps			from orifice							
-kagni	is a company / corporation 	chartered by authority		for purpose			company, corporation				
-kajde	warns			of danger							
-kajna	is a shelf or counter 	on					shelf				
-kakne	is capable of doing						capable				
-kakpa	digs			out of			digger				
-kalci	is excrement or feces 	of					excrement				
-kalri	is open	giving access to place		for object			open				
-kalsa	is a chaos	chaotic in					chaos, chaotic				
-kalte	hunts prey			for purpose			hunter	prey			
-kamju	is a column						pillar				
-kamni	is a committee 	with task					committee	purpose of a committee			
-kampu	is universal 	among					common, general, universal	group with something in common			
-kamro	is Welsh	in					Welsh				
-kanba	is a goat 	of species					goat				
-kancu	counts 	the number of		to be	by units						
-kandi	is dim, non-intense 	in		received by observer			dim, non-intense				
-kanji	calculates 	value		from data			calculater	a calculated value	data for calculation		
-kanla	is an eye 	of					eye				
-kanpe	expects			with likelihood							
-kanro	is healthy or well 	in					healthy				
-kansa	accompanies			in state							
-kantu	is a quantum 	of					quantum				
-kanxe	is a conjunction 	stating that	is true	as well as			conjunction	a component of a conjunction	a conjunction element		
-karbi	compares			with	in	determining comparison	comparer	something compared	something compared with	a compared property	a comparison
-karce	is a car, truck, van 	for carrying					car, truck, van	cargo of a car			
-karda	is a card						card				
-kargau	opens			to	due to element						
-kargu	is expensive 	to					expensive				
-karli	is a belt or collar 	surrounding					collar				
-karni	is a newspaper, magazine, journal	with content					journal, newspaper, magazine	contents of a magazine			
-katna	cuts			into pieces							
-kavbu	captures			with trap					trap used for capture		
-kecti	feels sorry 	for		about							
-kelci	plays 	game					player	game (played)			
-kelvo	is		degrees Kelvin								
-kenka	is a pie or cake	with ingredient					pie/cake	cake ingredient			
-kenra	is a cancer disease 	in					cancer				
-kensa	is outer space 	near					outer space				
-kerfa	is hair 	of					hair				
-kerlo	is an ear 	of					ear				
-kernelo	is a kernel, nucleus, 'nut' 	of					kernel, nucleus, 'nut'				
-ketco	is South American 	in					South American				
-kevna	is a cavity or hole 	in					cavity, hole				
-ki'ogra	weighs		kilograms								
-ki'otre	is		kilometers long								
-kibro	pertains to the internet 	in					internet thing				
-kicne	is a cushion						cushion				
-kijno	is oxygen						oxygen				
-kilto	is a thousand 	of		in							
-kinda	is kind of like			in			kind of				
-kinli	is sharp 	at location					sharp				
-kisto	is Pakistani 	in					Pakistani				
-klaji	is a street or alley 	at		allowing access to			street, avenue, alley				
-klaku	weeps or cries 	tears						tear wept			
-klama	goes 	to		from	by route	using means	passenger, goer, rider	destination of a ride	origin of a ride	route, track	vehicle
-klani	is a quantity	measured as		on scale							
-klesi	is a type, kind, class 	of whole		defined by			subset, type, kind, class				
-klina	is transparent, clear, penetrable 	to signal					transparent				
-kliru	is some halogen						halogen				
-kliti	is clay						clay				
-klupe	is a screw, bolt 	for purpose		with threads	with frame		screw	a purpose of a screw	a screw thread	a frame of a screw	
-kluza	is loose	bloused on		in			loose				
-kobli	is a cabbage or lettuce 	of species					cabbage				
-kojna	is a corner 	in					corner				
-kokso	is a coconut 	of variety/cultivar					coconut				
-kolme	is coal						coal				
-kombitu	is a comb 	with teeth, needles					comb		tooth of a comb, needle of a comb		
-konju	is a cone 	with base		and vertex			cone	base of a cone	vertex of a cone		
-korbi	is an edge or border 	between					edge	something with an edge			
-korcu	is bent or crooked						bent				
-korka	is some cork 	from tree					cork				
-korpora	is a (text) corpus	consisting of 									
-korvo	is a crow/raven 	of species					crow				
-kosta	is a jacket or sweater						jacket				
-krali	is a legal/moral right 	of		in legal system			legal right, moral right				
-kramu	is		area units 	in standard							
-krasi	is an origin or source 	of					origin	something with an origin			
-krati	represents			in function			representative				
-krefu	is a recurrence 	of		happening for the _th time:			recurrence		number of recurrences		
-krici	believes	that	is true	about			believer				
-krili	is quantity of crystal 	of material					crystal				
-krinu	is a justification or reason	for					justification	event justified			
-krixa	yells or cries out										
-krokodilo	is a crocodile	of breed					crocodile				
-kruca	intersects			at location					point of an intersection		
-kruji	is cream						cream				
-kruvi	is a curve or bend 	in		at location	defined by points		curve	something with a curve	a location of a curve	a property defining a curve	
-kuadrili	is a thigh, hip 	of					thigh/hip				
-kubli	is a cube						cube				
-kucli	is curious 	about					curious	subject of curiosity			
-kufra	is comfortable 	with					comfortable				
-kukte	is tasty or delicious 	to					tasty				
-kulnu	is culture 	of people					culture				
-kumfa	is a room 	in					room				
-kumte	is a camel or llama 	of species					camel, llama				
-kunra	is an ore 	containing material		mined from			mineral				
-kunti	is empty of material						empty				
-kurfa	is a rectangle 	defined by vertices					rectangle				
-kurji	takes care 	of					caretaker				
-kurki	is bitter or acrid 	to					bitter, acrid				
-kuspe	extends or reaches 	over range					having scope	scope			
-kusru	is cruel 	to victim		in actions			cruel action	victim of cruelty			
-labno	is a wolf 	of species					wolf				
-labyxu'e	is pink, of rose color						pink				
-lacni	is eyewear, glasses 	used by		serving purpose			glasses				
-lacpu	pulls or drags			by handle				something pulled, something dragged			
-ladru	is milk 	from					milk				
-lafti	lifts							something lifted			
-lakne	is probable, likely						probable				
-lakse	is some wax						wax				
-laldo	is old/aged 	in that it has					old, aged				
-lalxu	is a lake or pool 	at site					lake	place with a lake			
-lamji	is adjacent	to		in	in direction		adjacent				
-lanbi	is protein						protein				
-lanci	is a flag or banner	symbolizing					flag, banner				
-lanka	is a basket 	containing					basket	contents of a basket			
-lanli	analyzes			by method			analyst	something analysed	method of analysis		
-lanme	is a sheep 	of species					sheep				
-lante	is a can 	for					can, pre-sealed container	something canned			
-lanxe	is in balance 	under forces					balanced				
-lanzu	is a family 	including		by bond			family	family member			
-larcu	is art	, creative application of skill					art	craft			
-lasna	fastens or binds			to	with		fastener	fastened			
-lastu	is brass						brass				
-latmo	is Latin 	in					something Latin				
-latna	is a lotus 	of species					lotus				
-lazni	is lazy 	concerning action					lazy	action lazily avoided			
-lebna	takes or seizes			from				something taken			
-lektoni	is an electron						electron				
-lelxe	is a lily 	of species/strain					x1 is a lily of species/strain x2				
-lenjo	is a lens 	focusing rays		to the focus			lens	rays focused by a lens	focus of a lens		
-lenku	is cold						cold				
-lerci	is late 	by standard					late event				
-lerfu	is a letter, symbol 	in word or alphabet		representing			letter, alphabetic symbol				
-letri	is electric 	in					electric				
-lianpi	is a cheek 	of					cheek				
-lianzi	is a length of chain 	with links or rings					chain	link of a chain, ring of a chain			
-libjo	is Libyan 	in					something Libyan				
-lidne	precedes			in							
-lifri	experiences						experiencer, patient (experiencer)	experienced event			
-lijda	is a religion 	of believers		sharing beliefs			religion	religious believer	religious belief		
-limna	swims 	in					swimmer				
-lindi	is a lightning 	striking at		from			lightning				
-linji	is a line segment 	defined by points					line	points defining a line			
-linto	is lightweight						lightweight				
-lisri	is a story 	about					story, tale, yarn, narrative	plot of a story			
-liste	is a list, log 	of	in order	in medium			list, log	logged			
-litce	is		liters in volume								
-litki	is fluid						fluid				
-litru	travels 	via route					traveller	travelling route			
-livga	is a liver 	of					liver				
-livla	is a fuel 	for powering					fuel				
-logji	is a logic 	for reasoning about					logic				
-loglo	pertains to Loglan 	in					Loglandic				
-lojbo	is Lojbanic 	in					Lojbanic				
-loldi	is a floor or ground 	of					floor				
-lorxu	is a fox 	of species					fox				
-lubno	is Lebanese 	in					something Lebanese				
-lujvo	is a lujvo, compound verb	with meaning		, arguments meaning	, with affixes built from components		lujvo (compound verb made of affixes)				
-lumci	washes			of contaminant			washer				
-lunbe	is naked or bare						naked, bare				
-lunra	is a moon or major natural satellite 	of planet					moon	planet with a moon			
-lunsa	condenses						condensing				
-luska	is a mollusc 	of species					mollusc				
-mabla	is shitty, awful 	in		according to			shitty, awful, execrable, deplorable, wretched, rotten, miserable, contemptible, crappy, inferior, of low-quality				
-mabru	is mammal 	of species					mammal				
-macnu	is manual	in function					manual	function done manually			
-magneti	is magnetic 	in					magnet				
-makcu	is mature 	in					mature				
-makfa	is magic or supernatural 	to		performed by			magical event		wizard, magician		
-maksi	is a magnet 	producing field					magnet	a magnetic field			
-malsi	is a church or temple 	of religion, culture					church, temple				
-mamta	is a mother 	of					mother	child of a mother			
-manci	feels awe or wonder 	about					feeler of awe	something awe-inspiring			
-manfo	is uniform, homogeneous 	in					uniform, homogeneous				
-mango	is a mango 	of variety					mango				
-manku	is dark						dark				
-manri	is a standard 	for observing		with rules			standard				
-mansa	satisfies			in			satisfying	satisfied			
-manti	is an ant 	of species					ant				
-mapku	is a hat, helmet						hat, helmet				
-mapni	is some cotton						cotton				
-mapti	is compatible 	with		in			compatible				
-marbi	is a shelter 	protecting		against threat			shelter, haven, refuge, retreat, harbor				
-marce	is a vehicle 	for carrying					vehicle	passenger			
-marde	are the ethics 	of performer					ethics, morals, moral standards, ethical standards				
-margu	is mercury						mercury				
-marji	is material 	made of		in shape			material, stuff, matter	composition of matter	shape of matter		
-marna	is hemp 	of species					hemp				
-marvele	is marvellous, astonishing 	to					marvellous				
-marxa	crushes or smashes			into							
-masno	is slow at doing				slow				
-masti	is		months long								
-matci	is a mat or pad						mat, pad				
-matli	is some flax, linen						linen				
-matne	is butter						butter				
-matra	is an engine 	powering					engine				
-mavji	is oats 	of species					oats				
-maxri	is wheat 	of species					wheat				
-mebri	is a brow or forehead 	of					brow				
-megdo	is a million 	of		in							
-mekso	is a mathematical expression 	under rules					math expression				
-melbi	is beautiful 	to observer		in aspect			beautiful				
-meljo	is Malaysian 	in					something Malaysian				
-menli	is a mind 	of body					mind				
-mensi	is a sister 	of		by bond			sister	sibling of a sister			
-mentu	is		minutes long							
-merko	is U.S. American 	in					something American				
-merli	measures			to be	units on scale	with accuracy	measurer	measured			
-mexno	is Mexican 	in					something Mexican				
-midju	is in the middle 	of									
-mifra	is ciphertext	of		made using cipher			encrypted text	not encrypted text	cipher for encryption		
-mikce	cures or treats			for disease			doctor	patient (being cured)	disease cured		
-mikri	is a millionth 	of		in			millionth				
-milti	is a thousandth 	of		in			thousandth				
-milxe	is mild 	in					mild				
-minde	commands or orders			to do			commander				
-minli	is		non-metric long distance units 	in standard	with subunits		something measured in non-metric long distance	an amount of non-metric long distance	a subunit of a non-metric long distance		
-minra	reflects or echoes			to observer	as			reflected, echoed			
-mintu	is identical 	to					identical				
-mipri	hides			from				concealed, hidden			
-mirli	is a deer 	of species					deer				
-misno	is famous 	among					famous				
-misro	is Egyptian 	in					something Egyptian				
-mitre	is		meters in								
-mitysisku	searches 	for		among			searcher				
-mixre	is a mixture 	including					mixture	ingredient of a mixture			
-mlana	is to the side 	of					lateral				
-mlatu	is a cat 	of species					cat				
-mleca	is less 	than		in	by amount		less	more			
-mledi	is a fungus 	of species					fungus				
-mligla	is warm						warm				
-mluni	is a satellite 	orbiting					satellite (in outer space)	celestial body with a satellite			
-mokca	is a point in time or at place						instant				
-moklu	is a mouth 	of					mouth				
-molki	is an industrial plant or mill 	performing					industrial plant, mill				
-molro	is		moles								
-monsuta	is a monster						monster				
-monte	goes by vehicle										
-morji	remembers			about subject				remembered			
-morko	is Moroccan 	in					something Moroccan				
-morna	is a pattern 	of forms		arranged according to rule			pattern				
-morsi	is dead						dead				
-mosra	is friction 	due to rubbing of		against			friction				
-mraji	is some rye 	of species					rye				
-mrena'u	is a real number						real number				
-mrilu	mails or posts			to	from	in mail system	mailer	mailed			mail system
-mruli	is a hammer 	for		with head	propelled by		hammer		head of a hammer		
-mucti	is immaterial or not physical						immaterial, not physical				
-mudri	is wood 	from tree					wood				
-mukti	is a motive 	for		done by agent			motive		who is motivated		
-mulno	is complete, whole 	in property					complete				
-munje	is a universe 	of					universe	domain of a universe			
-mupli	is an example 	of		among			example				
-murta	is a curtain 	for covering					curtain	covered by a curtain			
-muslo	is Islamic or Moslem 	in					something Islamic				
-mutce	is much 	in					much				
-muvdu	moves 	to		from	over route						
-muvgau	moves (causes to move)			to	from	over route			moved		
-muzga	is a museum or zoo 	for preserving					museum				
-nabmi	is a problem 	to					problem				
-najnimre	is an orange 	of species									
-nakni	is a male 	of species		with masculine traits			male				
-nakpinji	is a penis 	of					penis				
-nalci	is a wing 	of					wing	winged			
-namcu	is a number or value						number				
-nanba	is bread						bread				
-nanca	is		years long								
-nandu	is difficult or challenging 	for					difficult, challenging				
-nangua	is a pumpkin 	of species					melon				
-nanla	is a boy						boy				
-nanmu	is a man						man				
-nanvi	is a billionth or 10^-9	of		in							
-narge	is a nut 	from plant		with shell	with kernel		nut		nut shell	nut kernel	
-narju	is orange						orange				
-natfe	contradicts or denies						contradiction				
-natmi	is nation or ethnic group 	of people					nation				
-navni	is a quantity of inert gas						inert gas				
-naxle	is a channel or canal 	to		from	with route		channel	a channel destination	a channel origin	a channel route	
-nazbi	is a nose 	of					nose				
-nejni	is energy 	of		of object			energy	type of energy	form of energy		
-nelci	likes						fancier	liked			
-nenri	is inside						inner	outer			
-nibli	implies										
-nicte	is a night 	of day					night-time				
-nikle	is nickel						nickel				
-nilce	is furniture	in		serving the function			furniture				
-nimre	is a citrus fruit 	of species					citrus				
-ninmu	is a woman						woman				
-nirna	is a nerve or neuron 	of					nerve				
-nitcu	needs			for purpose							
-nivji	knits			from yarn					yarn for knitting		
-nixli	is a girl						girl				
-nobli	is noble 	in					noble				
-norgo	reflects Norwegian culture/nationality 	in					Norwegian				
-notci	is a notice 	about		made by			message	subject of a message			
-nudle	is a noodle						noodles				
-nukni	has magenta color						magenta (color)				
-nupre	promises or threatens			to				promised			
-nurma	is a countryside, rural area 	of					countryside				
-nusna	induces			about	from specific facts			inducted proposition			
-nutli	is neutral in				neutral				
-nuzba	is news 	about		from	to observer		news				
-nuzlo	is New Zealandish	in					New Zealandish				
-omle	is an omelette 	containing					omelette				
-orka	is an orca	of breed					orca				
-pacna	hopes 	for		with likelihood							
-pagbu	is a part or piece 	of					part				
-pagre	passes through 	barrier		to destination	from origin						
-pajni	judges 	matter					judge	matter judged			
-palci	is immoral, evil 	by standard					wicked, evil, immoral				
-palku	are pants or trousers						trousers, pants				
-palma	is a palm tree 	of species					palm tree				
-palne	is a tray or platter 	with contents					tray, platter				
-palpi	touch-feels/palpates 	surface									
-palta	is a plate or saucer						plate, saucer				
-pambe	is a pump 	inserting fluid		into	from		pump				
-panci	is a smell or fragrance 	emitted by		detected by observer			smell, fragrance				
-pandi	punctuates			with symbol or word	with effect		punctuater	something punctuated	a punctuation	an effect of punctuation	
-panje	is sponge						sponge				
-panka	is a park						park				
-panlo	is a slice 	of					slice	sliced			
-panpi	is at peace 	with									
-panra	is parallel, congruent, similar 	to		differing only in			congruent		the only difference		
-pante	protests or complains 	about		to			protester				
-panzi	is a child 	of					offspring	biological parent			
-papri	is a page 	of book or document					page	paged document, paged book			
-parbi	is a ratio 	of		with respect to			fraction	numerator	denominator		
-parji	is a parasite 	of					parasite				
-pastu	is a robe, gown						robe, gown				
-patfu	is a father 	of					father	child of a father			
-patlu	is a potato 	of species					potato				
-patxu	is a pot or sink 	with contents					pot	contents of a pot			
-pelji	is paper						paper				
-pelmeni	is a dumpling/ravioli/pelmeni/dim sum	containing					dumplings, ravioli, pelmeni, dim sum				
-pelxu	is yellow						yellow				
-pemci	is a poem 	about					poem	subject of a poem			
-penbi	is a pen 	using ink					pen	ink of a pen			
-pencu	touches			with				touched			
-pendo	is a friend	to					friend				
-penmi	encounters or meets							encountered			
-pensi	ponders, is pensive 	about					thinker				
-perli	is a pear 	of species					pear				
-curmi	allows		to happen								
-permite	allows, permits			to do			who allows	what is allowed			
-pesxu	is jam, paste, dough						paste				
-petso	is 10 to the fifteenth 	of		in							
-pezli	is a leaf 	of plant					leaf	plant with leaves			
-picti	is 10 to the negative twelfth of	in							
-pijne	is a pin 	for piercing					pin	pierced by a pin			
-pikci	pleads or begs			for							
-piksku	makes comment			to			commentator	comment			
-pikta	is a ticket 	entitling		to			ticket	ticket holder			
-pilda	is pale						pale				
-pilji	is the product 	of		multiplied by			product of multiplication				
-pilka	is a crust, peel 	of					crust, peel				
-pilno	uses			for purpose			user	used			
-pimlu	is a feather 	of					feather	feathered			
-pinca	is urine	of					urine				
-pincivi	excretes urine/urinates/pees/pisses										
-pindi	is poor 	in					poor				
-pinfu	is a prisoner 	of		restrained by action			prisoner		means of imprisonment		
-pinka	is a comment 	about		made by	to		comment	subject of a comment			
-pinsi	is a pencil or crayon 	with marking material					pencil, crayon				
-pinta	is level, horizontal 	in frame of reference					horizontal				
-pinxe	drinks			out of			drinker	something drunk			
-pipno	is a piano or other keyboard musical instrument						piano				
-pixra	is a picture 	of		made by			picture	pictured			
-plana	is fat or obese 	in					fat, obese				
-planeta	is a planet						planet				
-platu	plans, designs 	plot		for purpose			planner	plan, planned	purpose of a plan		
-pleji	pays			to	for		payer	payment	payee	something paid for	
-plibu	is a pubic area 	of					pubic area, external genitalia				
-plini	is a planet 	around					planet	something a planet orbits			
-plipe	jumps 	to		from	through route						
-plise	is an apple 	of species					apple				
-plita	is a geometrical plane 	defined by points					plane (shape)				
-plixa	ploughs			using			plowman, ploughman	ploughed, plow	plough, plow		
-plixau	is useful 	for user		in			useful				
-pluja	is complex 	in					complex				
-pluka	pleases						pleasant event	pleased			
-pluta	is a route 	to		from			route				
-polje	folds			at location				folded	fold, wrinkle, creae		
-polno	is Polynesian 	in					something Polynesian				
-ponjo	is Japanese 	in					something Japanese				
-ponse	owns			under law			owner, proprietor	possessed, property (possessed)			
-porpi	breaks or shatters into pieces							piece of something broken			
-porsi	is a sequence						sequence				
-porto	is Portuguese 	in					something Portuguese				
-prali	is a profit or benefit 	to		resulting from			profit, benefit				
-prami	loves						lover	loved			
-prane	is perfect or ideal 	in					perfect				
-preja	spreads 	over		from initial state				area of expansion			
-prenu	is a person						person				
-preti	is a question 	about		asked by	to		question	a subject of a question	a questioner	an audience of a questioner	
-prije	is wise 	about matter					wise				
-prina	is a print 	on		made by			print	surface printed on	printer		
-pritu	is to the right 	of		in frame of reference			right (direction)				
-prosa	is prose 	about					prose, prosaic text				
-protoni	is a proton						proton				
-pruce	is a process 	with input		with output	via stages		process	process input	process output	stage of a process	
-pruni	is elastic						elastic, spring (elastic)				
-pruxi	is ghostly or spiritual						ghostly, spiritual				
-cripu	is a bridge 	across		between points			bridge				
-pulce	is dust						dust				
-pulji	is a police officer 	enforcing					police officer				
-pulni	is a pulley 	used for		rotating on			pulley		axle of a pulley		
-punji	places or puts			at				placed			
-punli	is a swelling, clump 	on					swelling, clump				
-purci	is earlier	than					earlier event, past event	later event, future event			
-purdi	is a garden or field 	of gardener		growing crops			garden	gardener	crops of a garden		
-purmo	is some powder 	of					powder				
-racli	is rational or sane						rational event, sane event				
-ractu	is a rabbit 	of species					rabbit				
-radno	is		radians								
-rafsi	is an affix 	for word					affix	word with affixes			
-ragve	is across 	boundary		from							
-rakso	is Iraqi 	in					something Iraqi				
-raktu	disturbs 	person		causing problems				disturbed			
-ralci	is delicate, fragile 	in					fragile				
-ralju	is principal or chief 	among		in			principal, chief				
-ralte	keeps or retains						keeper	kept			
-randa	surrenders or yields 	to		under conditions			surrenderer	something surrendered to	a condition of surrender		
-rango	is a bodily organ 	of		performing function			bodily organ		function of a bodily organ		
-ranji	persists or continues 	over place or time interval					persistant				
-ranmi	is a myth 	about					myth				
-ransu	is a quantity of bronze						bronze				
-ranti	is soft 	to force					soft				
-ranxi	is ironic, 	contrary to expectation		in aspect			ironic, contrary to expectation				
-rapli	occurs repeatedly		times				repeating event				
-rarna	is spontaneous or natural						spontaneous				
-ratcu	is a rat 	of species					rat				
-ratni	is an atom 	of element		of isotope number or weight			atom	atomic number	isotope number		
-rebla	is a tail 	of					tail	tailed			
-rectu	is meat 	from					meat				
-remna	is a human	of species					human				
-renro	throws or launches			to or at				thrown			
-renvi	survives or endures						survivor				
-respa	is a reptile 	of species					reptile				
-ricfu	is rich 	in					rich				
-rigni	is disgusting 	to					disgusting				
-rijno	is a quantity of silver						silver				
-rilti	is a rhythm, 	rhythmical pattern of					rhythm	having a rhythm			
-rimni	rhymes 	with		in language	with correspondence		having a rhyme	rhyming with something			
-rinci	drains or flushes 	from		through drain	by force		draining liquid		drain, strainer		
-rindo	is Native American/Indian 	in					Native American				
-rinju	is restrained 	by		against			restrained	restraining			
-rinka	causes effect						cause	effect			
-rinsa	welcomes or greets										
-rirci	is rare, not usual 	in		among			rare				
-rirni	rears, is a parent	of					parent (rearer)				
-rirxe	is a river 	of land mass		draining watershed			river		watershed of a river		
-rismi	is some rice 	of species					rice				
-risna	is a heart 	of					heart				
-ritli	is a ceremony, rite 	for purpose		in community			ceremony, rite				
-rivbi	avoids or escapes fate			through action				avoided event			
-rokci	is a rock						rock				
-romge	is a highly reflective surface 	of metal									
-romlo	is Romani/Romany/gypsy 	in					gypsy				
-ronde	is a ring 	with inside diameter		with outside diameter			ring	inner diameter of a ring	outer diameter of a ring		
-ropno	is European 	in					European				
-rorci	procreates			with coparent			parent (procreator), procreator				
-rotsu	is thick 	in dimension					thick				
-rozgu	is a rose 	of species					rose (plant)				
-ruble	is weak, frail 	in					weak, frail				
-rufsu	is rough in texture						rough (in texture)				
-runme	melts						melting				
-runta	dissolves 	in		making solution			dissolving		solution (mixture)		
-rupnu	costs		major money units 	in monetary system			measured in dollars, measured in roubles, measured in euro, measured in yuan	amount of dollars, amount of roubles, amount of euro, amount of yuan			
-rusko	is Russian 	in					Russian				
-rutni	is artificially made 	by people					artificial				
-rutpapaia	is a papaya fruit	of variety					papaya				
-sabji	provides			to			provider	provided			
-sabnu	is a cabin 	of vehicle					cabin of a vehicle	vehicle with a cabin			
-sacki	is a match, device to make fire						match (lighter)				
-saclu	is the decimal equivalent 	of fraction		in base							
-sadjo	is Saudi Arabian 	in					something Saudi Arabian				
-sakci	sucks, inhales			into				sucked, inhaled			
-sakli	slides or glides 	on									
-sakta	is sugar						sugar				
-salci	celebrates			by doing				event celebrated			
-salpo	is sloped 	with angle		to horizon			sloped				
-salta	is a salad 	with ingredients					salad	ingredient of a salad			
-samcu	is a cassava or yam 	of species					cassava, yam				
-sampu	is simple 	in					simple				
-sance	is sound 	produced by					sound	producer of a sound			
-sanga	sings			to			singer	song, sung			
-sanji	is aware or conscious 	of					aware, conscious				
-sanli	stands 	on		using							
-sanmi	is a meal 	including					meal	dish of a meal			
-sanso	is a sauce or gravy 	for use with		containing			sauce, gravy				
-santa	is an umbrella	shielding		from			umbrella				
-sarcu	is necessary 	for	to take place				necessary condition				
-sarji	supports or holds up			against			supporter	supported			
-sarlu	is a spiral or helix						helix, spiral				
-sarni	is a triangle/tetrahedron 	defined by corners/vertices		with sides/dimensions			triangle, tetrahedron				
-sarxe	is harmonious or in agreement 	with		in			harmonious				
-saske	is a lore, mass of facts 	about		based on methodology			science, lore	subject of a science	methodology of a science		
-satci	is exact 	in					exact				
-satre	strokes			with				stroked			
-savru	is a noise 	to		perceived via			noise				
-sazri	operates machine			with goal			driver, operator	driven, operated			
-sefta	is a surface 	of object					surface				
-seksi	exhibits biological or social sexuality	in		the sexuality being			sexy	sexual activity	social gender, biological gender		
-selbrivla	is a morphologically defined predicate word, verb word						verb word				
-selci	is a cell, atom, basic subunit 	of body					indivisible, cell, atom, basic subunit				
-selfu	serves			with service			servant		a service		
-semto	is Semitic 	in					something Semitic				
-senci	sneezes										
-senpi	doubts 	that	is true				irresolute				
-senta	is a layer 	of material		within structure			layer				
-senva	dreams 	about					dreamer	dream			
-sepli	is separate 	from		, separated by			separate				
-sesre	is Soviet	in					Soviet				
-setca	inserts or puts			into				inserted			
-sevzi	is a self	of									
-sfani	is a fly 	of species					fly (insect)				
-sfasa	punishes			for	with punishment			punished	reason for punishment	punishment	
-sfofa	is a sofa						sofa				
-sfubu	dives or swoops 	to		from			diver				
-siclu	whistles 	sound						whistled			
-sicni	is a coin						coin				
-sidbo	is an idea 	about		by thinker			idea				
-sidju	helps			do			helper				
-sigja	is a cigar or cigarette						cigar, cigarette				
-silka	is silk 	produced by					silk				
-silna	is salt, NaCl						salt				
-simlu	seems 	to have		to observer							
-simsa	is similar 	to		in			similar				
-simxu	mutually do							done mutually			
-since	is a snake 	of species					snake				
-sinma	respects or venerates							respected, venerated			
-sinso	is the trigonometric sine 	of angle					sine				
-sinxa	is a sign 	meaning		to observer			sign	meaning of a sign			
-sipna	is asleep						asleep				
-sirji	is straight or direct 	between					straight				
-sirxo	is Syrian 	in					something Syrian				
-sisku	searches 	for		among							
-sisti	ceases or stops							ceased, stopped			
-sitna	quotes or cites source			for statement				quoted source			
-sivni	is private or personal 	to					private				
-skaci	is a skirt						skirt				
-skalera	are stairs 	with steps					stairway, stairs	step of stairs			
-skami	is a computer						computer				
-skapi	is a skin, leather 	from					skin, leather				
-skari	is of colour			as perceived by observer			coloured, colored	colour, color			
-ski'entia	is science 	about subject matter		based on the Scientific Method							
-skicu	describes			to	with description		describer	described, told about		description	
-skiji	is a skate or ski 	for surface					skate, ski		sled		
-skori	is rope or cable 	of filaments or material					rope, cable	filament of a rope, filament of a cable			
-skoto	is Scottish 	in					something Scottish				
-skuro	is a groove or trench 	in					groove, trench	grooved surface			
-slabu	is familiar 	to observer		in							
-slaka	is a syllable 	in language					syllable				
-slami	is a quantity of acid						acid				
-slanu	is a cylinder						cylinder				
-slari	is sour 	to					sour				
-slasi	is some plastic						plastic				
-sligu	is solid						solid				
-slilu	oscillates 	with period		through states			oscillating	period of oscillation			
-sliri	is sulfur						sulphur				
-slovo	is Slavic 	in					something Slavic				
-sluji	is a muscle 	controlling body part					muscle				
-sluni	is an onion 	of species					onion				
-smacu	is a mouse 	of species					mouse				
-smadi	guesses, conjectures		is true 	about				guess (hypothesis)			
-smaji	is quiet 	at observation point					silent				
-smaka	feels the taste										
-smani	is a monkey or ape 	of species					monkey				
-smela	is a plum/peach/cherry/apricot/almond/sloe fruit 	of species/variety					plum				
-smoka	is a sock						sock				
-smuci	is a spoon or scoop						spoon, scoop				
-smuni	is a meaning 	of		accepted by observer			meaning	meaningful			
-snada	succeeds 	at		because of effort					successful effort		
-snanu	is to the south 	of					southern				
-snidu	is		seconds long								
-snime	is snow						snow				
-snipa	sticks or adheres 	to					sticky				
-snuji	is a sandwich 	of		sandwiched between			sandwich				
-snura	is safe 	from threat					safe from a threat				
-snuti	is an accident 	on the part of					accident				
-sobde	is soya 	of species					soya				
-sodna	is an alkali metal						alkali metal				
-sodva	is soda, carbonated beverage 	of brand					soda				
-softo	is Soviet 	in					something Soviet				
-solji	is a quantity of gold						gold				
-solri	is the sun 	of home planet					sun				
-sombo	sows			in				sown			
-sonci	is a soldier 	of army					soldier	army of soldiers			
-sorcu	is a store or deposit 	of					store, deposit, stockpile				
-sorgu	is sorghum 	of species					sorghum				
-sorta	sorta does						sort of				
-sovda	is an egg 	from organism					egg				
-spaji	surprises						surprising event	surprised			
-spali	polishes			with polish					polish		
-spano	is Spanish 	in					Spanish				
-spati	is a plant 	of species					plant (organism)				
-speni	is married 	to		under custom			spouse, wife, husband				
-spero	pertains to Esperanto 	in					Esperantic				
-spisa	is a portion or piece 	of					portion, piece	portioned			
-spita	is a hospital 	treating patient		for condition			hospital	patient of a hospital			
-spofu	is broken 	in function					broken	broken function			
-spoja	explodes or bursts 	into pieces					exploding				
-spuda	responds or answers 	to stimulus		with response			responder	stimulus for a response	response		
-sputu	spits 	liquid		from	onto			liquid spit			
-sraji	is vertical 	in reference frame					vertical				
-sraku	scratches							scratched			
-sralo	is Australian 	in					Australian				
-srana	is relevant 	to					relevant				
-srasu	is grass 	of species					grass				
-srera	errs 	in doing						error, mistake			
-srito	is Sanskrit 	in					something Sanskrit				
-sruma	assumes 	that	is true 	about				assumed			
-sruri	encloses or surrounds			in direction			enclosing	eclosed			
-stace	is honest 	with		about			honest				
-stagi	is the vegetable, edible portion 	of plant					vegetable				
-staku	is a ceramic						ceramic				
-stali	stays or remains 	at					staying, remaining				
-stani	is a stem or trunk 	of plant					stem, trunk	plant with a stem (organism)			
-stapa	steps 	on surface		using limbs							
-stasu	is soup 	with ingredients					soup	ingredient of a soup			
-stati	has talent 	for doing					smart, talented	talent			
-steba	feels frustration 	about					frustrated	frustrating situation			
-steci	is specific 	only to		among			specific feature	having a specific feature			
-stedu	is a head 	of					head				
-stela	is a lock 	for sealing		, with mechanism			lock	sealed with a lock	locking mechanism		
-stero	is		steradians								
-stici	is to the west 	of		in frame of reference			western				
-stidi	suggests			to			advisor	piece of advice, suggestion, proposal			
-stika	changes			in degree				adjusted			
-stizu	is a bench or chair						chair				
-stodi	is static, constant, unchanging 	in					constant				
-stomaxu	is a/the stomach/digestive organ 	of					stomach				
-stuna	is to the east 	of		in frame of reference			eastern				
-stura	is a structure or arrangement 	of					structure	structured			
-stuzi	is an inherent site 	of					site				
-sucta	is abstracted 	from		by rules			abstraction	something abstracted	a rule of abstraction		
-sudga	is dry 	of liquid					dry				
-sufti	is a hoof 	of					hoof				
-suksa	is sudden 	at					sudden				
-sumji	is the sum 	of		plus	plus	...	sum, total (sum)	summand			
-sumne	smells 	the scent						scent			
-sumti	is an argument/noun 	of predicate		filling place			noun, name, pronoun, verb argument	main verb, predicate	place of a verb argument		
-sunga	is garlic 	of species					garlic				
-sunla	is wool 	from					wool				
-surla	relaxes 	by doing									
-sutra	is fast or quick 	at doing					fast, quick	done fast			
-tabno	is carbon						carbon				
-tabra	is a musical horn, trumpet						trumpet, horn (musical instrument)				
-tadji	is a method 	for doing					method	done methodically			
-tadni	is a student 	of					student	studied			
-tagji	is tight, snug 	on		in			tight, snug				
-taksi	is a taxi						taxi				
-talsa	challenges			at							
-tamca	is a tomato 	of species					tomato				
-tamji	is a thumb or big toe 	on limb					thumb				
-tamne	is a cousin 	to		by bond			cousin				
-tanbo	is a board or plank						board, plank				
-tance	is a tongue 	of					tongue				
-tanjo	it a tangent 	of angle					tangent				
-tanko	is tobacco 	of species					tobacco				
-tanru	is a compound of two verbs	formed with component		that modifies			compound verb				
-tansi	is a pan, shallow basin, sink 	for contents					shallow basin, pan, sink	contents of a pan			
-tanxe	is a box or crate 	for contents					box	contents of a box			
-tapla	is a tile						tile				
-tarbi	is an embryo 	with mother		and father			embryo	a mother of an embryo	a father of an embryo		
-tarci	is a star						star				
-tarla	is a quantity of tar						tar				
-tarmi	is the (ideal) shape 	of					shape	having a shape			
-tarti	behaves 	in manner						behaviour, behavior			
-taske	thirsts 	for					thirsty				
-tasmi	is the way or manner 	in which	happens				manner				
-tasta	is a taste 	of					taste				
-tatpi	is tired 	of					tired	tiring			
-tatru	is a breast 	of					breast				
-tavla	talks 	to		about	in language				subject of a talk		
-taxfu	is a garment 	worn by		serving purpose			garment				
-tcaci	is a custom or habit 	of					custom, habit	having a habit			
-tcadu	is a city or town 	of area					city, town				
-tcana	is a station, node 	for component	of a network				network station, network node	network with a station			
-tcati	is some tea 	brewed from					tea	leaf of tea			
-tcemi	is compared 	with									
-tcena	extends 	to range		in	from range		stretchy				
-tcica	tricks or misleads			into			misleading event	tricked, misled			
-tcidu	reads			from medium			reader	text being read	document being read		
-tcika	is the time 	of		happening on day	at place or timezone		time of day			time zone	
-tcila	is a detail or feature 	of					detail, feature	detailed, having features			
-tcima	is a detail of weather 	at place					weather				
-tcini	are the circumstances 	of					situation, circumstances				
-tcita	is a label or tag 	of		showing information			tag, label	tagged, labelled	information on a tag		
-temci	is the elapsed time 	from		to							
-tenfa	is the exponential result 	of		to the power of			exponential result	exponential base	exponent		
-tengu	is a texture 	of					texture	having a texture			
-terdi	is the home planet 	of inhabitants					home planet				
-terpa	fears						fearful	causing fear			
-terto	is a trillion, 10^12 	of		in							
-tigni	performs			for audience			performer	performance	audience of a performance		
-tigra	is a tiger 	of species					tiger				
-tikpa	kicks			at location	using foot						
-tilju	is heavy or massive 	in					heavy				
-tinbe	obeys 	rule		made by				rule obeyed			
-tinci	is tin						tin				
-tinsa	is rigid, stiff 	in direction		against force			rigid, stiff				
-tirna	hears							heard			
-tirse	is iron						iron				
-tisna	becomes full	of material									
-titla	is sweet or sugary 	to					sweet, sugary				
-tivni	is a video camera or TV center 	streaming		via medium	to TV receiver		streaming video camera, streaming TV center	streamed video			
-tixnu	is a daughter 	of					daughter	parent of a daughter			
-toknu	is an oven 	for heating					oven	baked in an oven			
-tolcri	finds			at				found (in possesion)			
-toldi	is a butterfly or moth 	of species					butterfly, moth				
-tolna'e	confirms, is evidence 	for					evidence				
-tolpo'u	is functional, usable						functional, usable				
-toltinsa	is flexible 	in direction		under force			flexible				
-tonga	is a tone 	of pitch					tone	tone pitch			
-tordu	is short 	in dimension					short				
-torni	twists 	under force					twisting				
-tornozelo	is an ankle 	of					ankle				
-torta	is some cake, torte, tart, pie, flan 	made of/containing ingredients					cake, torte, tart, pie, flan				
-traduki	translates			to			translator, interpreter	text translated			
-traji	is utmost/superlative 	in		among			utmost, most				
-trano	is nitrogen						nitrogen				
-trati	is taut, strained 	in direction					taut, strained				
-trene	is a train 	of cars					train (of cars)	car of a train, carriage (of a train)			
-tricu	is a tree 	of species					tree				
-trina	attracts			with			attractive	attracted			
-trixe	is behind			in frame of reference							
-troci	tries 	to do						something tried			
-tsali	is strong 	in property					strong				
-tsani	is the sky 	at place					sky				
-tsapi	is a spice or seasoning 	causing flavor					spice, seasoning	flavour of a seasoning, flavor of a seasoning			
-tsiju	is a seed, fertilized cell 	of organism		for producing offspring			seed, fertilized cell				
-tsina	is a platform or stage 	at		supporting			platform, stage				
-tsuku	arrives 	at		via				place of arrival			
-tubnu	is a tube 	made of		with the hole made of			tube	material of a tube	content of a tube		
-tugni	agrees 	with		that							
-tujli	is a tulip 	of species					tulip				
-tumla	is a parcel of land 	at					terrain, parcel of land				
-tunba	is a sibling 	of		by bond			sibling				
-tunka	is copper						copper				
-tunlo	swallows										
-tunta	pokes, stabs, pricks										
-tuple	is a leg 	of					leg				
-turko	is Turkish 	in					Turkish				
-turni	governs 	people or domain					governor				
-tutci	is a tool 	used for					tool	purpose of a tool			
-tutra	is territory 	controlled by					territory				
-uenzi	is a text 	in language					text	language of a text			
-ultime	is the finale/final/last part 	leading up to completion of					finale, final part				
-vacmurse	is the twilight 	of day					twilight				
-vacri	is air 	from place		composed of			air				
-vajni	is important 	to		in			important				
-valsi	is a word 	meaning		in language			word	meaning of a word			
-vamji	is the value of			for observer	for use		value	having value			
-vamtu	vomits								
-vanbi	is part of the conditions	under which	exists or happens				part of an environment	environment			
-vanci	is an evening 	of day					evening				
-vanjba	is a grape 	of plant					grape				
-vanju	is wine 	from grapes					wine	wine grape			
-vasru	is a container or vessel 	containing					container, vessel	contents of a vessel, contained			
-vasxu	breathes							breathed			
-vecnu	sells goods or service			to	for goods or service		seller, vendor	sold		price of something sold	
-vedli	remembers experience						witness				
-venfu	takes revenge 	against		for wrong	by doing				reason for revenge	act of vengeance	
-vensa	is spring 	of year		at location			springtime				
-verba	is a child 	aged		immature in			child				
-vibna	is a vagina 	of					vagina				
-vidni	is a screen, video monitor 	for function					screen, video monitor	function of a screen			
-vidru	is a virus 	of species		capable of infecting			virus				
-vifne	is fresh or unspoiled						fresh, unspoiled				
-vikmi	excretes waste			from	via			excreted waste, excrement			
-viknu	is viscous, of thick consistency						viscous, thick (viscous)				
-vimcu	removes or subtracts			from	leaving			removed		remainder after removal	
-vindu	is poisonous or toxic 	to					toxic, poisonous				
-vinji	is an aircraft 	for carrying					airplane, aircraft	cargo of an aircraft			
-vipsi	is a vice 	in		to principal			subordinate, vice-president				
-virnu	is brave 	in					brave	done bravely			
-viska	sees							seen			
-vitci	is intermittent 	in					irregular, intermittent				
-vitke	visits, is a guest 	of					guest				
-vitno	is permanent 	in property					permanent				
-vlagi	is a vulva 	of					vulva				
-vlaste	is a dictionary 	with words					dictionary				
-vlile	is violent						violence				
-vlina	is a logical disjunction 	stating that	is true, and or				logical disjunction	an alternative of a disjunction	another alternative of a disjunction		
-vlipa	has the power 	to bring about					powerful				
-vofli	flies 	using means									
-voksa	is the voice 	of					voice				
-volve	returns 	to		from							
-vorme	is a doorway 	between					doorway				
-vraga	is a lever 	for doing		with fulcrum	and arm		lever	purpose of a lever	fulcrum of a lever	arm of a lever	
-vreji	is a record 	of		about	in medium		record (file), file (record)	recorded information	information storage medium, data carrier		
-vreta	rests or reclines 	on									
-vrici	is miscellaneous or assorted 	in					miscellaneous				
-vrude	is virtuous 	in					virtuous				
-vrusi	is a taste or flavor 	of					taste, flavor	having a taste			
-vukro	is Ukrainian 	in					Ukrainian				
-xabju	dwells or lives in						inhabitant	home			
-xadba	is half 	of					half				
-xadni	is a body or corpse 	of					body (corpse)				
-xagji	is hungry 	for					hungry				
-xagri	is a pipe, oboe, saxophone, clarinet, reed musical instrument						reed instrument, pipe, oboe, saxophone, clarinet	reed (of a musical instrument)			
-xajmi	is funny 	to		in			funny				
-xaksu	consumes or uses up						consumer	consumed			
-xalbo	is flippant or non-serious 	about					flippant, non-serious				
-xalka	is alcohol 	of components					alcohol				
-xalni	panics 	about					alarmist, panic-monger	panic situation			
-xamgu	is good 	for					good				
-xampo	is		amperes								
-xamsi	is a sea or ocean 	at place					sea				
-xance	is a hand 	of					hand				
-xanka	is anxious, worries	about					nervous	nervous situation			
-xanri	is imagined	by					imaginary event				
-xanto	is an elephant 	of species					elephant				
-xarci	is a weapon 	for use against		used by			weapon				
-xarju	is a pig 	of species					pig				
-xarnu	stubbornly opposes			about			obstinate				
-xasli	is a donkey 	of species					donkey				
-xasne	is sweat 	from					sweat		sweat gland		
-xatra	is a letter 	to		from	with content		letter (message)	recipient of letter	sender of a letter	contents of a letter	
-xatsi	is 10 to the negative eighteenth 	of		in							
-xazdo	is Asian 	in					Asiatic				
-xebni	hates or despises										
-xebro	is Hebrew 	in					Hebrew				
-xecto	is a hundred 	of		in							
-xedja	is a jaw 	of					jaw				
-xekri	is black						black				
-xelso	is Greek 	in					something Greek				
-xendo	is kind 	to		in doing			kind (generous, warm-hearted)		act of kindness		
-xenru	regrets							regretted			
-xexso	is 10 to the eighteenth 	of		in							
-xindo	is Hindi 	in					belonging to Hindi				
-xinmo	is some ink 	of color		used by writing device			ink	color of ink	ink pen		
-xirma	is a horse 	of species					horse				
-xislu	is a wheel 	of vehicle					wheel	wheeled			
-xispo	is Hispanic 	in					something Hispanic				
-xlali	is bad 	for					bad				
-xlura	lures or influences			into							
-xorbo	pertains to Xorban 	in					Xorban				
-xotli	is a hotel or inn						hotel				
-xrabo	is Arabic 	in					Arabic				
-xrani	injures										
-xriso	is Christian 	in					Christian				
-xruba	is buckwheat 	of species					buckwheat				
-xruki	is a turkey 	of species					turkey				
-xrula	is a flower 	of plant or species					flower				
-xukmi	is the chemical			with purity			chemical				
-xunre	is red						red				
-xurdo	is Urdu 	in					belonging to Urdu				
-xusra	claims, asserts 	that		is true			claimant	claim			
-xutla	is smooth						smooth				
-zabna	is superb/admirable 	in					superb, admirable				
-zajba	is a gymnast 	performing					gymnast	gymnastic feat			
-zalvi	grinds			into powder					powder produced by grinding		
-zanru	approves 	of									
-zarci	is a market 	selling					market (trading site)				
-zargu	is a buttock 	of					buttocks				
-zasni	is temporary 	in property					temporary				
-zasti	exists or is real 	to		under metaphysics			existing				
-zbabu	is soap						soap				
-zbani	is a bay 	of coast					bay	coast, shore			
-zbasu	makes or assembles			from parts			assembler				
-zbepi	is a pedestal, stand 	supporting					pedestal, stand				
-zdani	is a home 	of					home	inhabitant			
-zdile	is entertaining 	to		in			amusing	amused			
-zekri	is a crime 	to					crime				
-zenba	increases 	in		by amount			increasing				
-zepti	is 10 to the negative twenty-first 	of		in							
-zetro	is 10 to the twenty-first 	of		in							
-zgana	observes			using sense			observer, spectator				
-zgike	is music performed 	by					music				
-tolxanka	is calm, tranquil, serene 	about					calm, tranquil, serene				
-zgipli	plays music		on a musical instrument				musician		musical instrument		
-zi'evla	is a free-form word						zi'evla				
-zifre	is at liberty or free 	to do or be									
-zigzagi	is a line with the shape of a zigzag						zigzag				
-zildukse	is in excess, is too much 	for	to take place				excess				
-zinki	is zinc						zinc				
-zirpu	is purple						purple				
-zivle	invests resources			into	expecting profit		investor	invested		expected profit of an investment	
-zmadu	exceeds or is more 	than		in	by amount		more	less			
-zmiku	is automatic 	in function					robot, automatic	function of a robot			
-zukte	takes action			for purpose			actor	taken action	purpose of action		
-zumri	is corn or maize 	of species					maize				
-zungi	feels guilty 	about									
-zunle	is to the left 	of		in frame of reference			left (in direction)				
-zunti	interferes with or disrupts			due to				hindered, disrupted			
-zutse	sits 	on									
-zvati	is present 	at									
+brivla	1post	2pre	2post	3pre	4pre	5pre	noun1	noun2	noun3	noun4	noun5	adv1	adv2	adv3	adv4	adv5	adj1	adj2	adj3	adj4	adj5
+aftobuso	is a bus, coach						bus, coach														
+akti	is running	in service					active, in action	active operation													
+alna	is an alder 	of species					alder	species of alder													
+ankabuta	is a spider 	of species					spider	species of spider													
+arte	is a piece of artwork						piece of artwork														
+arxokuna	is a raccoon 	of species					raccoon	species of raccoon													
+tolckire	feels resentment, bitterness 	towards		for action			resentful														
+asna	is a posture, stance, asana 	of body					posture														
+bacru	utters						utterer	uttered text or sound													
+badna	is a banana fruit or plant 	of species					banana	banana species													
+badri	is sad 	about					sad	sad event													
+bajra	runs 	on surface		using limbs			runner	running surface	running limb												
+bakfu	is a pack or bundle 	containing		held together by			pack, bundle	content of a pack													
+bakni	is a cow or bovine 	of species					cow	species of cow													
+bakri	is some chalk						chalk														
+baktu	is a pail or bucket	containing					bucket	content of a bucket													
+balji	is a bulb 	of plant					bulb (of a plant)														
+balnema	is a baleen whale 	of species					baleen whale	species of baleen whale													
+balni	is a balcony or shelf 	of structure					balcony	building with a balcony													
+balre	is a blade 	of tool					blade	a tool or weapon with a blade													
+balvi	is later	than					later event	earlier event													
+bambola	is a doll						doll														
+bambu	is a bamboo 	of variety					bamboo	species of bamboo													
+bancu	is beyond boundary			from	in			boundary													
+bandu	defends			from threat			defender	threat defended against													
+banfi	is an amphibian of species						amphibian														
+bangu	is a language 	used by		to express			language	user of a language													
+banli	is great, magnificent 	in					something great														
+banro	grows 	to size or into form		from																	
+banxa	is a bank	owned by		for banking functions			bank	bank owner, bank system	function of bank												
+banzu	is enough 	for	to take place				sufficient thing														
+bapli	forces, convinces		to occur				force														
+barda	is big	in dimension					large, big	dimension of largeness													
+bargu	is an arch 	over or around					arch	something arched around													
+barja	is a bar 	serving		to customers			bar	bar merchandise	bar customer												
+barna	is a mark or spot 	on					mark, spot	something with mark/spot													
+bartu	is outside 	of					something outside	something inside													
+basna	emphasizes			by action			emphasizer	something emphasized													
+basti	is a replacement 	for					replacement (object)	something replaced													
+batci	bites or pinches		on/at				biter	bitten													
+batke	is a button or knob	on					button														
+bavmi	is barley 	of species					barley	species of barley													
+baxso	is Malay-Indonesian 	in					Malaysian	Malaysian aspect													
+bebna	is foolish 	in					fool	foolish action													
+bekpi	is the back body-part 	of					back (of body)														
+bemro	is North American 	in					North American														
+bende	is a team or crew 	of persons		led by	for purpose		team	member of a team	leader of a team	purpose of a team											
+bengo	is Bengal 	in					Bengali	Bengali aspect													
+benji	transmits			to receiver	from origin	via	sender	receiver	transmission receiver	origin of a transmission	medium of transmission										
+bersa	is a son 	of					son	parent of son													
+berti	is to the north 	of					northern														
+besna	is a brain 	of					brain	enitity with a brain													
+betfu	is the abdomen	of					abdomen														
+betka	is a beet 	of variety					beet	species of beet													
+betri	is a tragedy 	for					tragedy	experiencer of tragedy													
+bevri	brings, transports, carries			to	from	by path	carrier	cargo	cargo destination	cargo source	cargo route										
+bidju	is a bead or pebble						pebble, bead														
+bifce	is a bee or wasp 	of species					bee, wasp	species of bee/wasp													
+bikla	whips or lashes						whipper	whipped													
+bilga	is obligated 	to do		by agreement			obligated	obligation													
+bilma	is ill or sick 	with symptoms		from disease			ill	symptom of an illness	disease												
+bilni	is personnel 	organized in system		for purpose			personnel	workforce	purpose of workforce												
+bindo	is Indonesian 	in					Indonesian														
+binra	insures			against threat	with benefit		insurer, underwriter	insured thing or person		insurance compensation											
+binxo	transforms 	into					something that becomes	something that is become													
+biorka	is a birch 	of species					birch														
+birje	is beer or ale 	brewed from					beer	beer ingredient													
+birka	is an arm 	of body					arm														
+birti	is convinced 	that	is true				convinced														
+bisli	is ice						ice														
+bitmu	is a wall, fence 	of		separating it from			fence, wall	building with walls													
+bitri	is		bits in size				bits	number of bits													
+blabi	is white						white														
+blaci	is glass						glass (substance)														
+blanu	is blue						blue														
+blato	is a cockroach, termite 	of species					cockroach														
+bliku	is a block						block														
+blondine	has fair hair						blond														
+brunete	has dark hair						brunet														
+bloti	is a boat or ship 	for carrying					boat	cargo of a boat, passenger of a boat													
+bolci	is a ball or sphere						ball														
+bombila	is a light bulb						light bulb														
+bongu	is a bone 	of					bone	bony structure													
+boske	is a forest 	of					forest	forest organism													
+botpi	is a bottle, jar, or flask	for					bottle	contents of a bottle													
+boxfo	is a sheet or blanket						sheet														
+boxna	is a wave 	in					wave	medium of wave													
+bradi	is an enemy 	of		in struggle			enemy	someone who has an enemy	struggle between enemies												
+bratu	is hail or sleet						hail/sleet														
+brazo	is Brazilian 	in					Brazilian														
+bredi	is ready 	for					ready														
+bridi	is a clause 	with relationship		among arguments			grammatical clause	relationship in a grammatical clause	argument of a grammatical clause												
+brife	is wind 	from					wind	direction of a wind													
+briju	is an office	of workers					office	office worker													
+brito	is British 	in					British														
+broda	is the predicate variable 1						broda														
+brode	is the predicate variable 2						brode														
+brodi	is the predicate variable 3						brodi														
+brodo	is the predicate variable 4						brodo														
+brodu	is the predicate variable 5						brodu														
+bruna	is a brother	of		bonded by			brother	sibling of a brother													
+budjo	is Buddhist 	in					Buddhist														
+bukpu	is cloth						cloth														
+bumru	is covered by a fog or mist 	of					foggy thing	fog, mist													
+bunda	is		weight units	in standard																	
+bunre	is brown						brown														
+burcu	is a brush 	for doing		with bristles			brush	purpose of a brush	brush bristle												
+burna	is flustered, disconcerted 	by					flustered	befuddling event													
+cabna	is current 	with	in time				current	current													
+cabra	is an apparatus 	for function		controlled by agent			apparatus	function of an apparatus													
+minji	is a machine 	for function					machine	function of a machine													
+cacra	is		hours in duration				hour	number of hours													
+cadzu	walks 	on surface		with limbs			walker	walked-on surface													
+cafne	occurs frequently						frequent event														
+cagna	is a wound 	on body		at locus	caused by		wound														
+cakla	is chocolate or cocoa						chocolate														
+calku	is a shell or husk 	around					shell														
+canci	vanishes 	from location																			
+cando	is idle or at rest						idle thing														
+cange	is a farm or ranch 	at		farmed by	that raises or produces		farm		farmer	farm production											
+canja	trades 	commodity		for	with		trader	commodity													
+canko	is a window 	in structure					window	building with a window													
+canlu	is a space 	occupied by					space														
+canpa	is a shovel 	for doing					shovel														
+canre	is sand						sand														
+canti	is a gut 	of					intestine														
+carce	is a carriage or wagon 	for carrying					carriage	cargo of a carriage													
+carmi	is bright or intense 	in					bright thing														
+carna	turns or rotates 	around axis		in direction			rotating	axis of rotation	direction of rotation												
+cartu	is a chart or diagram 	of		showing information			chart	picture on a chart													
+carvi	rains or showers 	to		from			rain		rain cloud												
+casnu	discusses						discusser	topic of a discussion													
+catke	shoves or pushes			at locus																	
+catlu	examines																				
+catni	has authority 	over matter		on the basis of			someone with authority														
+catra	kills						killer	killed													
+caxno	is shallow 	in direction		away from reference point			shallow														
+cecla	launches projectile or missile						gun	missile													
+cecmu	is a community or colony of organisms						community	member of a community													
+cedra	is an era or age 	characterized by					era														
+cenba	varies 	in		by amount			variable														
+censa	is holy or sacred 	to					holy														
+centero	is in the center 	of					center														
+centi	is a hundredth 	of		in			hundredth														
+cerda	inherits			from	according to rule		inheritor, heir	inherited, heritage													
+cermurse	is the dawn 	of day					dawn														
+cerni	is a morning 	of day					morning														
+certu	is skilled 	at					expert	field of expertise													
+cevni	is a god 	of people/religion		with dominion over			god														
+cfari	commences, begins, or starts						beginning, start														
+cfika	is a work of fiction	about					work of fiction	plot of a work of fiction													
+cfila	is a flaw 	in		causing			flaw	flawed													
+cfine	is a wedge						wedge														
+cfipu	confuses or baffles			in			confusing														
+ciblu	is blood	of					blood														
+cicna	is turquoise or cyan						cyan (color)														
+cidja	is food 	for					food														
+cidni	is a knee/elbow 	of limb					knee, elbow														
+cidro	is hydrogen						hydrogen														
+cifnu	is an infant or baby	of species					infant														
+cigla	is a gland 	secreting		in body			gland	secretion of a gland													
+cikna	is awake						someone awake														
+cikre	repairs or mends			for use			repairer	repaired													
+ciksi	explains			to	with explanation		expounder			explanation											
+cilce	is wild or untamed						wild														
+cilmo	is moist or damp 	with liquid					damp														
+cilre	learns	information		about	from		learner	learned													
+cilta	is a thread, wire, filament						thread (cord), cord														
+cimde	is a dimension 	of space or object		according to rule or model			dimension														
+cimni	in infinite 	in					infinite														
+cinba	kisses			at				kissed													
+cindu	is an oak 	of species					oak														
+cinfo	is a lion 	of species					lion														
+cinje	is a wrinkle 	in					wrinkle	wrinkled													
+cinki	is an arthropod 	of species					arthropod														
+cinla	is thin 	in dimension					thin														
+cinmo	feels emotion			about			emotional (live being)	emotion													
+cinri	is interesting	to					interesting	interested													
+cinta	is paint 	of substance		in a base of			paint (coloring substance)	pigment of a paint	paint base												
+cintura	is a waist 	of body					waist (of body)														
+cinza	is a pincer/chopsticks/tongs 	for doing		to			tongs														
+cipni	is a bird 	of species					bird														
+cipra	is a test, act of examination	of					study, test	tested													
+cirko	loses			at			loser	lost, not in possesion													
+cirla	is cheese						cheese														
+ciska	writes			on			writer	written text	writing medium												
+cisma	smiles						smiler														
+ciste	is a system	with structure		, components	, displaying		system	structure of a system	component of a system	property of a system											
+citka	eats						eater	eaten													
+citno	is young 	in that it has					young														
+citri	is a history 	of		according to			history	having a history													
+citsi	is a season 	defined by		of year			season														
+civla	is a flea or louse 	of species		parasitic on			flea														
+cizra	is strange 	to		in			strange														
+ckabu	is rubber						rubber														
+ckafi	is coffee						coffee														
+ckaji	has property						property														
+ckana	is a bed						bed														
+ckape	is dangerous 	to					dangerous	threatened													
+ckasu	mocks			about	by doing		bully	bullied													
+ckeji	feels ashamed, mortified 	about		before audience			ashamed	shameful event													
+ckiku	is a key 	fitting lock					key (of a lock)	lock (of a key)													
+ckilu	is a scale of units 	for measuring					scale														
+ckini	is related 	to		by relationship			related		relationship												
+ckire	is grateful or thankful 	to		for			thankful		reason for gratitude												
+ckule	is a school 	serving area		, teaching	to		school		subject taught in a school	pupil of a school											
+ckunu	is a conifer 	of species					conifer														
+cladu	is loud 	at observation point					loud (producing loud sound)	loud place													
+clani	is long 	in dimension					long														
+claxu	lacks						deficient														
+clika	is lichen or moss 	of species		growing on			moss														
+clira	is early 	by standard					early event														
+clite	is polite 	in matter					polite	polite behaviour													
+cliva	leaves			via																	
+clupa	is a loop	of material					loop														
+cmaci	is mathematics 	describing					mathematics	field of mathematics													
+cmalu	is small 	in dimension					small														
+cmana	is a mountain 	projecting from					mountain	land mass with a mountain													
+cmavo	is a grammatical particle 	of class					grammatical particle														
+cmene	is a name	of		used by			name		namegiver												
+cmila	laughs						laugher														
+cmima	is a member 	of 					member	set													
+cmoni	howls, utters, moans			expressing			moaner														
+cnano	is normal 	in		among			norm														
+cnebo	is a neck 	of body					neck														
+cnemu	rewards			for atypical	with		rewarder	rewardee	reason for a reward	reward											
+cnici	is neat or orderly 	in					neat														
+cnino	is new 	to observer		in property			new														
+cnisa	is lead metal						lead (metal)														
+cnita	is directly beneath or below						what is beneath	what is above													
+cokcu	soaks up			from	into		absorber	absorbed													
+condi	is deep 	in		away from reference point			deep														
+cortu	feels pain 	at					who feels pain	location of pain			``										
+cpacu	acquires or gets			from				acquired													
+cpana	on top 	of					what is on top	what is below													
+cpare	climbs 	on																			
+cpedu	requests			from				something requested													
+cpina	is pungent or irritating	to					pungent, irritating														
+cradi	broadcasts or transmits			via station or frequency	to receiver		broadcaster	broadcasted	broadcasting station	broadcast receiver											
+crane	is in front 	of		facing			something in front														
+creka	is a shirt						shirt														
+crepu	harvests			from			harvester	harvested crop	crop field												
+cribe	is a bear 	of species					bear (animal)														
+crida	is a fairy/elf/gnome						fairy, elf														
+crino	is green						green														
+crisa	is summer 	of year		at location			summer														
+critu	is autumn 	of year		at location			autumn														
+ctaru	is a tide 	in					tide														
+ctebi	is a lip 	of orifice					lip	orifice with a lip													
+cteki	is a tax 	on		levied against	by authority or collector		tax	taxable property	taxpayer	collector of a tax											
+ctile	is petroleum						petroleum														
+ctino	is a shadow 	of		made by light source			shadow														
+ctuca	teaches to			ideas			teacher	taught audience	subject taught												
+cukla	is round						round														
+cukta	is a book 	with work					book	work in a book													
+culno	is full 	of					full														
+cumki	is possible						possible														
+cumla	is modest or humble 	about					modest														
+cunmi	is millet or grain 	of species					millet														
+cunso	is random, unpredictable						random														
+cuntu	is an affair/business	involving persons					affair														
+cupra	produces			by process			producer	product	process of production												
+curnu	is a worm 	of species					worm														
+curve	is pure 	in					pure														
+cusku	says			to audience			who says	what is said	audience												
+cutci	is a shoe 	for covering					shoe														
+cutne	is the chest 	of body					chest														
+cuxna	chooses			from complete set				what is chosen	set of choices, menu of choices												
+dacru	is a drawer 	in					drawer														
+dacti	is a material thing						material object														
+dadjo	is Taoist	in					Taoist														
+dakfu	is a knife 	for cutting					knife														
+dakli	is a bag or sack 	containing					bag	contents of a bag													
+damba	fights or struggles 	with		over issue			fighter														
+damri	is a percussion instrument	with beater					drum	beater of a drum													
+damva'u	smokes, inhales smoke						smoker														
+dandu	is suspended or hangs 	from		at joint																	
+danfu	is an answer/solution	to					solution to a problem	problem													
+danlu	is an animal	of species					live being														
+danmo	is smoke 	from source					smoke														
+danre	applies force	to					pressure														
+dansu	dances	to					dancer														
+danti	is a ballistic projectile 	for firing by					bullet	gun													
+daplu	is an island						island														
+dapma	condemns or curses			to fate				condemned													
+dargu	is a road or highway						road														
+darlu	argues 	for stance		against stance			arguer	stance (in a discussion)													
+darno	is distant 	from		in			distant														
+darsi	shows audacity 	in behavior					cheeky	audacious behaviour													
+darxi	hits or strikes			with			who strikes														
+daski	is a pocket or pouch 	in					pocket														
+dasni	wears			as garment of type			who wears a garment	garment worn													
+daspo	destroys						destroyer	destroyed													
+dasri	is a ribbon or strip						ribbon														
+datka	is a duck 	of species					duck														
+datni	is information 	about		gathered by method			information		method of getting information												
+datru	is dated	to day		of month	of year	in calendar	dated event	calendar full day	calendar month	calendar year	type of calendar system										
+decti	is a tenth 	of		in			'1/10'														
+degji	is a finger, toe, or digit 	on limb					finger, toe, digit (of body)	limb with fingers or toes													
+dejni	owes debt			to creditor	in return for service		debtor	debt	creditor of debt												
+dekpu	is		volume units	in standard																	
+dekto	is ten times			in			'10'														
+delfinu	is a dolphin 	of species/breed					dolphin														
+delno	is		candela in luminosity					amount of candela													
+dembi	is a legume, bean, or pea 	from plant					legume seed	plant with legumes													
+denci	is a tooth 	of					tooth														
+denmi	is dense 	in					dense														
+denpa	waits or pauses 	for		at state	before doing		something that waits														
+dertu	is soil or dirt						soil														
+derxi	is a heap or stack 	of					heap														
+desku	shakes or vibrates 	from force					something vibrating														
+detri	is the date of						datestamp														
+dicra	interrupts or disrupts			due to quality																	
+didni	deduces	that	is true 	about	from general rule		deducer														
+dikca	is electric current 	in medium		of polarity or quantity			electric current														
+diklo	is local	to location		within range			local														
+dikni	is regular or periodic 	in		with interval			regular														
+dilcu	is a quotient 	of		divided by	leaving remainder		quotient	dividend of a quotient	divisor of a quotient	remainder of a quotient											
+dilnu	is a cloud 	of material					cloud														
+dimna	is a fate or destiny 	of					destiny														
+dinju	is a building 	for purpose					building														
+dinko	is a nail or tack 	for purpose					nail (tack)														
+dirba	is dear or precious 	to					precious														
+dirce	radiates or emits						emitter	radiation													
+dirgo	is a drop 	of					drop														
+ditcu	is the time-duration/period 	of					period														
+dizlo	is low 	compared to					low														
+djacu	is water						water														
+djedi	is		full days long				full day	number of full days													
+djica	desires or wants			for purpose				something desired													
+djuno	knows 	fact		about	on grounds			known fact		grounds of knowledge											
+donri	is daytime 	of day					daytime														
+dotco	is German 	in					German														
+draci	is a drama or play 	about					play (drama)	plot of a drama													
+drani	is correct 	in					correct														
+drata	is not the same 	as					other														
+drudi	is a roof or lid 	of structure					roof	something with a lid													
+dugri	is the logarithm 	of		to base			logarithm		base of a logarithm												
+dukti	is opposite or contrary 	to		in			opposite														
+dunda	gives or donates			to			giver	gift	receiver of a gift												
+dunja	freezes																				
+dunku	is distressed or anguished 	by					distressed	distressing event													
+dunli	is equal 	to		in			equal														
+dunra	is winter 	of year		at location			winter														
+dzena	is an elder or ancestor 	of		by bond			ancestor	descendant													
+dzipo	is Antarctican 	in																			
+enge	is an architect/designer/engineer 	of					designer														
+entuzi	is enthusiastic, excited 	about					enthusiastic														
+esporte	is a type of sports 	practiced by					sports	sportsperson, sportsman, sportswoman													
+facki	discovers 	fact		about			discoverer	a discovery													
+fadni	is ordinary 	in		among			typical, ordinary														
+fagri	is a fire 	with fuel		burning in			fire	fuel for fire	oxidizer of fire												
+falnu	is a sail 	for gathering wind		on vehicle			sail	wind for a sail	sailboat												
+famti	is an aunt or uncle 	of		by bond			aunt, uncle	niece, nephew													
+lacri	relies, counts on, trusts			to bring about, ensure, maintain state																	
+fancu	is a function 	mapping domain		to range	defined by rule		function	function domain	function range												
+fange	is alien or unfamiliar 	to		in			alien, unfamiliar														
+fanmo	is the end	of					end	process being finished													
+fanri	is a factory or mill 	producing		from			factory, mill	product of a factory	raw material for a factory												
+fanta	prevents		from occurring					event being prevented													
+fanva	translates			to language	from language	with result	translator	text to be translated	target language for translation	source language for translation	translation (text)										
+fanza	annoys						annoying event	annoyed person													
+fapro	opposes, doesn't surrender 	to		about																	
+farlu	falls 	to		from																	
+farna	is the direction of			from origin			direction														
+farvi	evolves or develops 	into		from	through stages					stage of development, version in development											
+fasnu	happens						occurrence														
+fatci	is a fact						fact														
+fatne	is in reverse order 	from					reversed	a sequence before reversal													
+fatri	is distributed 	among		with portions			distributed		portion of a distributed thing												
+febvi	boils						something boiling														
+fegli	is ugly 	to observer		in aspect			something ugly														
+femti	is 10 to the negative fifteenth 	of		in																	
+fendi	divides			into			divider	divided													
+fengu	is angry 	at		for			angry														
+fenki	is crazy						crazy action														
+fenra	is a crack 	in					crack														
+fenso	sews or stitches		together 	with tool	using filament																
+fepni	is		cents/copecks in value 	in monetary system																	
+fepri	is a lung 	of					lung														
+ferti	is fertile 	for growing					fertile														
+festi	is waste 	from					waste														
+fetsi	is a female 	of species		with feminine traits			female		feminine trait												
+figre	is a fig 	of species					fig														
+filme	is a video, movie 	about					movie, film	plot of a movie													
+filso	is Palestinian 	in					something Palestinian														
+finpe	is a fish 	of species					fish														
+finti	creates			for purpose	from existing elements or ideas		creator	creation (object created), creature	purpose of creation	raw materials for creation											
+firca	flirts 	with		by doing																	
+flalu	is a law 	specifying		for community			law														
+flani	is a flute, fife						flute														
+flecu	is a current 	in		flowing towards	from		current (flow)														
+fliba	fails 	at doing																			
+flira	is a face 	of body					face														
+flora	is a flower 	of plant or species					flower	blooming													
+fluso	is a flowing fluid 	flowing to		from	via the route		fluid														
+foldi	is a field 	made of					field														
+fonmo	is some foam or froth 	of material		with bubbles of material			foam		bubble in foam												
+fonxa	is a phone or modem 	in network					telephone, phone	phone network													
+forca	is a fork 	for		with tines	on base		fork														
+fragari	is a strawberry 	of species/breed					strawberry														
+fraso	is French 	in					French														
+frati	responds or reacts 	with action		to stimulus			responder	a response	a responder's stimulus	a response condition											
+fraxu	forgives			for					action forgiven												
+frica	differs 	from		in			something different														
+friko	is African 	in					African														
+frili	is easy 	for					easy														
+frinu	is a fraction 	of		divided by			fraction	numerator of a fraction	denominator of a fraction												
+friti	offers			to				offering													
+frumu	frowns																				
+fukpi	is a copy 	of		in form	made by method		copy, replica														
+fulta	floats 	in or on																			
+funca	is determined by luck 	of					luck (good or bad)														
+fusra	rots or decays						rotting														
+fuzme	is responsible 	for		to authority			responsible														
+gacri	is a lid 	for covering					lid	something with a lid													
+gadri	is a sumti generating particle of class LE or LA	labelling					gadri (grammatical particle)														
+galfi	modifies or changes			into			modifier														
+galtu	is high 	in reference frame					high														
+galxe	is a throat 	of					throat														
+ganlo	is closed 	preventing access to place		for object			closed														
+ganra	is broad or wide 	in dimension					broad														
+ganse	detects or senses			by means			detector	detected	means of detection												
+ganti	is a gonad	of		of sex			gonad		sex (biological)												
+ganxo	is the anus 	of					anus														
+ganzu	organizes 	chaos		into order	by principle		organizer	chaotic, not organized	organized												
+gapci	is a gas						gas														
+gapru	is directly above						something above														
+garna	is a railing or bar 	supporting or restraining					rail														
+gasnu	causes		to happen				agent														
+gaspo	is gua\spi 	in					gua\spi														
+gasta	is steel						steel														
+genja	is a root 	of					root														
+gento	is Argentinian 	in					Argentinian														
+genxu	is a hook						hook														
+gerku	is a dog 	of species					dog														
+gerna	is the grammar 	of language		for structure			grammar		text												
+gidva	guides or leads			in			guide (conductor)														
+gigdo	is a billion or 10 to the ninth 	of		in																	
+ginka	is a camp 	of inhabitants					camp	camper													
+girzu	is a group 	with 	in common				group														
+gismu	is a root verb						gismu (root verb)														
+glare	is hot						hot														
+gleki	is happy 	about					happy														
+gletu	copulates	with																			
+glico	is English 	in					English														
+gluta	is a glove or mitten						glove														
+gocti	is 10 to the negative twenty-fourth 	of		in																	
+gotro	is 10 to the twenty-fourth 	of		in																	
+gradu	is a unit 	on scale		measuring			unit	scale with units													
+grake	has a weight	of	grams					weight in grams													
+grana	is a rod or pole						rod														
+grasu	is grease, oil						grease														
+gredile	is a grill/grid/graticule 	consisting of lines					grill, grid	line of a grid													
+greku	is a frame or structure 	supporting					frame														
+grusi	is gray						gray														
+grute	is a fruit 	of species					fruit (of a plant)														
+gubni	is public 	to community					public	a community with something public													
+gugde	is the country 	of inhabitants		with territory			country	citizen of a country	territory of a country												
+gumri	is a mushroom 	of species					mushroom														
+gundi	is industry 	producing		by process or means			industry	product of an industry	industrial process												
+gunka	works 	on		with goal			worker	work activity	work goal												
+gunma	is a joint mass, team 	of components that are					mass, aggregate	component of a mass													
+gunro	rolls 	on surface		rotating on axis or axle																	
+gunse	is a goose 	of species					goose														
+gunta	attacks			with goal			attacker	attacked													
+gurni	is grain 	from plant					grain														
+guska	erodes			from																	
+gusni	is light 	falling down on		from source			light (illumination)	illuminated	illuminator												
+gusta	is a restaurant 	serving food		to			restaurant														
+gutci	is		non-metric short distance units	in standard	with subunits		something measured in non-metric short distance	an amount of non-metric distance	a non-metric short distance standard	a subunit of a non-metric short distance											
+gutra	is the womb 	of					womb														
+influenza	is an influenza, grippe, flu						influenza, grippe, flu														
+influ'enza	is an influenza, grippe, flu						influenza, grippe, flu														
+info	is information 	about		gathered by method			information		method of gathering information												
+insekto	is an insect 	of species					insect														
+incipe	is the beginning	of					beginning (first part) of an event														
+intele	is an intellect 	of bearer					intellect														
+irci	is an IRC user	on channel		in network			IRC user														
+jabre	brakes or slows activity			with mechanism or principle																	
+jadni	is a decoration 	of					ornament, decoration (ornament)	adorned													
+jakne	is a rocket						rocket														
+jalge	is a result or outcome 	of					outcome of an event, result of an event														
+jalna	is starch						starch														
+jamfu	is a foot 	of					foot														
+jamna	wars 	against		over territory or matter					reason for a war												
+janbe	is a bell or chime 	producing sound					bell	sound of a bell													
+janco	is a joint 	attaching limbs					joint	limb with a joint													
+janli	collides 	with																			
+jansu	is a diplomat 	representing polity		in negotiation/with function			diplomat		diplomatic negotiation												
+janta	is a bill, invoice 	for goods or service		billed to	by		bill, invoice														
+jarbu	is a suburban area 	of					suburban area														
+jarco	demonstrates or shows			to				demonstrated, manifestated property													
+jarki	is narrow 	in dimension					narrow														
+jaspu	is a passport 	issued to		by	allowing		passport	something having a passport													
+jatna	is a commander or leader 	of					commander, leader, captain, boss														
+javni	is a rule 	mandating		in			rule	prescribed by a rule	people to whom the rule is applied												
+jbama	is a bomb 	with explosive					bomb	explosive of a bomb													
+jbari	is a berry	of plant					berry														
+jbena	is born 	to						birth giver													
+jbera	borrows			from	for time			borrowed													
+jbini	is between/among			in			something between														
+jbopre	is a Lojbanist						Lojbanist														
+jdari	is firm or resistant 	to force					firm														
+jdice	decides 	that	is true	about																	
+jdika	decreases 	in		by amount			decreasing														
+jdima	is the price 	of		to	set by		price	something having a price		price-maker											
+jdini	is money 	issued by					money														
+jduli	is jelly 	of material					jelly	contents of a jelly													
+jecta	is a polity or state 	governing					polity, state														
+jeftu	is		weeks long																		
+jegvo	is Judaic, Christian, or Moslem 	in					Judaic or Christian or Moslem														
+jelca	burns																				
+jemna	is a gem						gem														
+jenca	shocks or stuns						shocking event	shocked													
+jendu	is an axle 	on which	rotates				axle														
+jenmi	is an army 	serving		in doing			army														
+jerna	earns salary or payment			for work			deserving	deserved, salary													
+jersi	chases						chaser	chased													
+jerxo	is Algerian 	in					something Algerian														
+jesni	is a needle						needle														
+jetce	is a jet 	of material		expelled from			jet	a material of a jet	a jet source												
+jetnu	is true 	by standard					_true	standard for truth													
+jgalu	is a claw 	of					claw														
+jganu	is an angle 	from vertex		subtended by lateral			angle	vertex of an angle	lateral of an angle												
+jgari	holds, clutches			using			holder	held													
+jgena	is a knot 	in					knot	something with a knot													
+jgina	is a gene 	of		determining trait			gene														
+jgira	feels pride 	in					proud														
+jgita	is a guitar or stringed musical instrument	with plectrum or bow					guitar, stringed musical instrument	bow of a guitar, bow of a stringed musical instrument													
+jibni	is near			in			near														
+jibri	is a job 	of person					job	having a job													
+jicla	stirs fluid																				
+jicmu	is a fundamental principle, basis 	of					basis, fundamental principle														
+jijnu	intuitively knows							intuitively known													
+jikca	socializes, interacts socially	with																			
+jikni	is the economic market, system 	of political body or sector					economic system														
+jikru	is a strong alcoholic drink, liquor, spirits 	distilled from					liquor														
+jilka	is a quantity of alkali	of metal					alkali														
+jilra	is envious or jealous 	of		about			envious, jealous														
+jimca	is a branch 	of					branch														
+jimpe	understands			about																	
+jimte	is a limit or border 	of		in			limit	something with a limit													
+jinci	are shears or scissors 	for cutting					scissors														
+jinga	wins prize			from competitors	in competition		winner	a prize won													
+jinku	is a vaccine 	protecting		against	introduced by method		vaccine	vaccinated	disease prevented by vaccine	method of vaccination											
+jinme	is metal						metal														
+jinru	is immersed or submerged 	in liquid					immersed														
+jinsa	is clean 	, lacking					clean														
+jinto	is a well or spring 	of fluid					well/spring	fluid of a well, spring water													
+jinvi	opines or thinks 	that	is true 	about	on grounds		having an opinion	opinion													
+jinzi	is an innate or natural property 	of					innate														
+jipci	is a chicken 	of species					chicken														
+jipno	is a tip or point 	on object		at location			tip														
+jirna	is a horn 	of body					horn														
+jisra	is some juice 	from					juice														
+jitfa	is false 	by standard or epistemology					_false	standard of truth/falsehood													
+jitro	has control 	over		in activity			in control	under control													
+jivbu	weaves			from material					yarn for weaving												
+jivna	competes 	with competitors		in contest	for the reward		competitor	opponent in a competition	competition	prize in a competition											
+jmaji	gather 	at location		from locations			gatherers	location of gathering													
+jmifa	is a shoal or reef						shoal														
+jmina	combines or adds			to	with result																
+jmive	is alive 	in that it does					alive														
+jordo	is Jordanian 	in					something Jordanian														
+jorne	is joined 	to		at location																	
+jubme	is a table						table														
+judri	is an address 	of		in system			address		address system												
+jufra	is a sentence or statement 	about		in language			sentence	topic of a sentence	language of a sentence												
+jukpa	cooks or prepares food			by recipe			cook	cooked food	recipe for cooking												
+julne	is a filter 	letting	pass	and prohibiting			filter														
+jundi	pays attention 	to					attentive	object of attention													
+jungo	is Chinese 	in					Chinese														
+junla	is a timer or clock 	measuring time units					timer	unit of time													
+junpero	is a juniper/cedar 	of species/variety																			
+junri	is earnest or serious 	about					someone serious														
+junta	is the weight 	of		in field			weight														
+jurme	is a bacteria or germ 	of species					bacteria														
+jursa	is harsh or severe 	to					harsh event														
+jutsi	is a taxon 	of super-taxon					taxon, species														
+juxre	is clumsy 	in doing					clumsy														
+jvinu	is a view 	seen by		from viewpoint			view		viewpoint												
+kabri	is a cup or mug 	containing					cup	content of a cup													
+kacma	is a camera 	recording images of illumination type		to medium			camera														
+kadno	is Canadian 	in					something Canadian														
+kafke	coughs, farts, burps			from orifice																	
+kagni	is a company / corporation 	chartered by authority		for purpose			company, corporation														
+kajde	warns			of danger																	
+kajna	is a shelf or counter 	on					shelf														
+kakne	is capable of doing						capable														
+kakpa	digs			out of			digger														
+kalci	is excrement or feces 	of					excrement														
+kalri	is open	giving access to place		for object			open														
+kalsa	is a chaos	chaotic in					chaos, chaotic														
+kalte	hunts prey			for purpose			hunter	prey													
+kamju	is a column						pillar														
+kamni	is a committee 	with task					committee	purpose of a committee													
+kampu	is universal 	among					common, general, universal	group with something in common													
+kamro	is Welsh	in					Welsh														
+kanba	is a goat 	of species					goat														
+kancu	counts 	the number of		to be	by units																
+kandi	is dim, non-intense 	in		received by observer			dim, non-intense														
+kanji	calculates 	value		from data			calculater	a calculated value	data for calculation												
+kanla	is an eye 	of					eye														
+kanpe	expects			with likelihood																	
+kanro	is healthy or well 	in					healthy														
+kansa	accompanies			in state																	
+kantu	is a quantum 	of					quantum														
+kanxe	is a conjunction 	stating that	is true	as well as			conjunction	a component of a conjunction	a conjunction element												
+karbi	compares			with	in	determining comparison	comparer	something compared	something compared with	a compared property	a comparison										
+karce	is a car, truck, van 	for carrying					car, truck, van	cargo of a car													
+karda	is a card						card														
+kargau	opens			to	due to element																
+kargu	is expensive 	to					expensive														
+karli	is a belt or collar 	surrounding					collar														
+karni	is a newspaper, magazine, journal	with content					journal, newspaper, magazine	contents of a magazine													
+katna	cuts			into pieces																	
+kavbu	captures			with trap					trap used for capture												
+kecti	feels sorry 	for		about																	
+kelci	plays 	game					player	game (played)													
+kelvo	is		degrees Kelvin																		
+kenka	is a pie or cake	with ingredient					pie/cake	cake ingredient													
+kenra	is a cancer disease 	in					cancer														
+kensa	is outer space 	near					outer space														
+kerfa	is hair 	of					hair														
+kerlo	is an ear 	of					ear														
+kernelo	is a kernel, nucleus, 'nut' 	of					kernel, nucleus, 'nut'														
+ketco	is South American 	in					South American														
+kevna	is a cavity or hole 	in					cavity, hole														
+ki'ogra	weighs		kilograms																		
+ki'otre	is		kilometers long																		
+kibro	pertains to the internet 	in					internet thing														
+kicne	is a cushion						cushion														
+kijno	is oxygen						oxygen														
+kilto	is a thousand 	of		in																	
+kinda	is kind of like			in			kind of														
+kinli	is sharp 	at location					sharp														
+kisto	is Pakistani 	in					Pakistani														
+klaji	is a street or alley 	at		allowing access to			street, avenue, alley														
+klaku	weeps or cries 	tears						tear wept													
+klama	goes 	to		from	by route	using means	passenger, goer, rider	destination of a ride	origin of a ride	route, track	vehicle										
+klani	is a quantity	measured as		on scale																	
+klesi	is a type, kind, class 	of whole		defined by			subset, type, kind, class														
+klina	is transparent, clear, penetrable 	to signal					transparent														
+kliru	is some halogen						halogen														
+kliti	is clay						clay														
+klupe	is a screw, bolt 	for purpose		with threads	with frame		screw	a purpose of a screw	a screw thread	a frame of a screw											
+kluza	is loose	bloused on		in			loose														
+kobli	is a cabbage or lettuce 	of species					cabbage														
+kojna	is a corner 	in					corner														
+kokso	is a coconut 	of variety/cultivar					coconut														
+kolme	is coal						coal														
+kombitu	is a comb 	with teeth, needles					comb		tooth of a comb, needle of a comb												
+konju	is a cone 	with base		and vertex			cone	base of a cone	vertex of a cone												
+korbi	is an edge or border 	between					edge	something with an edge													
+korcu	is bent or crooked						bent														
+korka	is some cork 	from tree					cork														
+korpora	is a (text) corpus	consisting of 																			
+korvo	is a crow/raven 	of species					crow														
+kosta	is a jacket or sweater						jacket														
+krali	is a legal/moral right 	of		in legal system			legal right, moral right														
+kramu	is		area units 	in standard																	
+krasi	is an origin or source 	of					origin	something with an origin													
+krati	represents			in function			representative														
+krefu	is a recurrence 	of		happening for the _th time:			recurrence		number of recurrences												
+krici	believes	that	is true	about			believer														
+krili	is quantity of crystal 	of material					crystal														
+krinu	is a justification or reason	for					justification	event justified													
+krixa	yells or cries out																				
+krokodilo	is a crocodile	of breed					crocodile														
+kruca	intersects			at location					point of an intersection												
+kruji	is cream						cream														
+kruvi	is a curve or bend 	in		at location	defined by points		curve	something with a curve	a location of a curve	a property defining a curve											
+kuadrili	is a thigh, hip 	of					thigh/hip														
+kubli	is a cube						cube														
+kucli	is curious 	about					curious	subject of curiosity													
+kufra	is comfortable 	with					comfortable														
+kukte	is tasty or delicious 	to					tasty														
+kulnu	is culture 	of people					culture														
+kumfa	is a room 	in					room														
+kumte	is a camel or llama 	of species					camel, llama														
+kunra	is an ore 	containing material		mined from			mineral														
+kunti	is empty of material						empty														
+kurfa	is a rectangle 	defined by vertices					rectangle														
+kurji	takes care 	of					caretaker														
+kurki	is bitter or acrid 	to					bitter, acrid														
+kuspe	extends or reaches 	over range					having scope	scope													
+kusru	is cruel 	to victim		in actions			cruel action	victim of cruelty													
+labno	is a wolf 	of species					wolf														
+labyxu'e	is pink, of rose color						pink														
+lacni	is eyewear, glasses 	used by		serving purpose			glasses														
+lacpu	pulls or drags			by handle				something pulled, something dragged													
+ladru	is milk 	from					milk														
+lafti	lifts							something lifted													
+lakne	is probable, likely						probable														
+lakse	is some wax						wax														
+laldo	is old/aged 	in that it has					old, aged														
+lalxu	is a lake or pool 	at site					lake	place with a lake													
+lamji	is adjacent	to		in	in direction		adjacent														
+lanbi	is protein						protein														
+lanci	is a flag or banner	symbolizing					flag, banner														
+lanka	is a basket 	containing					basket	contents of a basket													
+lanli	analyzes			by method			analyst	something analysed	method of analysis												
+lanme	is a sheep 	of species					sheep														
+lante	is a can 	for					can, pre-sealed container	something canned													
+lanxe	is in balance 	under forces					balanced														
+lanzu	is a family 	including		by bond			family	family member													
+larcu	is art	, creative application of skill					art	craft													
+lasna	fastens or binds			to	with		fastener	fastened													
+lastu	is brass						brass														
+latmo	is Latin 	in					something Latin														
+latna	is a lotus 	of species					lotus														
+lazni	is lazy 	concerning action					lazy	action lazily avoided													
+lebna	takes or seizes			from				something taken													
+lektoni	is an electron						electron														
+lelxe	is a lily 	of species/strain					x1 is a lily of species/strain x2														
+lenjo	is a lens 	focusing rays		to the focus			lens	rays focused by a lens	focus of a lens												
+lenku	is cold						cold														
+lerci	is late 	by standard					late event														
+lerfu	is a letter, symbol 	in word or alphabet		representing			letter, alphabetic symbol														
+letri	is electric 	in					electric														
+lianpi	is a cheek 	of					cheek														
+lianzi	is a length of chain 	with links or rings					chain	link of a chain, ring of a chain													
+libjo	is Libyan 	in					something Libyan														
+lidne	precedes			in																	
+lifri	experiences						experiencer, patient (experiencer)	experienced event													
+lijda	is a religion 	of believers		sharing beliefs			religion	religious believer	religious belief												
+limna	swims 	in					swimmer														
+lindi	is a lightning 	striking at		from			lightning														
+linji	is a line segment 	defined by points					line	points defining a line													
+linto	is lightweight						lightweight														
+lisri	is a story 	about					story, tale, yarn, narrative	plot of a story													
+liste	is a list, log 	of	in order	in medium			list, log	logged													
+litce	is		liters in volume																		
+litki	is fluid						fluid														
+litru	travels 	via route					traveller	travelling route													
+livga	is a liver 	of					liver														
+livla	is a fuel 	for powering					fuel														
+logji	is a logic 	for reasoning about					logic														
+loglo	pertains to Loglan 	in					Loglandic														
+lojbo	is Lojbanic 	in					Lojbanic														
+loldi	is a floor or ground 	of					floor														
+lorxu	is a fox 	of species					fox														
+lubno	is Lebanese 	in					something Lebanese														
+lujvo	is a lujvo, compound verb	with meaning		, arguments meaning	, with affixes built from components		lujvo (compound verb made of affixes)														
+lumci	washes			of contaminant			washer														
+lunbe	is naked or bare						naked, bare														
+lunra	is a moon or major natural satellite 	of planet					moon	planet with a moon													
+lunsa	condenses						condensing														
+luska	is a mollusc 	of species					mollusc														
+mabla	is shitty, awful 	in		according to			shitty, awful, execrable, deplorable, wretched, rotten, miserable, contemptible, crappy, inferior, of low-quality														
+mabru	is mammal 	of species					mammal														
+macnu	is manual	in function					manual	function done manually													
+magneti	is magnetic 	in					magnet														
+makcu	is mature 	in					mature														
+makfa	is magic or supernatural 	to		performed by			magical event		wizard, magician												
+maksi	is a magnet 	producing field					magnet	a magnetic field													
+malsi	is a church or temple 	of religion, culture					church, temple														
+mamta	is a mother 	of					mother	child of a mother													
+manci	feels awe or wonder 	about					feeler of awe	something awe-inspiring													
+manfo	is uniform, homogeneous 	in					uniform, homogeneous														
+mango	is a mango 	of variety					mango														
+manku	is dark						dark														
+manri	is a standard 	for observing		with rules			standard														
+mansa	satisfies			in			satisfying	satisfied													
+manti	is an ant 	of species					ant														
+mapku	is a hat, helmet						hat, helmet														
+mapni	is some cotton						cotton														
+mapti	is compatible 	with		in			compatible														
+marbi	is a shelter 	protecting		against threat			shelter, haven, refuge, retreat, harbor														
+marce	is a vehicle 	for carrying					vehicle	passenger													
+marde	are the ethics 	of performer					ethics, morals, moral standards, ethical standards														
+margu	is mercury						mercury														
+marji	is material 	made of		in shape			material, stuff, matter	composition of matter	shape of matter												
+marna	is hemp 	of species					hemp														
+marvele	is marvellous, astonishing 	to					marvellous														
+marxa	crushes or smashes			into																	
+masno	is slow 	at doing					slow thing	slow process													
+masti	is		months long																		
+matci	is a mat or pad						mat, pad														
+matli	is some flax, linen						linen														
+matne	is butter						butter														
+matra	is an engine 	powering					engine														
+mavji	is oats 	of species					oats														
+maxri	is wheat 	of species					wheat														
+mebri	is a brow or forehead 	of					brow														
+megdo	is a million 	of		in																	
+mekso	is a mathematical expression 	under rules					math expression														
+melbi	is beautiful 	to observer		in aspect			beautiful														
+meljo	is Malaysian 	in					something Malaysian														
+menli	is a mind 	of body					mind														
+mensi	is a sister 	of		by bond			sister	sibling of a sister													
+mentu	is		minutes long																		
+merko	is U.S. American 	in					something American														
+merli	measures			to be	units on scale	with accuracy	measurer	measured													
+mexno	is Mexican 	in					something Mexican														
+midju	is in the middle 	of																			
+mifra	is ciphertext	of		made using cipher			encrypted text	not encrypted text	cipher for encryption												
+mikce	cures or treats			for disease			doctor	patient (being cured)	disease cured												
+mikri	is a millionth 	of		in			millionth														
+milti	is a thousandth 	of		in			thousandth														
+milxe	is mild 	in					mild														
+minde	commands or orders			to do			commander														
+minli	is		non-metric long distance units 	in standard	with subunits		something measured in non-metric long distance	an amount of non-metric long distance	a subunit of a non-metric long distance												
+minra	reflects or echoes			to observer	as			reflected, echoed													
+mintu	is identical 	to					identical														
+mipri	hides			from				concealed, hidden													
+mirli	is a deer 	of species					deer														
+misno	is famous 	among					famous														
+misro	is Egyptian 	in					something Egyptian														
+mitre	is		meters in																		
+mitysisku	searches 	for		among			searcher														
+mixre	is a mixture 	including					mixture	ingredient of a mixture													
+mlana	is to the side 	of					lateral														
+mlatu	is a cat 	of species					cat														
+mleca	is less 	than		in	by amount		less	more													
+mledi	is a fungus 	of species					fungus														
+mligla	is warm						warm														
+mluni	is a satellite 	orbiting					satellite (in outer space)	celestial body with a satellite													
+mokca	is a point in time or at place						instant														
+moklu	is a mouth 	of					mouth														
+molki	is an industrial plant or mill 	performing					industrial plant, mill														
+molro	is		moles																		
+monsuta	is a monster						monster														
+monte	goes by vehicle																				
+morji	remembers			about subject				remembered													
+morko	is Moroccan 	in					something Moroccan														
+morna	is a pattern 	of forms		arranged according to rule			pattern														
+morsi	is dead						dead														
+mosra	is friction 	due to rubbing of		against			friction														
+mraji	is some rye 	of species					rye														
+mrena'u	is a real number						real number														
+mrilu	mails or posts			to	from	in mail system	mailer	mailed			mail system										
+mruli	is a hammer 	for		with head	propelled by		hammer		head of a hammer												
+mucti	is immaterial or not physical						immaterial, not physical														
+mudri	is wood 	from tree					wood														
+mukti	is a motive 	for		done by agent			motive		who is motivated												
+mulno	is complete, whole 	in property					complete														
+munje	is a universe 	of					universe	domain of a universe													
+mupli	is an example 	of		among			example														
+murta	is a curtain 	for covering					curtain	covered by a curtain													
+muslo	is Islamic or Moslem 	in					something Islamic														
+mutce	is much 	in					much														
+muvdu	moves 	to		from	over route																
+muvgau	moves (causes to move)			to	from	over route			moved												
+muzga	is a museum or zoo 	for preserving					museum														
+nabmi	is a problem 	to					problem														
+najnimre	is an orange 	of species																			
+nakni	is a male 	of species		with masculine traits			male														
+nakpinji	is a penis 	of					penis														
+nalci	is a wing 	of					wing	winged													
+namcu	is a number or value						number														
+nanba	is bread						bread														
+nanca	is		years long																		
+nandu	is difficult or challenging 	for					difficult, challenging														
+nangua	is a pumpkin 	of species					melon														
+nanla	is a boy						boy														
+nanmu	is a man						man														
+nanvi	is a billionth or 10^-9	of		in																	
+narge	is a nut 	from plant		with shell	with kernel		nut		nut shell	nut kernel											
+narju	is orange						orange														
+natfe	contradicts or denies						contradiction														
+natmi	is nation or ethnic group 	of people					nation														
+navni	is a quantity of inert gas						inert gas														
+naxle	is a channel or canal 	to		from	with route		channel	a channel destination	a channel origin	a channel route											
+nazbi	is a nose 	of					nose														
+nejni	is energy 	of		of object			energy	type of energy	form of energy												
+nelci	likes						fancier	liked													
+nenri	is inside						inner	outer													
+nibli	implies																				
+nicte	is a night 	of day					night-time														
+nikle	is nickel						nickel														
+nilce	is furniture	in		serving the function			furniture														
+nimre	is a citrus fruit 	of species					citrus														
+ninmu	is a woman						woman														
+nirna	is a nerve or neuron 	of					nerve														
+nitcu	needs			for purpose																	
+nivji	knits			from yarn					yarn for knitting												
+nixli	is a girl						girl														
+nobli	is noble 	in					noble														
+norgo	reflects Norwegian culture/nationality 	in					Norwegian														
+notci	is a notice 	about		made by			message	subject of a message													
+nudle	is a noodle						noodles														
+nukni	has magenta color						magenta (color)														
+nupre	promises or threatens			to				promised													
+nurma	is a countryside, rural area 	of					countryside														
+nusna	induces			about	from specific facts			inducted proposition													
+nutli	is neutral	in					neutral														
+nuzba	is news 	about		from	to observer		news														
+nuzlo	is New Zealandish	in					New Zealandish														
+omle	is an omelette 	containing					omelette														
+orka	is an orca	of breed					orca														
+pacna	hopes 	for		with likelihood																	
+pagbu	is a part or piece 	of					part														
+pagre	passes through 	barrier		to destination	from origin																
+pajni	judges 	matter					judge	matter judged													
+palci	is immoral, evil 	by standard					wicked, evil, immoral														
+palku	are pants or trousers						trousers, pants														
+palma	is a palm tree 	of species					palm tree														
+palne	is a tray or platter 	with contents					tray, platter														
+palpi	touch-feels/palpates 	surface																			
+palta	is a plate or saucer						plate, saucer														
+pambe	is a pump 	inserting fluid		into	from		pump														
+panci	is a smell or fragrance 	emitted by		detected by observer			smell, fragrance														
+pandi	punctuates			with symbol or word	with effect		punctuater	something punctuated	a punctuation	an effect of punctuation											
+panje	is sponge						sponge														
+panka	is a park						park														
+panlo	is a slice 	of					slice	sliced													
+panpi	is at peace 	with																			
+panra	is parallel, congruent, similar 	to		differing only in			congruent		the only difference												
+pante	protests or complains 	about		to			protester														
+panzi	is a child 	of					offspring	biological parent													
+papri	is a page 	of book or document					page	paged document, paged book													
+parbi	is a ratio 	of		with respect to			fraction	numerator	denominator												
+parji	is a parasite 	of					parasite														
+pastu	is a robe, gown						robe, gown														
+patfu	is a father 	of					father	child of a father													
+patlu	is a potato 	of species					potato														
+patxu	is a pot or sink 	with contents					pot	contents of a pot													
+pelji	is paper						paper														
+pelmeni	is a dumpling/ravioli/pelmeni/dim sum	containing					dumplings, ravioli, pelmeni, dim sum														
+pelxu	is yellow						yellow														
+pemci	is a poem 	about					poem	subject of a poem													
+penbi	is a pen 	using ink					pen	ink of a pen													
+pencu	touches			with				touched													
+pendo	is a friend	to					friend														
+penmi	encounters or meets							encountered													
+pensi	ponders, is pensive 	about					thinker														
+perli	is a pear 	of species					pear														
+curmi	allows		to happen																		
+permite	allows, permits			to do			who allows	what is allowed													
+pesxu	is jam, paste, dough						paste														
+petso	is 10 to the fifteenth 	of		in																	
+pezli	is a leaf 	of plant					leaf	plant with leaves													
+picti	is 10 to the negative twelfth	of		in																	
+pijne	is a pin 	for piercing					pin	pierced by a pin													
+pikci	pleads or begs			for																	
+piksku	makes comment			to			commentator	comment													
+pikta	is a ticket 	entitling		to			ticket	ticket holder													
+pilda	is pale						pale														
+pilji	is the product 	of		multiplied by			product of multiplication														
+pilka	is a crust, peel 	of					crust, peel														
+pilno	uses			for purpose			user	used													
+pimlu	is a feather 	of					feather	feathered													
+pinca	is urine	of					urine														
+pincivi	excretes urine/urinates/pees/pisses																				
+pindi	is poor 	in					poor														
+pinfu	is a prisoner 	of		restrained by action			prisoner		means of imprisonment												
+pinka	is a comment 	about		made by	to		comment	subject of a comment													
+pinsi	is a pencil or crayon 	with marking material					pencil, crayon														
+pinta	is level, horizontal 	in frame of reference					horizontal														
+pinxe	drinks			out of			drinker	something drunk													
+pipno	is a piano or other keyboard musical instrument						piano														
+pixra	is a picture 	of		made by			picture	pictured													
+plana	is fat or obese 	in					fat, obese														
+planeta	is a planet						planet														
+platu	plans, designs 	plot		for purpose			planner	plan, planned	purpose of a plan												
+pleji	pays			to	for		payer	payment	payee	something paid for											
+plibu	is a pubic area 	of					pubic area, external genitalia														
+plini	is a planet 	around					planet	something a planet orbits													
+plipe	jumps 	to		from	through route																
+plise	is an apple 	of species					apple														
+plita	is a geometrical plane 	defined by points					plane (shape)														
+plixa	ploughs			using			plowman, ploughman	ploughed, plow	plough, plow												
+plixau	is useful 	for user		in			useful														
+pluja	is complex 	in					complex														
+pluka	pleases						pleasant event	pleased													
+pluta	is a route 	to		from			route														
+polje	folds			at location				folded	fold, wrinkle, creae												
+polno	is Polynesian 	in					something Polynesian														
+ponjo	is Japanese 	in					something Japanese														
+ponse	owns			under law			owner, proprietor	possessed, property (possessed)													
+porpi	breaks or shatters into pieces							piece of something broken													
+porsi	is a sequence						sequence														
+porto	is Portuguese 	in					something Portuguese														
+prali	is a profit or benefit 	to		resulting from			profit, benefit														
+prami	loves						lover	loved													
+prane	is perfect or ideal 	in					perfect														
+preja	spreads 	over		from initial state				area of expansion													
+prenu	is a person						person														
+preti	is a question 	about		asked by	to		question	a subject of a question	a questioner	an audience of a questioner											
+prije	is wise 	about matter					wise														
+prina	is a print 	on		made by			print	surface printed on	printer												
+pritu	is to the right 	of		in frame of reference			right (direction)														
+prosa	is prose 	about					prose, prosaic text														
+protoni	is a proton						proton														
+pruce	is a process 	with input		with output	via stages		process	process input	process output	stage of a process											
+pruni	is elastic						elastic, spring (elastic)														
+pruxi	is ghostly or spiritual						ghostly, spiritual														
+cripu	is a bridge 	across		between points			bridge														
+pulce	is dust						dust														
+pulji	is a police officer 	enforcing					police officer														
+pulni	is a pulley 	used for		rotating on			pulley		axle of a pulley												
+punji	places or puts			at				placed													
+punli	is a swelling, clump 	on					swelling, clump														
+purci	is earlier	than					earlier event, past event	later event, future event													
+purdi	is a garden or field 	of gardener		growing crops			garden	gardener	crops of a garden												
+purmo	is some powder 	of					powder														
+racli	is rational or sane						rational event, sane event														
+ractu	is a rabbit 	of species					rabbit														
+radno	is		radians																		
+rafsi	is an affix 	for word					affix	word with affixes													
+ragve	is across 	boundary		from																	
+rakso	is Iraqi 	in					something Iraqi														
+raktu	disturbs 	person		causing problems				disturbed													
+ralci	is delicate, fragile 	in					fragile														
+ralju	is principal or chief 	among		in			principal, chief														
+ralte	keeps or retains						keeper	kept													
+randa	surrenders or yields 	to		under conditions			surrenderer	something surrendered to	a condition of surrender												
+rango	is a bodily organ 	of		performing function			bodily organ		function of a bodily organ												
+ranji	persists or continues 	over place or time interval					persistant														
+ranmi	is a myth 	about					myth														
+ransu	is a quantity of bronze						bronze														
+ranti	is soft 	to force					soft														
+ranxi	is ironic, 	contrary to expectation		in aspect			ironic, contrary to expectation														
+rapli	occurs repeatedly		times				repeating event														
+rarna	is spontaneous or natural						spontaneous														
+ratcu	is a rat 	of species					rat														
+ratni	is an atom 	of element		of isotope number or weight			atom	atomic number	isotope number												
+rebla	is a tail 	of					tail	tailed													
+rectu	is meat 	from					meat														
+remna	is a human	of species					human														
+renro	throws or launches			to or at				thrown													
+renvi	survives or endures						survivor														
+respa	is a reptile 	of species					reptile														
+ricfu	is rich 	in					rich														
+rigni	is disgusting 	to					disgusting														
+rijno	is a quantity of silver						silver														
+rilti	is a rhythm, 	rhythmical pattern of					rhythm	having a rhythm													
+rimni	rhymes 	with		in language	with correspondence		having a rhyme	rhyming with something													
+rinci	drains or flushes 	from		through drain	by force		draining liquid		drain, strainer												
+rindo	is Native American/Indian 	in					Native American														
+rinju	is restrained 	by		against			restrained	restraining													
+rinka	causes effect						cause	effect													
+rinsa	welcomes or greets																				
+rirci	is rare, not usual 	in		among			rare														
+rirni	rears, is a parent	of					parent (rearer)														
+rirxe	is a river 	of land mass		draining watershed			river		watershed of a river												
+rismi	is some rice 	of species					rice														
+risna	is a heart 	of					heart														
+ritli	is a ceremony, rite 	for purpose		in community			ceremony, rite														
+rivbi	avoids or escapes fate			through action				avoided event													
+rokci	is a rock						rock														
+romge	is a highly reflective surface 	of metal																			
+romlo	is Romani/Romany/gypsy 	in					gypsy														
+ronde	is a ring 	with inside diameter		with outside diameter			ring	inner diameter of a ring	outer diameter of a ring												
+ropno	is European 	in					European														
+rorci	procreates			with coparent			parent (procreator), procreator														
+rotsu	is thick 	in dimension					thick														
+rozgu	is a rose 	of species					rose (plant)														
+ruble	is weak, frail 	in					weak, frail														
+rufsu	is rough in texture						rough (in texture)														
+runme	melts						melting														
+runta	dissolves 	in		making solution			dissolving		solution (mixture)												
+rupnu	costs		major money units 	in monetary system			measured in dollars, measured in roubles, measured in euro, measured in yuan	amount of dollars, amount of roubles, amount of euro, amount of yuan													
+rusko	is Russian 	in					Russian														
+rutni	is artificially made 	by people					artificial														
+rutpapaia	is a papaya fruit	of variety					papaya														
+sabji	provides			to			provider	provided													
+sabnu	is a cabin 	of vehicle					cabin of a vehicle	vehicle with a cabin													
+sacki	is a match, device to make fire						match (lighter)														
+saclu	is the decimal equivalent 	of fraction		in base																	
+sadjo	is Saudi Arabian 	in					something Saudi Arabian														
+sakci	sucks, inhales			into				sucked, inhaled													
+sakli	slides or glides 	on																			
+sakta	is sugar						sugar														
+salci	celebrates			by doing				event celebrated													
+salpo	is sloped 	with angle		to horizon			sloped														
+salta	is a salad 	with ingredients					salad	ingredient of a salad													
+samcu	is a cassava or yam 	of species					cassava, yam														
+sampu	is simple 	in					simple														
+sance	is sound 	produced by					sound	producer of a sound													
+sanga	sings			to			singer	song, sung													
+sanji	is aware or conscious 	of					aware, conscious														
+sanli	stands 	on		using																	
+sanmi	is a meal 	including					meal	dish of a meal													
+sanso	is a sauce or gravy 	for use with		containing			sauce, gravy														
+santa	is an umbrella	shielding		from			umbrella														
+sarcu	is necessary 	for	to take place				necessary condition														
+sarji	supports or holds up			against			supporter	supported													
+sarlu	is a spiral or helix						helix, spiral														
+sarni	is a triangle/tetrahedron 	defined by corners/vertices		with sides/dimensions			triangle, tetrahedron														
+sarxe	is harmonious or in agreement 	with		in			harmonious														
+saske	is a lore, mass of facts 	about		based on methodology			science, lore	subject of a science	methodology of a science												
+satci	is exact 	in					exact														
+satre	strokes			with				stroked													
+savru	is a noise 	to		perceived via			noise														
+sazri	operates machine			with goal			driver, operator	driven, operated													
+sefta	is a surface 	of object					surface														
+seksi	exhibits biological or social sexuality	in		the sexuality being			sexy	sexual activity	social gender, biological gender												
+selbrivla	is a morphologically defined predicate word, verb word						verb word														
+selci	is a cell, atom, basic subunit 	of body					indivisible, cell, atom, basic subunit														
+selfu	serves			with service			servant		a service												
+semto	is Semitic 	in					something Semitic														
+senci	sneezes																				
+senpi	doubts 	that	is true				irresolute														
+senta	is a layer 	of material		within structure			layer														
+senva	dreams 	about					dreamer	dream													
+sepli	is separate 	from		, separated by			separate														
+sesre	is Soviet	in					Soviet														
+setca	inserts or puts			into				inserted													
+sevzi	is a self	of																			
+sfani	is a fly 	of species					fly (insect)														
+sfasa	punishes			for	with punishment			punished	reason for punishment	punishment											
+sfofa	is a sofa						sofa														
+sfubu	dives or swoops 	to		from			diver														
+siclu	whistles 	sound						whistled													
+sicni	is a coin						coin														
+sidbo	is an idea 	about		by thinker			idea														
+sidju	helps			do			helper														
+sigja	is a cigar or cigarette						cigar, cigarette														
+silka	is silk 	produced by					silk														
+silna	is salt, NaCl						salt														
+simlu	seems 	to have		to observer																	
+simsa	is similar 	to		in			similar														
+simxu	mutually do							done mutually													
+since	is a snake 	of species					snake														
+sinma	respects or venerates							respected, venerated													
+sinso	is the trigonometric sine 	of angle					sine														
+sinxa	is a sign 	meaning		to observer			sign	meaning of a sign													
+sipna	is asleep						asleep														
+sirji	is straight or direct 	between					straight														
+sirxo	is Syrian 	in					something Syrian														
+sisku	searches 	for		among																	
+sisti	ceases or stops							ceased, stopped													
+sitna	quotes or cites source			for statement				quoted source													
+sivni	is private or personal 	to					private														
+skaci	is a skirt						skirt														
+skalera	are stairs 	with steps					stairway, stairs	step of stairs													
+skami	is a computer						computer														
+skapi	is a skin, leather 	from					skin, leather														
+skari	is of colour			as perceived by observer			coloured, colored	colour, color													
+ski'entia	is science 	about subject matter		based on the Scientific Method																	
+skicu	describes			to	with description		describer	described, told about		description											
+skiji	is a skate or ski 	for surface					skate, ski		sled												
+skori	is rope or cable 	of filaments or material					rope, cable	filament of a rope, filament of a cable													
+skoto	is Scottish 	in					something Scottish														
+skuro	is a groove or trench 	in					groove, trench	grooved surface													
+slabu	is familiar 	to observer		in																	
+slaka	is a syllable 	in language					syllable														
+slami	is a quantity of acid						acid														
+slanu	is a cylinder						cylinder														
+slari	is sour 	to					sour														
+slasi	is some plastic						plastic														
+sligu	is solid						solid														
+slilu	oscillates 	with period		through states			oscillating	period of oscillation													
+sliri	is sulfur						sulphur														
+slovo	is Slavic 	in					something Slavic														
+sluji	is a muscle 	controlling body part					muscle														
+sluni	is an onion 	of species					onion														
+smacu	is a mouse 	of species					mouse														
+smadi	guesses, conjectures		is true 	about				guess (hypothesis)													
+smaji	is quiet 	at observation point					silent														
+smaka	feels the taste																				
+smani	is a monkey or ape 	of species					monkey														
+smela	is a plum/peach/cherry/apricot/almond/sloe fruit 	of species/variety					plum														
+smoka	is a sock						sock														
+smuci	is a spoon or scoop						spoon, scoop														
+smuni	is a meaning 	of		accepted by observer			meaning	meaningful													
+snada	succeeds 	at		because of effort					successful effort												
+snanu	is to the south 	of					southern														
+snidu	is		seconds long																		
+snime	is snow						snow														
+snipa	sticks or adheres 	to					sticky														
+snuji	is a sandwich 	of		sandwiched between			sandwich														
+snura	is safe 	from threat					safe from a threat														
+snuti	is an accident 	on the part of					accident														
+sobde	is soya 	of species					soya														
+sodna	is an alkali metal						alkali metal														
+sodva	is soda, carbonated beverage 	of brand					soda														
+softo	is Soviet 	in					something Soviet														
+solji	is a quantity of gold						gold														
+solri	is the sun 	of home planet					sun														
+sombo	sows			in				sown													
+sonci	is a soldier 	of army					soldier	army of soldiers													
+sorcu	is a store or deposit 	of					store, deposit, stockpile														
+sorgu	is sorghum 	of species					sorghum														
+sorta	sorta does						sort of														
+sovda	is an egg 	from organism					egg														
+spaji	surprises						surprising event	surprised													
+spali	polishes			with polish					polish												
+spano	is Spanish 	in					Spanish														
+spati	is a plant 	of species					plant (organism)														
+speni	is married 	to		under custom			spouse, wife, husband														
+spero	pertains to Esperanto 	in					Esperantic														
+spisa	is a portion or piece 	of					portion, piece	portioned													
+spita	is a hospital 	treating patient		for condition			hospital	patient of a hospital													
+spofu	is broken 	in function					broken	broken function													
+spoja	explodes or bursts 	into pieces					exploding														
+spuda	responds or answers 	to stimulus		with response			responder	stimulus for a response	response												
+sputu	spits 	liquid		from	onto			liquid spit													
+sraji	is vertical 	in reference frame					vertical														
+sraku	scratches							scratched													
+sralo	is Australian 	in					Australian														
+srana	is relevant 	to					relevant														
+srasu	is grass 	of species					grass														
+srera	errs 	in doing						error, mistake													
+srito	is Sanskrit 	in					something Sanskrit														
+sruma	assumes 	that	is true 	about				assumed													
+sruri	encloses or surrounds			in direction			enclosing	eclosed													
+stace	is honest 	with		about			honest														
+stagi	is the vegetable, edible portion 	of plant					vegetable														
+staku	is a ceramic						ceramic														
+stali	stays or remains 	at					staying, remaining														
+stani	is a stem or trunk 	of plant					stem, trunk	plant with a stem (organism)													
+stapa	steps 	on surface		using limbs																	
+stasu	is soup 	with ingredients					soup	ingredient of a soup													
+stati	has talent 	for doing					smart, talented	talent													
+steba	feels frustration 	about					frustrated	frustrating situation													
+steci	is specific 	only to		among			specific feature	having a specific feature													
+stedu	is a head 	of					head														
+stela	is a lock 	for sealing		, with mechanism			lock	sealed with a lock	locking mechanism												
+stero	is		steradians																		
+stici	is to the west 	of		in frame of reference			western														
+stidi	suggests			to			advisor	piece of advice, suggestion, proposal													
+stika	changes			in degree				adjusted													
+stizu	is a bench or chair						chair														
+stodi	is static, constant, unchanging 	in					constant														
+stomaxu	is a/the stomach/digestive organ 	of					stomach														
+stuna	is to the east 	of		in frame of reference			eastern														
+stura	is a structure or arrangement 	of					structure	structured													
+stuzi	is an inherent site 	of					site														
+sucta	is abstracted 	from		by rules			abstraction	something abstracted	a rule of abstraction												
+sudga	is dry 	of liquid					dry														
+sufti	is a hoof 	of					hoof														
+suksa	is sudden 	at					sudden														
+sumji	is the sum 	of		plus	plus	...	sum, total (sum)	summand													
+sumne	smells 	the scent						scent													
+sumti	is an argument/noun 	of predicate		filling place			noun, name, pronoun, verb argument	main verb, predicate	place of a verb argument												
+sunga	is garlic 	of species					garlic														
+sunla	is wool 	from					wool														
+surla	relaxes 	by doing																			
+sutra	is fast or quick 	at doing					fast, quick	done fast													
+tabno	is carbon						carbon														
+tabra	is a musical horn, trumpet						trumpet, horn (musical instrument)														
+tadji	is a method 	for doing					method	done methodically													
+tadni	is a student 	of					student	studied													
+tagji	is tight, snug 	on		in			tight, snug														
+taksi	is a taxi						taxi														
+talsa	challenges			at																	
+tamca	is a tomato 	of species					tomato														
+tamji	is a thumb or big toe 	on limb					thumb														
+tamne	is a cousin 	to		by bond			cousin														
+tanbo	is a board or plank						board, plank														
+tance	is a tongue 	of					tongue														
+tanjo	it a tangent 	of angle					tangent														
+tanko	is tobacco 	of species					tobacco														
+tanru	is a compound of two verbs	formed with component		that modifies			compound verb														
+tansi	is a pan, shallow basin, sink 	for contents					shallow basin, pan, sink	contents of a pan													
+tanxe	is a box or crate 	for contents					box	contents of a box													
+tapla	is a tile						tile														
+tarbi	is an embryo 	with mother		and father			embryo	a mother of an embryo	a father of an embryo												
+tarci	is a star						star														
+tarla	is a quantity of tar						tar														
+tarmi	is the (ideal) shape 	of					shape	having a shape													
+tarti	behaves 	in manner						behaviour, behavior													
+taske	thirsts 	for					thirsty														
+tasmi	is the way or manner 	in which	happens				manner														
+tasta	is a taste 	of					taste														
+tatpi	is tired 	of					tired	tiring													
+tatru	is a breast 	of					breast														
+tavla	talks 	to		about	in language				subject of a talk												
+taxfu	is a garment 	worn by		serving purpose			garment														
+tcaci	is a custom or habit 	of					custom, habit	having a habit													
+tcadu	is a city or town 	of area					city, town														
+tcana	is a station, node 	for component	of a network				network station, network node	network with a station													
+tcati	is some tea 	brewed from					tea	leaf of tea													
+tcemi	is compared 	with																			
+tcena	extends 	to range		in	from range		stretchy														
+tcica	tricks or misleads			into			misleading event	tricked, misled													
+tcidu	reads			from medium			reader	text being read	document being read												
+tcika	is the time 	of		happening on day	at place or timezone		time of day			time zone											
+tcila	is a detail or feature 	of					detail, feature	detailed, having features													
+tcima	is a detail of weather 	at place					weather														
+tcini	are the circumstances 	of					situation, circumstances														
+tcita	is a label or tag 	of		showing information			tag, label	tagged, labelled	information on a tag												
+temci	is the elapsed time 	from		to																	
+tenfa	is the exponential result 	of		to the power of			exponential result	exponential base	exponent												
+tengu	is a texture 	of					texture	having a texture													
+terdi	is the home planet 	of inhabitants					home planet														
+terpa	fears						fearful	causing fear													
+terto	is a trillion, 10^12 	of		in																	
+tigni	performs			for audience			performer	performance	audience of a performance												
+tigra	is a tiger 	of species					tiger														
+tikpa	kicks			at location	using foot																
+tilju	is heavy or massive 	in					heavy														
+tinbe	obeys 	rule		made by				rule obeyed													
+tinci	is tin						tin														
+tinsa	is rigid, stiff 	in direction		against force			rigid, stiff														
+tirna	hears							heard													
+tirse	is iron						iron														
+tisna	becomes full	of material																			
+titla	is sweet or sugary 	to					sweet, sugary														
+tivni	is a video camera or TV center 	streaming		via medium	to TV receiver		streaming video camera, streaming TV center	streamed video													
+tixnu	is a daughter 	of					daughter	parent of a daughter													
+toknu	is an oven 	for heating					oven	baked in an oven													
+tolcri	finds			at				found (in possesion)													
+toldi	is a butterfly or moth 	of species					butterfly, moth														
+tolna'e	confirms, is evidence 	for					evidence														
+tolpo'u	is functional, usable						functional, usable														
+toltinsa	is flexible 	in direction		under force			flexible														
+tonga	is a tone 	of pitch					tone	tone pitch													
+tordu	is short 	in dimension					short														
+torni	twists 	under force					twisting														
+tornozelo	is an ankle 	of					ankle														
+torta	is some cake, torte, tart, pie, flan 	made of/containing ingredients					cake, torte, tart, pie, flan														
+traduki	translates			to			translator, interpreter	text translated													
+traji	is utmost/superlative 	in		among			utmost, most														
+trano	is nitrogen						nitrogen														
+trati	is taut, strained 	in direction					taut, strained														
+trene	is a train 	of cars					train (of cars)	car of a train, carriage (of a train)													
+tricu	is a tree 	of species					tree														
+trina	attracts			with			attractive	attracted													
+trixe	is behind			in frame of reference																	
+troci	tries 	to do						something tried													
+tsali	is strong 	in property					strong														
+tsani	is the sky 	at place					sky														
+tsapi	is a spice or seasoning 	causing flavor					spice, seasoning	flavour of a seasoning, flavor of a seasoning													
+tsiju	is a seed, fertilized cell 	of organism		for producing offspring			seed, fertilized cell														
+tsina	is a platform or stage 	at		supporting			platform, stage														
+tsuku	arrives 	at		via				place of arrival													
+tubnu	is a tube 	made of		with the hole made of			tube	material of a tube	content of a tube												
+tugni	agrees 	with		that																	
+tujli	is a tulip 	of species					tulip														
+tumla	is a parcel of land 	at					terrain, parcel of land														
+tunba	is a sibling 	of		by bond			sibling														
+tunka	is copper						copper														
+tunlo	swallows																				
+tunta	pokes, stabs, pricks																				
+tuple	is a leg 	of					leg														
+turko	is Turkish 	in					Turkish														
+turni	governs 	people or domain					governor														
+tutci	is a tool 	used for					tool	purpose of a tool													
+tutra	is territory 	controlled by					territory														
+uenzi	is a text 	in language					text	language of a text													
+ultime	is the finale/final/last part 	leading up to completion of					finale, final part														
+vacmurse	is the twilight 	of day					twilight														
+vacri	is air 	from place		composed of			air														
+vajni	is important 	to		in			important														
+valsi	is a word 	meaning		in language			word	meaning of a word													
+vamji	is the value of			for observer	for use		value	having value													
+vamtu	vomits							vomit													
+vanbi	is part of the conditions	under which	exists or happens				part of an environment	environment													
+vanci	is an evening 	of day					evening														
+vanjba	is a grape 	of plant					grape														
+vanju	is wine 	from grapes					wine	wine grape													
+vasru	is a container or vessel 	containing					container, vessel	contents of a vessel, contained													
+vasxu	breathes							breathed													
+vecnu	sells goods or service			to	for goods or service		seller, vendor	sold		price of something sold											
+vedli	remembers experience						witness														
+venfu	takes revenge 	against		for wrong	by doing				reason for revenge	act of vengeance											
+vensa	is spring 	of year		at location			springtime														
+verba	is a child 	aged		immature in			child														
+vibna	is a vagina 	of					vagina														
+vidni	is a screen, video monitor 	for function					screen, video monitor	function of a screen													
+vidru	is a virus 	of species		capable of infecting			virus														
+vifne	is fresh or unspoiled						fresh, unspoiled														
+vikmi	excretes waste			from	via			excreted waste, excrement													
+viknu	is viscous, of thick consistency						viscous, thick (viscous)														
+vimcu	removes or subtracts			from	leaving			removed		remainder after removal											
+vindu	is poisonous or toxic 	to					toxic, poisonous														
+vinji	is an aircraft 	for carrying					airplane, aircraft	cargo of an aircraft													
+vipsi	is a vice 	in		to principal			subordinate, vice-president														
+virnu	is brave 	in					brave	done bravely													
+viska	sees							seen													
+vitci	is intermittent 	in					irregular, intermittent														
+vitke	visits, is a guest 	of					guest														
+vitno	is permanent 	in property					permanent														
+vlagi	is a vulva 	of					vulva														
+vlaste	is a dictionary 	with words					dictionary														
+vlile	is violent						violence														
+vlina	is a logical disjunction 	stating that	is true, and or				logical disjunction	an alternative of a disjunction	another alternative of a disjunction												
+vlipa	has the power 	to bring about					powerful														
+vofli	flies 	using means																			
+voksa	is the voice 	of					voice														
+volve	returns 	to		from																	
+vorme	is a doorway 	between					doorway														
+vraga	is a lever 	for doing		with fulcrum	and arm		lever	purpose of a lever	fulcrum of a lever	arm of a lever											
+vreji	is a record 	of		about	in medium		record (file), file (record)	recorded information	information storage medium, data carrier												
+vreta	rests or reclines 	on																			
+vrici	is miscellaneous or assorted 	in					miscellaneous														
+vrude	is virtuous 	in					virtuous														
+vrusi	is a taste or flavor 	of					taste, flavor	having a taste													
+vukro	is Ukrainian 	in					Ukrainian														
+xabju	dwells or lives in						inhabitant	home													
+xadba	is half 	of					half														
+xadni	is a body or corpse 	of					body (corpse)														
+xagji	is hungry 	for					hungry														
+xagri	is a pipe, oboe, saxophone, clarinet, reed musical instrument						reed instrument, pipe, oboe, saxophone, clarinet	reed (of a musical instrument)													
+xajmi	is funny 	to		in			funny														
+xaksu	consumes or uses up						consumer	consumed													
+xalbo	is flippant or non-serious 	about					flippant, non-serious														
+xalka	is alcohol 	of components					alcohol														
+xalni	panics 	about					alarmist, panic-monger	panic situation													
+xamgu	is good 	for					good														
+xampo	is		amperes																		
+xamsi	is a sea or ocean 	at place					sea														
+xance	is a hand 	of					hand														
+xanka	is anxious, worries	about					nervous	nervous situation													
+xanri	is imagined	by					imaginary event														
+xanto	is an elephant 	of species					elephant														
+xarci	is a weapon 	for use against		used by			weapon														
+xarju	is a pig 	of species					pig														
+xarnu	stubbornly opposes			about			obstinate														
+xasli	is a donkey 	of species					donkey														
+xasne	is sweat 	from					sweat		sweat gland												
+xatra	is a letter 	to		from	with content		letter (message)	recipient of letter	sender of a letter	contents of a letter											
+xatsi	is 10 to the negative eighteenth 	of		in																	
+xazdo	is Asian 	in					Asiatic														
+xebni	hates or despises																				
+xebro	is Hebrew 	in					Hebrew														
+xecto	is a hundred 	of		in																	
+xedja	is a jaw 	of					jaw														
+xekri	is black						black														
+xelso	is Greek 	in					something Greek														
+xendo	is kind 	to		in doing			kind (generous, warm-hearted)		act of kindness												
+xenru	regrets							regretted													
+xexso	is 10 to the eighteenth 	of		in																	
+xindo	is Hindi 	in					belonging to Hindi														
+xinmo	is some ink 	of color		used by writing device			ink	color of ink	ink pen												
+xirma	is a horse 	of species					horse														
+xislu	is a wheel 	of vehicle					wheel	wheeled													
+xispo	is Hispanic 	in					something Hispanic														
+xlali	is bad 	for					bad														
+xlura	lures or influences			into																	
+xorbo	pertains to Xorban 	in					Xorban														
+xotli	is a hotel or inn						hotel														
+xrabo	is Arabic 	in					Arabic														
+xrani	injures																				
+xriso	is Christian 	in					Christian														
+xruba	is buckwheat 	of species					buckwheat														
+xruki	is a turkey 	of species					turkey														
+xrula	is a flower 	of plant or species					flower														
+xukmi	is the chemical			with purity			chemical														
+xunre	is red						red														
+xurdo	is Urdu 	in					belonging to Urdu														
+xusra	claims, asserts 	that		is true			claimant	claim													
+xutla	is smooth						smooth														
+zabna	is superb/admirable 	in					superb, admirable														
+zajba	is a gymnast 	performing					gymnast	gymnastic feat													
+zalvi	grinds			into powder					powder produced by grinding												
+zanru	approves 	of																			
+zarci	is a market 	selling					market (trading site)														
+zargu	is a buttock 	of					buttocks														
+zasni	is temporary 	in property					temporary														
+zasti	exists or is real 	to		under metaphysics			existing														
+zbabu	is soap						soap														
+zbani	is a bay 	of coast					bay	coast, shore													
+zbasu	makes or assembles			from parts			assembler														
+zbepi	is a pedestal, stand 	supporting					pedestal, stand														
+zdani	is a home 	of					home	inhabitant													
+zdile	is entertaining 	to		in			amusing	amused													
+zekri	is a crime 	to					crime														
+zenba	increases 	in		by amount			increasing														
+zepti	is 10 to the negative twenty-first 	of		in																	
+zetro	is 10 to the twenty-first 	of		in																	
+zgana	observes			using sense			observer, spectator														
+zgike	is music performed 	by					music														
+tolxanka	is calm, tranquil, serene 	about					calm, tranquil, serene														
+zgipli	plays music		on a musical instrument				musician		musical instrument												
+zi'evla	is a free-form word						zi'evla														
+zifre	is at liberty or free 	to do or be																			
+zigzagi	is a line with the shape of a zigzag						zigzag														
+zildukse	is in excess, is too much 	for	to take place				excess														
+zinki	is zinc						zinc														
+zirpu	is purple						purple														
+zivle	invests resources			into	expecting profit		investor	invested		expected profit of an investment											
+zmadu	exceeds or is more 	than		in	by amount		more	less													
+zmiku	is automatic 	in function					robot, automatic	function of a robot													
+zukte	takes action			for purpose			actor	taken action	purpose of action												
+zumri	is corn or maize 	of species					maize														
+zungi	feels guilty 	about																			
+zunle	is to the left 	of		in frame of reference			left (in direction)														
+zunti	interferes with or disrupts			due to				hindered, disrupted													
+zutse	sits 	on																			
+zvati	is present 	at																			
