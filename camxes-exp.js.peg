@@ -1459,7 +1459,7 @@ brivla_core = expr:(fuhivla / gismu / CVV_final_rafsi / stressed_initial_rafsi s
 
 stressed_initial_rafsi = expr:(stressed_extended_rafsi / stressed_y_rafsi / stressed_y_less_rafsi) { return _join(expr); }
 
-initial_rafsi = expr:(extended_rafsi / y_rafsi / !any_extended_rafsi y_less_rafsi) { return _join(expr); }
+initial_rafsi = expr:(extended_rafsi / y_rafsi / !any_extended_rafsi y_less_rafsi !any_extended_rafsi) { return _join(expr); }
 
 //___________________________________________________________________
 
@@ -1483,10 +1483,9 @@ fuhivla_head = expr:(!rafsi_string brivla_head) { return _join(expr); }
 
 brivla_head = expr:(!cmavo !slinkuhi !h &onset unstressed_syllable*) { return _join(expr); }
 
-//// Change by Xorxes
-slinkuhi = expr:(consonant (rafsi_string / brivla_rafsi / stressed_brivla_rafsi)) { return _join(expr); }
+slinkuhi = expr:(!rafsi_string consonant rafsi_string) { return _join(expr); }
 
-rafsi_string = expr:(y_less_rafsi* (gismu / CVV_final_rafsi / stressed_y_less_rafsi short_final_rafsi / y_rafsi / stressed_y_rafsi / stressed_y_less_rafsi? initial_pair y)) { return _join(expr); }
+rafsi_string = expr:(y_less_rafsi* (gismu / CVV_final_rafsi / stressed_y_less_rafsi short_final_rafsi / y_rafsi / stressed_y_rafsi / stressed_y_less_rafsi? initial_pair y / hy_rafsi / stressed_hy_rafsi)) { return _join(expr); }
 
 //___________________________________________________________________
 
@@ -1510,7 +1509,11 @@ stressed_CVV_rafsi = expr:(consonant (unstressed_vowel h stressed_vowel / stress
 
 y_rafsi = expr:((long_rafsi / CVC_rafsi) y h?) { return _join(expr); }
 
-y_less_rafsi = expr:(!y_rafsi (CVC_rafsi !y / CCV_rafsi / CVV_rafsi) !any_extended_rafsi) { return _join(expr); }
+y_less_rafsi = expr:(!y_rafsi !stressed_y_rafsi !hy_rafsi !stressed_hy_rafsi (CVC_rafsi / CCV_rafsi / CVV_rafsi) !h) { return _join(expr); }
+
+hy_rafsi = expr:((long_rafsi vowel / CCV_rafsi / CVV_rafsi) h y h?)
+
+stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y h?)
 
 long_rafsi = expr:(initial_pair unstressed_vowel consonant / consonant unstressed_vowel consonant consonant) { return _join(expr); }
 
@@ -1552,7 +1555,7 @@ consonantal_syllable = expr:(consonant syllabic &(consonantal_syllable / !nucleu
 
 coda = expr:(!any_syllable consonant &any_syllable / syllabic? consonant? &pause) {return _join(expr);}
 
-onset = expr:(h / consonant? glide / initial) {return _join(expr);}
+onset = expr:(h / glide / initial) {return _join(expr);}
 
 nucleus = expr:(vowel / diphthong / y !nucleus) {return _join(expr);}
 
@@ -1602,39 +1605,39 @@ voiced = expr:(b / d / g / j / v / z) {return expr;}
 
 unvoiced = expr:(c / f / k / p / s / t / x) {return expr;}
 
-l = comma* [lL] !h !l {return "l";}
+l = comma* [lL] !h !glide !l {return "l";}
 
-m = comma* [mM] !h !m !z {return "m";}
+m = comma* [mM] !h !glide !m !z {return "m";}
 
-n = comma* [nN] !h !n !affricate  {return "n";}
+n = comma* [nN] !h !glide !n !affricate  {return "n";}
 
-r = comma* [rR] !h !r {return "r";}
+r = comma* [rR] !h !glide !r {return "r";}
 
-b = comma* [bB] !h !b !unvoiced {return "b";}
+b = comma* [bB] !h !glide !b !unvoiced {return "b";}
 
-d = comma* [dD] !h !d !unvoiced {return "d";}
+d = comma* [dD] !h !glide !d !unvoiced {return "d";}
 
-g = comma* [gG] !h !g !unvoiced {return "g";}
+g = comma* [gG] !h !glide !g !unvoiced {return "g";}
 
-v = comma* [vV] !h !v !unvoiced {return "v";}
+v = comma* [vV] !h !glide !v !unvoiced {return "v";}
 
-j = comma* [jJ] !h !j !z !unvoiced {return "j";}
+j = comma* [jJ] !h !glide !j !z !unvoiced {return "j";}
 
-z = comma* [zZ] !h !z !j !unvoiced {return "z";}
+z = comma* [zZ] !h !glide !z !j !unvoiced {return "z";}
 
-s = comma* [sS] !h !s !c !voiced {return "s";}
+s = comma* [sS] !h !glide !s !c !voiced {return "s";}
 
-c = comma* [cC] !h !c !s !x !voiced {return "c";}
+c = comma* [cC] !h !glide !c !s !x !voiced {return "c";}
 
-x = comma* [xX] !h !x !c !k !voiced {return "x";}
+x = comma* [xX] !h !glide !x !c !k !voiced {return "x";}
 
-k = comma* [kK] !h !k !x !voiced {return "k";}
+k = comma* [kK] !h !glide !k !x !voiced {return "k";}
 
-f = comma* [fF] !h !f !voiced {return "f";}
+f = comma* [fF] !h !glide !f !voiced {return "f";}
 
-p = comma* [pP] !h !p !voiced {return "p";}
+p = comma* [pP] !h !glide !p !voiced {return "p";}
 
-t = comma* [tT] !h !t !voiced {return "t";}
+t = comma* [tT] !h !glide !t !voiced {return "t";}
 
 h = comma* ['h] &nucleus {return "'";}
 

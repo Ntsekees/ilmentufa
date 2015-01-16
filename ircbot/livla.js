@@ -176,7 +176,7 @@ var updatexmldumps = function (callback) {
 		var request = require("request"); var body;
 		request = request.defaults({jar: true});
 		var jar = request.jar();
-		var cookie = request.cookie("jbovlastesessionid=MTg6MzIwOmdsZWtpOjE0MDQyODk5NDE%3D");
+		var cookie = request.cookie("jbovlastesessionid=U2FsdGVkX1%2FpiXtl1FSyMUZvFTudUq0N59YatQesEbsfdQ6owwMDeA%3D%3D");
 		langs.forEach(function(thisa) {
 			velruhe.cfari[thisa] = true;
 			var uri="http://jbovlaste.lojban.org/export/xml-export.html?lang="+thisa;
@@ -343,24 +343,21 @@ return arr[Math.floor(arr.length*Math.random())];
 var processor = function(client, from, to, text, message) {
   if (!text) return;
 	said=Date.now();
-    if (text.indexOf('darxi la ') == '0' && from!==asker && from!==replier) {
-      	setTimeout(function() {client.say(sendTo, text.substr(9) + ': oidai mi darxi do lo trauta');}, 0 );
-    }
-
+    if (text.indexOf(preasker + 'darxi la ') == '0' && from!==asker && from!==replier) {
+    	setTimeout(function() {client.say(sendTo, text.substr(9+preasker.length) + ': oidai mi darxi do lo trauta');}, 0 );
+    }else{
+        if (text.indexOf(preasker) == '0' && from!==replier) {
+        setTimeout(function() {client.say(sendTo, from + ': ' + ext(mizmiku));}, interm );
+    }}
 	if (text.indexOf("doi " + asker) >-1 && from!==replier) {
-      	setTimeout(function() {client.say(sendTo, tato.tatoebaprocessing(from));}, interm );
-  }
-
+      		setTimeout(function() {client.say(sendTo, tato.tatoebaprocessing(from));}, interm );
+	}
 	setInterval(function() {if (Date.now()-said>interv){said=Date.now();client.say(livlytcan, prereplier + vric());}}, interv);
   //}
   var sendTo = from; // send privately
   if (to.indexOf('#') > -1) {
     sendTo = to; // send publicly
   }
-	if (text.indexOf(preasker) == '0' && from!==replier) {
-      	setTimeout(function() {client.say(sendTo, from + ': ' + ext(mizmiku));}, interm );
-  }
-
 };
 
 var processormensi = function(clientmensi, from, to, text, message) {
@@ -446,6 +443,7 @@ var processormensi = function(clientmensi, from, to, text, message) {
 	case text.indexOf('eo:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'eo'));break;
 	case text.indexOf('zh:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'zh'));break;
 	case text.indexOf('en-simple:') == '0': clientmensi.say(sendTo, vlaste(text.substr(10),'en-simple'));break;
+	case text.indexOf('lb:') == '0': clientmensi.say(sendTo, vlaste(text.substr(3),'lb'));break;
 
 	case text.indexOf('selmaho:') == '0': clientmensi.say(sendTo, vlaste(text.substr(8),'en','selmaho'));break;
 	case text.indexOf('finti:') == '0': clientmensi.say(sendTo, vlaste(text.substr(6),'en','finti'));break;
@@ -720,8 +718,8 @@ if (gchild===''){
 		lin= '';
 	}
 }else{
-	gchild=gchild.replace(/[\{\}_\$]/igm,"").replace(/`/g,"'").substring(0,600);
-		if (gchild.length>=600){
+	gchild=gchild.replace(/[\{\}_\$]/igm,"").replace(/`/g,"'").substring(0,700);
+		if (gchild.length>=700){
 			gchild+='...\n[mo\'u se katna] http://jbovlaste.lojban.org/dict/'+ lin;
 		}
 		if (xulujvo(lin)===true){
@@ -1287,6 +1285,7 @@ var items = [
 	["bu'u","at"],["ca","at-present"],
 	["ku",","],
 	["zo'u",":"],
+	["pe","that-is-related-to"],
 	["za'a","as-I-ca-see"],["za'adai","as-you-can-see"],["pu","in-past"],["ba","in-future"],["vau","]"],["doi","oh"],["uinai","unfortunately"],["u'u","sorry"],
 	["ko","do-it-so-that-you"],["poi","that"],["noi",",which"],["me","among"],
 	//["bakni","is-a-cow"],
@@ -1294,7 +1293,7 @@ var items = [
 	["ju","whether-or-not"],["gu","whether-or-not"],["gi'u","whether-or-not"],["u","whether-or-not"],
 	["xu","is-it-true-that"],["ka'e","possibly-can"],
         ["re'u","time"],["roi","times"],
-	["mi","I"]//dont copy
+	["mi","me"]//dont copy
 	];
 var itemsu = [//universal glosses
 	["lu","<"],["li'u",">"],["i","."],["bo","-|-"],["sai","!"],["cai","!!!"],["na'e","!"],["da","X"],["de","Y"],["di","Z"],["cu",":"],["jo","⇔"],
@@ -1635,11 +1634,11 @@ if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync
 var pars='var documentStore = {';
 var rev = xmlDoc.find("/dictionary/direction[1]/valsi");
 	for (var i=0;i<rev.length;i++) {
-		var hi=rev[i].attr("word").value();
+		var hi=rev[i].attr("word").value().replace("\\","\\\\");
 		pars+="\""+hi+"\":{\"word\":\""+hi+"\"";
-		try{pars+=",\"type\":\""+rev[i].attr("type").value()+"\"";}catch(err){}
-		try{pars+=",\"definition\":\""+rev[i].find("definition[1]")[0].text().replace(/"/g,"'").replace(/\\/g,"\\\\")+"\"";}catch(err){}
-		try{pars+=",\"notes\":\""+rev[i].find("notes[1]")[0].text().replace(/"/g,"'")+"\"";}catch(err){}
+		try{pars+=",\"type\":\""+rev[i].attr("type").value().replace("\\","\\\\")+"\"";}catch(err){}
+		try{pars+=",\"definition\":\""+rev[i].find("definition[1]")[0].text().replace(/"/g,"'").replace(/\\/g,"\\\\".replace("\\","\\\\"))+"\"";}catch(err){}
+		try{pars+=",\"notes\":\""+rev[i].find("notes[1]")[0].text().replace(/"/g,"'").replace("\\","\\\\")+"\"";}catch(err){}
 		var ra=rev[i].find("rafsi//text()[1]");
 		if (xugismu(hi)===true){
 			ra.push(hi);
@@ -1652,15 +1651,15 @@ var rev = xmlDoc.find("/dictionary/direction[1]/valsi");
 		pars+="}";
 		if (i<rev.length-1){pars+=",";}//\n
 	}
-	pars+="};";//\n
+	pars+="};\n";//\n
 rev = xmlDoc.find("/dictionary/direction[2]/nlword");
 var nl='var literals = {';
 	for (i=0;i<rev.length;i++) {
-		nl+="\""+rev[i].attr("word").value().replace(/"/g,"'").replace(/\\/g,"\\")+"\":[\""+rev[i].attr("valsi").value().replace(/"/g,"'").replace(/\\/g,"\\")+"\"]";
+		nl+="\""+rev[i].attr("word").value().replace(/"/g,"'").replace(/\\/g,"\\").replace("\\","\\\\")+"\":[\""+rev[i].attr("valsi").value().replace(/"/g,"'").replace(/\\/g,"\\").replace("\\","\\\\")+"\"]";
 		nl+="";
-		if (i<rev.length-1){nl+=",";}//\n
+		if (i<rev.length-1){nl+=",\n";}//\n
 	}
-	nl+="};";//\n
+	nl+="};\n";//\n
 	pars+=nl;
 	var t = path.join(__dirname,"../i/data","parsed-"+lng + ".js");
 	pars = fs.writeFileSync(t+".temp",pars);
