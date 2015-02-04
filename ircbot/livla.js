@@ -831,7 +831,8 @@ var sidju = {
 		'    "rafsi: kulnu" gives "klu", "rafsi: klu" gives "kulnu"\n' +
 		'Other conlang dictionaries: "toki:", "laadan:", "loglan:"\n' +
 		'Lojban <-> Loglan conversion (incomplete): "coi:", "loi:"\n' +
-		'"Tatoeba: klama" gets a random example sentence using "klama"',
+		'"Tatoeba: klama" gets a random example sentence using "klama"\n' +
+		'Delayed messaging: type "' + replier + ': doi user message" to send "message" to "user" when they return',
 }
 
 var frame = function (lin)
