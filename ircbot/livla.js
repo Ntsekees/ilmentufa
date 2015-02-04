@@ -82,7 +82,7 @@ function readConfig(filename) {
 	ensureDirExistence(configDirectory);
 	file = path.join(configDirectory, filename);
 	try {
-		return fs.readFileSync(file,'utf8');
+		return fs.readFileSync(file,{encoding: 'utf8'});
 	} catch (e) {
 		// If we get an “ENOENT” error, we return an empty string.
 		// Other errors are still thrown.
@@ -148,7 +148,7 @@ var updategloss = function () {
 	try {
 		var newgloss = {};
 		var name = path.join(__dirname, "dumps", "gimste.txt");
-		var contents = fs.readFileSync(name, 'utf8');
+		var contents = fs.readFileSync(name, {encoding: 'utf8'});
 		contents.split("\n").forEach(function (line) {
 			var cells = line.split("	");
 			for (var i = 0; i < 12; i++)
@@ -173,7 +173,7 @@ var updatexmldumps = function (callback) {
 	var velruhe = { cfari: {}, mulno: {}, nalmulselfaho: {} };
 	try{
 		var langs=["jbo","en","ru","es","fr","ja","de","eo","zh","en-simple","fr-facile","hu"];
-		var request = require("request"); var body;
+		var request = require("request");
 		request = request.defaults({jar: true});
 		var jar = request.jar();
 		var cookie = request.cookie("jbovlastesessionid=U2FsdGVkX1%2FpiXtl1FSyMUZvFTudUq0N59YatQesEbsfdQ6owwMDeA%3D%3D");
@@ -181,28 +181,29 @@ var updatexmldumps = function (callback) {
 			velruhe.cfari[thisa] = true;
 			var uri="http://jbovlaste.lojban.org/export/xml-export.html?lang="+thisa;
 			jar.setCookie(cookie, uri);
-			request({uri: uri,method: "GET",jar: jar}, function(err, response, body) {
-				//write body to file
-				if(err) {
-					velruhe.nalmulselfaho[thisa] = true;
-					delete velruhe.cfari[thisa];
-				} else {
-					var t = path.join(__dirname,"dumps",thisa + ".xml");
-					var content = fs.writeFileSync(t+".temp",body);
-					fs.renameSync(t+".temp", t);console.log(thisa + ' updated');
-					velruhe.mulno[thisa] = true;
-					if (thisa == "en") {
-						xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),'utf8'));
-					}
-					delete velruhe.cfari[thisa];
-					sutsisningau(thisa);
+			var t = path.join(__dirname,"dumps",thisa + ".xml");
+			request({
+				uri: uri, method: "GET", jar: jar
+			}).on("error", function (err) {
+				velruhe.nalmulselfaho[thisa] = true;
+				delete velruhe.cfari[thisa];
+				if (callback && Object.keys(velruhe.cfari).length === 0) {
+					callback(velruhe);
 				}
+			}).pipe(fs.createWriteStream(t + ".temp")).on("finish", function () {
+				fs.renameSync(t+".temp", t);console.log(thisa + ' updated');
+				velruhe.mulno[thisa] = true;
+				if (thisa == "en") {
+					xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),{encoding: 'utf8'}));
+				}
+				delete velruhe.cfari[thisa];
+				sutsisningau(thisa);
+				global.gc();
 				if (callback && Object.keys(velruhe.cfari).length === 0) {
 					callback(velruhe);
 				}
 			}); 
 		});
-		body="";
 		langs.forEach(function(thisa) {//now update pdf
 			var uri="http://jbovlaste.lojban.org/export/latex-export.html?lang="+thisa;
 			jar.setCookie(cookie, uri);
@@ -225,7 +226,7 @@ var updatexmldumps = function (callback) {
 	sutsisningau("zamenhofo");sutsisningau("laadan");
 	updategloss();
 };
-var xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),'utf8'));//store en dump in memory
+var xmlDocEn = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps","en" + ".xml"),{encoding: 'utf8'}));//store en dump in memory
 
 setInterval(function(){updatexmldumps()}, 3*86400000); //update logs once a djedi
 
@@ -691,7 +692,7 @@ var tordu = function (lin,lng,flag,xmlDoc)
 				}
 				return errorMessage;
 			}
-			xmlDoc = libxmljs.parseXml(fs.readFileSync(xmlPath,'utf8'));
+			xmlDoc = libxmljs.parseXml(fs.readFileSync(xmlPath,{encoding: 'utf8'}));
 		}
 	}
 
@@ -735,7 +736,7 @@ var mulno = function (lin,lng,xmlDoc)
 {
 lin=lin.replace(/\"/g,'');var xo;
 if (typeof xmlDoc==='undefined'){
-	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),{encoding: 'utf8'}));}
 }
 	
 var stra=[];var i;
@@ -835,7 +836,7 @@ var arrf=fs.readdirSync(path.join(__dirname,fram)).filter(function(file) { retur
 
 for (var i=0;i<arrf.length;i++)
 {
-	var xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,fram,arrf[i]),'utf8').replace(/xmlns=\"/g,'mlns=\"'));
+	var xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,fram,arrf[i]),{encoding: 'utf8'}).replace(/xmlns=\"/g,'mlns=\"'));
 	var si = xmlDoc.get("/frame[translate(@name,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\"]/definition[1]/text()");
 	if (typeof si !=='undefined'){gag= si.toString().replace(/&lt;.*?&gt;/g,'');
 	si = xmlDoc.find("/frame[translate(@name,\""+lin.toUpperCase()+"\",\""+lin+"\")=\""+lin+"\"]/FE[@coreType=\"Core\"]/definition/text()");
@@ -854,7 +855,7 @@ var stra=[];
 
 for (var i=0;i<arrf.length;i++)
 {
-	var xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,fram,arrf[i]),'utf8').replace(/xmlns=\"/g,'mlns=\"'));
+	var xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,fram,arrf[i]),{encoding: 'utf8'}).replace(/xmlns=\"/g,'mlns=\"'));
 	var si = xmlDoc.get("/frame[contains(translate(./definition,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\")]");
 		if (typeof si !=='undefined'){
 			stra.push(si.attr("name").value());
@@ -931,7 +932,7 @@ var glosrgentufa=function(lin,lng,check,xmlDoc)
 {
 lin=lin.replace(/\"/g,'');
 if (typeof xmlDoc==='undefined'){
-	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),{encoding: 'utf8'}));}
 }
 var retur='y no da se tolcri';
 var items = {
@@ -1272,7 +1273,7 @@ var gloso=function(lin,lng,check,xmlDoc)
 //var lng="en";
 lin=lin.replace(/\"/g,'');
 if (typeof xmlDoc==='undefined'){
-	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),{encoding: 'utf8'}));}
 }
 var retur='y no da se tolcri';
 var items = [
@@ -1344,7 +1345,7 @@ var valsicmene = function (lin,lng)
 lin=lin.replace(/\"/g,'');var xo;
 var retur='y no da se tolcri';
 var xmlDoc;
-if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc= libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc= libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),{encoding: 'utf8'}));}
 var coun = xmlDoc.find("/dictionary/direction[1]/valsi[contains(translate(@word,\""+lin.toUpperCase()+"\",\""+lin+"\"),\""+lin+"\")]");
 var stra=[];
 	for (var i=0;i<coun.length;i++)
@@ -1548,7 +1549,7 @@ return coun;
 var triz=function(inp,flag,lng,xmlDoc){
 if (typeof lng==='undefined'){lng='en';}
 if (typeof xmlDoc==='undefined'){
-	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+	if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),{encoding: 'utf8'}));}
 }
 	var ar=inp.trim().split(" ");
 	for(var l=0;l<ar.length;l++){
@@ -1629,7 +1630,7 @@ var katna= function(lin,lng,flag,xmlDoc){
 
 var sutsisningau = function(lng){//write a new file parsed.js that would be used by sutsis
 if (typeof lng==='undefined'){lng='en';}
-if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),'utf8'));}
+if (lng==="en"){xmlDoc=xmlDocEn;}else{xmlDoc = libxmljs.parseXml(fs.readFileSync(path.join(__dirname,"dumps",lng + ".xml"),{encoding: 'utf8'}));}
 
 var pars='var documentStore = {';
 var rev = xmlDoc.find("/dictionary/direction[1]/valsi");
@@ -1667,7 +1668,7 @@ var nl='var literals = {';
 	t = path.join(__dirname,"../i/"+lng+"/","webapp.appcache");
 	var d = new Date();
 	var n = d.getDate();
-	if(n==1){try{pars=fs.readFileSync(t,'utf8');pars = fs.writeFileSync(t,pars);console.log(t + ' updated');}catch(err){}}
+	if(n==1){try{pars=fs.readFileSync(t,{encoding: 'utf8'});pars = fs.writeFileSync(t,pars);console.log(t + ' updated');}catch(err){}}
 };
 
 var lmw = function (lin,sendTo){//to be done
@@ -1702,7 +1703,7 @@ var jbofihe = function(lin,sendTo){
 };
 
 var pseudogismu = function(){//a joke function. checks if an English word is  a valid gismu
-	var words = fs.readFileSync(path.join(__dirname,"../","vale.txt"),'utf8').split("\n");
+	var words = fs.readFileSync(path.join(__dirname,"../","vale.txt"),{encoding: 'utf8'}).split("\n");
 	var sj=[];
 	for (var j=0;j<words.length;j++){
 			sj.push(words[j]+" "+run_camxes(words[j].toLowerCase().replace(/sh/g,"c"),3));
