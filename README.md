@@ -3,7 +3,7 @@ ilmentufa
 
 'la ilmentufa' is a syntactical and not yet semantical parser for the Lojban language.
 
-Read more about it at http://mw.lojban.org/index.php?title=La_Bangu:_ilmentufa
+Read more about it at http://lojban.org/papri/La_Bangu:_ilmentufa
 
 
 === Requirements ===
