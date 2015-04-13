@@ -1,6 +1,7 @@
 var config = {
   server: 'irc.freenode.net',
-  nick: ['camxes', 'mikykibykarni'],
+//  nick: ['camxes', 'mikykibykarni'],
+  nick: 'camxes',
   options: {
     channels: ['#lojban', '#ckule', '#balningau'],
     debug: false
@@ -8,34 +9,10 @@ var config = {
 };
 
 var irc = require('irc');
-var client = new Array(config.nick.length);
-for (var i = 0; i < config.nick.length; i++) {
-    client[i] = new irc.Client(config.server, config.nick[i], config.options);
+var client = new irc.Client(config.server, config.nick, config.options);
 
-    client[i].addListener('message', (function(i) { return function(from, to, text, message) {
-            processor(i, client, from, to, text, message);
-    };})(i));
-}
-
-var fs = require('fs');
-var twitter = require('immortal-ntwitter');
-var twit;
-fs.readFile(__dirname + '/twitter.secret', 'utf8', function(err, data) {
-    var keys = data.split('\n');
-    twit = new twitter({
-        consumer_key:        keys[0],
-        consumer_secret:     keys[1],
-        access_token_key:    keys[2],
-        access_token_secret: keys[3]
-    });
-
-    twit.immortalStream('statuses/filter', {'track': 'lojban'}, function (stream) {
-        stream.on('data', function (data) {
-            client[1].action(config.options.channels[0], '@' + data['user']['screen_name']
-                                                       + ': ' + data['text']);
-            client[1].action(config.options.channels[0], '[' + 'https://twitter.com/' + data['user']['id_str'] + '/status/' + data['id_str'] + ']');
-        });
-    });
+client.addListener('message', function(from, to, text, message) {
+    processor(client, from, to, text, message);
 });
 
 var camxes = require('../camxes.js');
@@ -51,7 +28,7 @@ function make_regexps(nick) {
     };
 }
 
-var processor = function(i, client, from, to, text, message) {
+var processor = function(client, from, to, text, message) {
   if (!text) return;
   var sendTo = from; // send privately
   if (to.indexOf('#') > -1) {
@@ -59,20 +36,20 @@ var processor = function(i, client, from, to, text, message) {
   }
   if (sendTo == to) {  // Public
     var regexps = make_regexps(config.nick[i]);
-    if (i == 0 && text.indexOf(config.nick[i] + ": ") == '0') {
+    if (text.indexOf(config.nick[i] + ": ") == '0') {
       text = text.substr(config.nick[i].length + 2);
       var ret = extract_mode(text);
-      client[i].say(sendTo, run_camxes(ret[0], ret[1], ret[2]));
+      client.say(sendTo, run_camxes(ret[0], ret[1], ret[2]));
     } else if (text.search(regexps.coi) >= 0) {
-      client[i].say(sendTo, "coi");
+      client.say(sendTo, "coi");
     } else if (text.search(regexps.juhi) >= 0) {
-      client[i].say(sendTo, "re'i");
+      client.say(sendTo, "re'i");
     } else if (text.search(regexps.kihe) >= 0) {
-      client[i].say(sendTo, "je'e fi'i");
+      client.say(sendTo, "je'e fi'i");
     }
-  } else if (i == 0) {  // Private
+  } else {  // Private
 	var ret = extract_mode(text);
-    client[i].say(sendTo, run_camxes(ret[0], ret[1], ret[2]));
+    client.say(sendTo, run_camxes(ret[0], ret[1], ret[2]));
   }
 };
 
