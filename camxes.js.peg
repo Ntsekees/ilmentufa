@@ -1424,9 +1424,9 @@ stressed_brivla_rafsi = expr:(&unstressed_syllable brivla_head stressed_syllable
 
 brivla_rafsi = expr:(&(syllable consonantal_syllable* syllable) brivla_head h y h?) { return _join(expr); }
 
-stressed_fuhivla_rafsi = expr:(fuhivla_head stressed_syllable &consonant onset y) { return _join(expr); }
+stressed_fuhivla_rafsi = expr:(fuhivla_head stressed_syllable !h onset y) { return _join(expr); }
 
-fuhivla_rafsi = expr:(&unstressed_syllable fuhivla_head &consonant onset y h?) { return _join(expr); }
+fuhivla_rafsi = expr:(&unstressed_syllable fuhivla_head !h onset y h?) { return _join(expr); }
 
 fuhivla_head = expr:(!rafsi_string brivla_head) { return _join(expr); }
 
@@ -1491,7 +1491,7 @@ unstressed_diphthong = expr:(!stressed diphthong !stress) {return _join(expr);}
 unstressed_vowel = expr:(!stressed vowel !stress) {return _join(expr);}
 
 //// FIX: Xorxes' fix for fu'ivla rafsi stress
-stress = expr:(consonant* h? y? syllable pause) {return _join(expr);}
+stress = expr:((consonant / glide)* h? y? syllable pause) {return _join(expr);}
 
 stressed = expr:(onset comma* [AEIOU]) {return _join(expr);}
 
@@ -1512,7 +1512,7 @@ nucleus = expr:(vowel / diphthong / y !nucleus) {return _join(expr);}
 
 glide = expr:(i / u) &nucleus !glide {return expr;}
 
-diphthong = expr:(a i / a u / e i / o i) !nucleus !glide {return _join(expr);}
+diphthong = expr:(a u !u / (a i / e i / o i) !i) !nucleus {return _join(expr);}
 
 vowel = expr:(a / e / i / o / u) !nucleus {return expr;}
 

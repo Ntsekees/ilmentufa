@@ -190,7 +190,8 @@ bridi_tail_1 = expr:(bridi_tail_2 ((gihek / JA_clause) !(stag? BO_clause) !(stag
 //// EXP-MODIF: GI TAG BO + JACU
 bridi_tail_2 = expr:(CU_elidible bridi_tail_3 (((gihek / JA_clause) stag? / GI_clause stag) BO_clause free* bridi_tail_2 tail_terms)?) {return _node("bridi_tail_2", expr);}
 
-bridi_tail_3 = expr:(gek_sentence / (selbri / SELBRI_elidible) tail_terms) {return _node("bridi_tail_3", expr);}
+//// EXP-MODIF: terms before selbri after cu
+bridi_tail_3 = expr:(gek_sentence / (terms CU_elidible)* (selbri / SELBRI_elidible) tail_terms) {return _node("bridi_tail_3", expr);}
 
 //// EXP-FIX: tag? KE --> tag* KE
 gek_sentence = expr:(gek subsentence gik subsentence tail_terms / tag* KE_clause free* gek_sentence KEhE_elidible free* / NA_clause free* gek_sentence) {return _node("gek_sentence", expr);}
@@ -1485,9 +1486,9 @@ stressed_brivla_rafsi = expr:(&unstressed_syllable brivla_head stressed_syllable
 
 brivla_rafsi = expr:(&(syllable consonantal_syllable* syllable) brivla_head h y h?) { return _join(expr); }
 
-stressed_fuhivla_rafsi = expr:(fuhivla_head stressed_syllable &consonant onset y) { return _join(expr); }
+stressed_fuhivla_rafsi = expr:(fuhivla_head stressed_syllable !h onset y) { return _join(expr); }
 
-fuhivla_rafsi = expr:(&unstressed_syllable fuhivla_head &consonant onset y h?) { return _join(expr); }
+fuhivla_rafsi = expr:(&unstressed_syllable fuhivla_head !h onset y h?) { return _join(expr); }
 
 fuhivla_head = expr:(!rafsi_string brivla_head) { return _join(expr); }
 
@@ -1552,7 +1553,7 @@ unstressed_diphthong = expr:(!stressed diphthong !stress) {return _join(expr);}
 unstressed_vowel = expr:(!stressed vowel !stress) {return _join(expr);}
 
 //// FIX: Xorxes' fix for fu'ivla rafsi stress
-stress = expr:(consonant* h? y? syllable pause) {return _join(expr);}
+stress = expr:((consonant / glide)* h? y? syllable pause) {return _join(expr);}
 
 stressed = expr:(onset comma* [AEIOU]) {return _join(expr);}
 
@@ -1573,7 +1574,6 @@ nucleus = expr:(vowel / diphthong / y !nucleus) {return _join(expr);}
 
 glide = expr:(i / u) &nucleus !glide {return expr;}
 
-//// EXP-MODIF: Removing "!glide" and disallowing ViiV and VuuV sequences.
 diphthong = expr:(a u !u / (a i / e i / o i) !i) !nucleus {return _join(expr);}
 
 vowel = expr:(a / e / i / o / u) !nucleus {return expr;}
