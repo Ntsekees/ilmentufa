@@ -1921,7 +1921,7 @@ VEI = &cmavo expr:( v e i ) &post_word {return ["VEI", _join(expr)];}
 
 VEhO = &cmavo expr:( v e h o ) &post_word {return ["VEhO", _join(expr)];}
 
-VUhU = &cmavo expr:( g e h a / f u h u / p i h i / f e h i / v u h u / s u h i / j u h u / g e i / p a h i / f a h i / t e h a / c u h a / v a h a / n e h o / d e h o / f e h a / s a h o / r e h a / r i h o / s a h i / p i h a / s i h i ) &post_word {return ["VUhU", _join(expr)];}
+VUhU = &cmavo expr:( g e h a / f u h u / p i h i / f e h i / v u h u / s u h i / j u h u / g e i / p a h i / f a h i / t e h a / c u h a / v a h a / n e h o / d e h o / f e h a / s a h o / r e h a / r i h o / s a h i / p i h a / s i h i / j o i h i) &post_word {return ["VUhU", _join(expr)];}
 
 VEhA = &cmavo expr:( v e h u / v e h a / v e h i / v e h e ) &post_word {return ["VEhA", _join(expr)];}
 
