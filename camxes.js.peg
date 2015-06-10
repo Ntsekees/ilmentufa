@@ -1462,7 +1462,7 @@ y_less_rafsi = expr:(!y_rafsi !stressed_y_rafsi !hy_rafsi !stressed_hy_rafsi (CV
 
 hy_rafsi = expr:((long_rafsi vowel / CCV_rafsi / CVV_rafsi) h y h?)
 
-stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y h?)
+stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y)
 
 long_rafsi = expr:(initial_pair unstressed_vowel consonant / consonant unstressed_vowel consonant consonant) { return _join(expr); }
 
@@ -1500,7 +1500,7 @@ any_syllable = expr:(onset nucleus coda? / consonantal_syllable) {return _join(e
 syllable = expr:(onset !y nucleus coda?) {return _join(expr);}
 
 //// FIX: preventing {bla'ypre} from being a valid lujvo
-consonantal_syllable = expr:(consonant syllabic &(consonantal_syllable / !nucleus onset) (consonant &spaces)?) {return _join(expr);}
+consonantal_syllable = expr:(consonant &syllabic coda) {return _join(expr);}
 
 coda = expr:(!any_syllable consonant &any_syllable / syllabic? consonant? &pause) {return _join(expr);}
 
@@ -1510,7 +1510,7 @@ nucleus = expr:(vowel / diphthong / y !nucleus) {return _join(expr);}
 
 //_________________________________________________________________
 
-glide = expr:(i / u) &nucleus !glide {return expr;}
+glide = expr:(i / u) &nucleus {return expr;}
 
 diphthong = expr:(a i !i / a u !u / e i !i / o i !i) !nucleus {return _join(expr);}
 
