@@ -35,9 +35,9 @@ var processor = function(client, from, to, text, message) {
     sendTo = to; // send publicly
   }
   if (sendTo == to) {  // Public
-    var regexps = make_regexps(config.nick[i]);
-    if (text.indexOf(config.nick[i] + ": ") == '0') {
-      text = text.substr(config.nick[i].length + 2);
+    var regexps = make_regexps(config.nick);
+    if (text.indexOf(config.nick + ": ") == '0') {
+      text = text.substr(config.nick.length + 2);
       var ret = extract_mode(text);
       client.say(sendTo, run_camxes(ret[0], ret[1], ret[2]));
     } else if (text.search(regexps.coi) >= 0) {
