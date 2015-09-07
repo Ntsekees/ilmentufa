@@ -190,7 +190,7 @@ bridi_tail_start = expr:(ME_clause / NUhA_clause / NU_clause / NA_clause !KU_cla
 bridi_tail_1 = expr:(bridi_tail_2 ((gihek / JA_clause) !(stag? BO_clause) !(stag? KE_clause) free* bridi_tail_2 tail_terms)*) {return _node("bridi_tail_1", expr);}
 
 //// EXP-MODIF: GI TAG BO + JACU
-bridi_tail_2 = expr:(CU_elidible bridi_tail_3 (((gihek / JA_clause) stag? / GI_clause stag) BO_clause free* bridi_tail_2 tail_terms)?) {return _node("bridi_tail_2", expr);}
+bridi_tail_2 = expr:(CU_elidible free* bridi_tail_3 (((gihek / JA_clause) stag? / GI_clause stag) BO_clause free* bridi_tail_2 tail_terms)?) {return _node("bridi_tail_2", expr);}
 
 bridi_tail_3 = expr:((terms CU_elidible)* selbri tail_terms / gek_sentence) {return _node("bridi_tail_3", expr);}
 
