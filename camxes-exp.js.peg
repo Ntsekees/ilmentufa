@@ -1519,9 +1519,9 @@ y_rafsi = expr:((long_rafsi / CVC_rafsi) y h?) { return _join(expr); }
 
 y_less_rafsi = expr:(!y_rafsi !stressed_y_rafsi !hy_rafsi !stressed_hy_rafsi (CVC_rafsi / CCV_rafsi / CVV_rafsi) !h) { return _join(expr); }
 
-hy_rafsi = expr:((long_rafsi unstressed_vowel / CCV_rafsi / CVV_rafsi) h y)
+hy_rafsi = expr:((long_rafsi unstressed_vowel / CCV_rafsi / CVV_rafsi) h y h?)
 
-stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y h?)
+stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y)
 
 long_rafsi = expr:(initial_pair unstressed_vowel consonant / consonant unstressed_vowel consonant consonant) { return _join(expr); }
 
