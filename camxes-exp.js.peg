@@ -190,7 +190,7 @@ bridi_tail_start = expr:(ME_clause / NUhA_clause / NU_clause / NA_clause !KU_cla
 bridi_tail_1 = expr:(bridi_tail_2 ((gihek / JA_clause) !(stag? BO_clause) !(stag? KE_clause) free* bridi_tail_2 tail_terms)*) {return _node("bridi_tail_1", expr);}
 
 //// EXP-MODIF: GI TAG BO + JACU
-bridi_tail_2 = expr:(CU_elidible bridi_tail_3 (((gihek / JA_clause) stag? / GI_clause stag) BO_clause free* bridi_tail_2 tail_terms)?) {return _node("bridi_tail_2", expr);}
+bridi_tail_2 = expr:(CU_elidible free* bridi_tail_3 (((gihek / JA_clause) stag? / GI_clause stag) BO_clause free* bridi_tail_2 tail_terms)?) {return _node("bridi_tail_2", expr);}
 
 bridi_tail_3 = expr:((terms CU_elidible)* selbri tail_terms / gek_sentence) {return _node("bridi_tail_3", expr);}
 
@@ -1463,31 +1463,27 @@ cmavo_form = expr:(!h !cluster onset (nucleus h)* (!stressed nucleus / nucleus !
 
 //___________________________________________________________________
 
-brivla = expr:(!cmavo initial_rafsi* brivla_core) { return _join(expr); }
+brivla = expr:(!cmavo !slihykru initial_rafsi* brivla_core) { return _join(expr); }
 
 brivla_core = expr:(fuhivla / gismu / CVV_final_rafsi / stressed_initial_rafsi short_final_rafsi) { return _join(expr); }
 
 stressed_initial_rafsi = expr:(stressed_extended_rafsi / stressed_y_rafsi / stressed_y_less_rafsi) { return _join(expr); }
 
-initial_rafsi = expr:(extended_rafsi / y_rafsi / !any_extended_rafsi y_less_rafsi !any_extended_rafsi) { return _join(expr); }
+initial_rafsi = expr:(extended_rafsi / y_rafsi / !any_fuhivla_rafsi y_less_rafsi !any_fuhivla_rafsi) { return _join(expr); }
 
 //___________________________________________________________________
 
-any_extended_rafsi = expr:(fuhivla / extended_rafsi / stressed_extended_rafsi) { return _join(expr); }
+any_fuhivla_rafsi = expr:(fuhivla / fuhivla_rafsi / stressed_fuhivla_rafsi) { return _join(expr); }
 
 fuhivla = expr:(fuhivla_head stressed_syllable consonantal_syllable* final_syllable) { return _join(expr); }
 
-stressed_extended_rafsi = expr:(stressed_brivla_rafsi / stressed_fuhivla_rafsi) { return _join(expr); }
+stressed_extended_rafsi = expr:(stressed_hy_rafsi / stressed_fuhivla_rafsi) { return _join(expr); }
 
-extended_rafsi = expr:(brivla_rafsi / fuhivla_rafsi) { return _join(expr); }
+extended_rafsi = expr:(hy_rafsi / fuhivla_rafsi) { return _join(expr); }
 
-stressed_brivla_rafsi = expr:(&unstressed_syllable brivla_head stressed_syllable h y) { return _join(expr); }
+stressed_fuhivla_rafsi = expr:(fuhivla_head stressed_syllable consonantal_syllable* onset y) { return _join(expr); }
 
-brivla_rafsi = expr:(&(syllable consonantal_syllable* syllable) brivla_head h y h?) { return _join(expr); }
-
-stressed_fuhivla_rafsi = expr:(fuhivla_head stressed_syllable consonantal_syllable* !h onset y) { return _join(expr); }
-
-fuhivla_rafsi = expr:(&unstressed_syllable fuhivla_head !h onset y h?) { return _join(expr); }
+fuhivla_rafsi = expr:(&unstressed_syllable fuhivla_head onset y h?) { return _join(expr); }
 
 fuhivla_head = expr:(!rafsi_string brivla_head) { return _join(expr); }
 
@@ -1496,6 +1492,8 @@ brivla_head = expr:(!cmavo !slinkuhi !h &onset unstressed_syllable*) { return _j
 slinkuhi = expr:(!rafsi_string consonant rafsi_string) { return _join(expr); }
 
 rafsi_string = expr:(y_less_rafsi* (gismu / CVV_final_rafsi / stressed_y_less_rafsi short_final_rafsi / y_rafsi / stressed_y_rafsi / stressed_y_less_rafsi? initial_pair y / hy_rafsi / stressed_hy_rafsi)) { return _join(expr); }
+
+slihykru = (CCV_rafsi / stressed_CCV_rafsi) h y onset
 
 //___________________________________________________________________
 
@@ -1521,9 +1519,9 @@ y_rafsi = expr:((long_rafsi / CVC_rafsi) y h?) { return _join(expr); }
 
 y_less_rafsi = expr:(!y_rafsi !stressed_y_rafsi !hy_rafsi !stressed_hy_rafsi (CVC_rafsi / CCV_rafsi / CVV_rafsi) !h) { return _join(expr); }
 
-hy_rafsi = expr:((long_rafsi vowel / CCV_rafsi / CVV_rafsi) h y h?)
+hy_rafsi = expr:((long_rafsi unstressed_vowel / CCV_rafsi / CVV_rafsi) h y h?)
 
-stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y h?)
+stressed_hy_rafsi = expr:((long_rafsi stressed_vowel / stressed_CCV_rafsi / stressed_CVV_rafsi) h y)
 
 long_rafsi = expr:(initial_pair unstressed_vowel consonant / consonant unstressed_vowel consonant consonant) { return _join(expr); }
 
