@@ -434,9 +434,11 @@ joik_jek = expr:(joik free* / jek free* / VUhU_clause free* ) {return _node("joi
 gek = expr:(gak SE_clause? joik_jek / SE_clause? GA_clause free* / joik GI_clause free* / stag gik) {return _node("gek", expr); }
 
 //// EXP-ADD: GAJA
-gak = expr:(ga_clause free*) {return _node("gak", expr); }
+gak = expr:(ga_clause !gek free*) {return _node("gak", expr); }
 
-guhek = expr:(SE_clause? GUhA_clause free*) {return _node("guhek", expr); }
+guhek = expr:(guk SE_clause? joik_jek / SE_clause? GUhA_clause free*) {return _node("guhek", expr); }
+
+guk = expr:(gu_clause !gek free*) {return _node("guk", expr); }
 
 gik = expr:(GI_clause free*) {return _node("gik", expr); }
 
@@ -1372,6 +1374,11 @@ ga_clause = pre:ga_pre post:ga_post {return _node2("ga_clause", pre, post); }
 ga_pre = pre_clause ga_word spaces?
 ga_post = post_clause
 ga_word = &cmavo expr:( g a ) &post_word {return ["ga_word", _join(expr)];}
+
+gu_clause = pre:gu_pre post:gu_post {return _node2("gu_clause", pre, post); }
+gu_pre = pre_clause gu_word spaces?
+gu_post = post_clause
+gu_word = &cmavo expr:( g u ) &post_word {return ["gu_word", _join(expr)];}
 
 
 // ___ MORPHOLOGY ___
