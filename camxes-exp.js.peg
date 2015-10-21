@@ -354,7 +354,7 @@ mex_1 = expr:( mex_2 (operator stag? BO_clause free* mex_1)? ) {return _node("me
 
 mex_2 = expr:( number BOI_elidible free* / lerfu_string BOI_elidible free* / VEI_clause free* mex VEhO_elidible free* / NIhE_clause free* selbri TEhU_elidible free* / MOhE_clause sumti TEhU_elidible free* / gek mex gik mex_2 / (LAhE_clause free* / NAhE_clause free* BO_clause? free*) mex LUhU_elidible free* / PEhO_clause free* operator mex+ KUhE_elidible free* / FUhA_clause rp_expression ) {return _node("mex_2", expr); }
 
-rp_expression = expr:( mex (rp_expression operator)* ) {return _node("rp_expression", expr); }
+rp_expression = expr:( mex_1 (rp_expression operator)* ) {return _node("rp_expression", expr); }
 
 //mex_sa = expr:(mex_start (!mex_start (sa_word / SA_clause !mex_start) )* SA_clause &mex) {return _node("mex_sa", expr); }
 
