@@ -480,7 +480,7 @@ bu_clause_no_pre = expr:(pre_zei_bu (bu_tail? zei_tail)* bu_tail post_clause) {r
 zei_tail = expr:(ZEI_clause any_word)+ {return _node("zei_tail", expr); }
 bu_tail = expr:BU_clause+ {return _node("bu_tail", expr); }
 
-pre_zei_bu = expr:(!BU_clause !ZEI_clause !SI_clause !SA_clause !SU_clause !FAhO_clause any_word_SA_handling si_clause?) {return _node("pre_zei_bu", expr); }
+pre_zei_bu = expr:(!ZOI_start !BU_clause !ZEI_clause !SI_clause !SA_clause !SU_clause !FAhO_clause any_word_SA_handling si_clause?) {return _node("pre_zei_bu", expr); }
 // LOhU_pre / ZO_pre / ZOI_pre / !ZEI_clause !BU_clause !FAhO_clause !SI_clause !SA_clause !SU_clause any_word_SA_handling si_clause?
 // pre_zei_bu_no_SA = LOhU_pre / ZO_pre / ZOI_pre / !ZEI_clause !BU_clause !FAhO_clause !SI_clause !SA_clause !SU_clause any_word si_clause?
 
@@ -521,7 +521,7 @@ sa_word = pre_zei_bu
 
 si_word = pre_zei_bu
 
-su_word = !NIhO_clause !LU_clause !TUhE_clause !TO_clause !SU_clause !FAhO_clause any_word_SA_handling
+su_word = !ZOI_start !NIhO_clause !LU_clause !TUhE_clause !TO_clause !SU_clause !FAhO_clause any_word_SA_handling
 
 
 // ___ ELIDIBLE TERMINATORS ___  (EXPERIMENTAL)
@@ -1337,6 +1337,7 @@ ZOI_clause = pre:ZOI_pre post:ZOI_post {return _node2("ZOI_clause", pre, post); 
 //// EXP-EDIT: ZOI fix
 ZOI_pre = pre_clause ZOI spaces? zoi_open spaces? zoi_word* zoi_close spaces?
 ZOI_post = post_clause
+ZOI_start = !ZOI_pre ZOI
 // ZOI_no_SA_handling = pre_clause ZOI spaces? zoi_open zoi_word* zoi_close spaces?
 
 //         prenex terminator (not elidable) 
@@ -1592,7 +1593,7 @@ o = comma* [oO] {return "o";}
 
 u = comma* [uU] {return "u";}
 
-y = comma* [yY] !nucleus {return "y";}
+y = comma* [yY] !(!y nucleus) {return "y";}
 
 
 //___________________________________________________________________
