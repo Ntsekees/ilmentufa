@@ -889,7 +889,7 @@ var camxes = (function(){
         
         pos0 = pos;
         pos1 = pos;
-        result0 = parse_spaces();
+        result0 = parse_initial_spaces();
         result0 = result0 !== null ? result0 : "";
         if (result0 !== null) {
           result1 = [];
@@ -1182,7 +1182,7 @@ var camxes = (function(){
           }
         }
         if (result0 !== null) {
-          result0 = (function(offset, expr) {return _node("text_1", expr);})(pos0, result0);
+          result0 = (function(offset, expr) {return _node_nonempty("text_1", expr);})(pos0, result0);
         }
         if (result0 === null) {
           pos = pos0;
